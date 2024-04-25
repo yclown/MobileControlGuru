@@ -1,0 +1,5 @@
+﻿ #获取设备 ip  
+ #192.168.191.0/24 dev wlan0 proto kernel scope link src 192.168.191.3
+ shell ip route 
+
+ #
