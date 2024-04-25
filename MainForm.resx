@@ -145,10 +145,10 @@
     <value>9</value>
   </data>
   <data name="getDevices_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>509, 12</value>
+    <value>495, 13</value>
   </data>
   <data name="getDevices_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 39</value>
+    <value>97, 39</value>
   </data>
   <data name="getDevices_btn.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -231,6 +231,24 @@
   <metadata name="mini_menustrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>136, 17</value>
   </metadata>
+  <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="main_tsmi.Text" xml:space="preserve">
+    <value>主界面</value>
+  </data>
+  <data name="setting_tmsi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="setting_tmsi.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="exit_tsmi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="exit_tsmi.Text" xml:space="preserve">
+    <value>退出程序</value>
+  </data>
   <data name="mini_menustrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 70</value>
   </data>
@@ -325,24 +343,6 @@
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="main_tsmi.Text" xml:space="preserve">
-    <value>主界面</value>
-  </data>
-  <data name="setting_tmsi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="setting_tmsi.Text" xml:space="preserve">
-    <value>设置</value>
-  </data>
-  <data name="exit_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="exit_tsmi.Text" xml:space="preserve">
-    <value>退出程序</value>
-  </data>
   <data name="comboBox1.Items" xml:space="preserve">
     <value>中文</value>
   </data>
@@ -374,10 +374,10 @@
     <value>8</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>515, 108</value>
+    <value>495, 108</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 41</value>
+    <value>97, 41</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -425,7 +425,7 @@
     <value>6</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 108</value>
+    <value>598, 108</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 41</value>
@@ -479,10 +479,10 @@
     <value>4</value>
   </data>
   <data name="api_run.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 323</value>
+    <value>495, 183</value>
   </data>
   <data name="api_run.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 41</value>
+    <value>97, 41</value>
   </data>
   <data name="api_run.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -503,7 +503,7 @@
     <value>3</value>
   </data>
   <data name="api_close.Location" type="System.Drawing.Point, System.Drawing">
-    <value>601, 323</value>
+    <value>602, 183</value>
   </data>
   <data name="api_close.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 41</value>
