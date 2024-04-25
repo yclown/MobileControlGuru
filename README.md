@@ -66,7 +66,7 @@ IP连接
 
 API
 
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/API.png)
+![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/api.png)
 
 
 ## 项目计划
