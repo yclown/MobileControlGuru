@@ -106,6 +106,7 @@
             // 
             this.setting_tmsi.Name = "setting_tmsi";
             resources.ApplyResources(this.setting_tmsi, "setting_tmsi");
+            this.setting_tmsi.Click += new System.EventHandler(this.setting_tmsi_Click);
             // 
             // exit_tsmi
             // 

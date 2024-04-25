@@ -408,5 +408,12 @@ namespace MobileControlGuru
         }
 
         #endregion
+
+        private void setting_tmsi_Click(object sender, EventArgs e)
+        {
+            ScrcpySetting scrcpysetting = new ScrcpySetting();
+            scrcpysetting.StartPosition = FormStartPosition.CenterParent;
+            scrcpysetting.ShowDialog(this);
+        }
     }
 }

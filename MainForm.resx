@@ -232,25 +232,25 @@
     <value>136, 17</value>
   </metadata>
   <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="main_tsmi.Text" xml:space="preserve">
     <value>主界面</value>
   </data>
   <data name="setting_tmsi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="setting_tmsi.Text" xml:space="preserve">
     <value>设置</value>
   </data>
   <data name="exit_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="exit_tsmi.Text" xml:space="preserve">
     <value>退出程序</value>
   </data>
   <data name="mini_menustrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 70</value>
+    <value>181, 92</value>
   </data>
   <data name="mini_menustrip.Text" xml:space="preserve">
     <value>设置</value>

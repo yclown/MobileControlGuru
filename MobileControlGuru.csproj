@@ -262,6 +262,7 @@
     <EmbeddedResource Include="ScrcpySetting.resx">
       <DependentUpon>ScrcpySetting.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Docs\autohotkey.ahk" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -300,8 +301,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Doc\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
