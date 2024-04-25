@@ -1,68 +1,68 @@
-# µçÄÔ¶à¿ØÊÖ»ú£¨MobileControlGuru£©
+# ç”µè„‘å¤šæŽ§æ‰‹æœºï¼ˆMobileControlGuruï¼‰
 
-µçÄÔ¿ØÖÆÊÖ»úµÄ×ÀÃæÓ¦ÓÃ£¬°ïÖúÐ¡»ï°éÓä¿ìµÄÃþÓã
+ç”µè„‘æŽ§åˆ¶æ‰‹æœºçš„æ¡Œé¢åº”ç”¨ï¼Œå¸®åŠ©å°ä¼™ä¼´æ„‰å¿«çš„æ‘¸é±¼
 
-## ¹¦ÄÜ
+## åŠŸèƒ½
 
-1. ÊÖ»ú¶à¿Ø
-2. ÅúÁ¿²Ù×÷
-3. ¿ì½Ý¼ü²Ù×÷
-4. API·¢²¼
+1. æ‰‹æœºå¤šæŽ§
+2. æ‰¹é‡æ“ä½œ
+3. å¿«æ·é”®æ“ä½œ
+4. APIå‘å¸ƒ
 
-## Ê¹ÓÃËµÃ÷
+## ä½¿ç”¨è¯´æ˜Ž
 
-1. ´ò¿ªMobileControlGuru.exe
-2. ÊÖ»ú¿ªÆôµ÷ÊÔÄ£Ê½²¢ÊÚÈ¨µ÷ÊÔ
-3. µã»÷»ñÈ¡Éè±¸ÁÐ±í
-4. ×ó±ßÁÐ±í³öÏÖÉè±¸ÐÅÏ¢,¼´¿É¿ªÊ¼¿ØÖÆÊÖ»ú£¨ÎÞÐèÍ¶ÆÁ£©
+1. æ‰“å¼€MobileControlGuru.exe
+2. æ‰‹æœºå¼€å¯è°ƒè¯•æ¨¡å¼å¹¶æŽˆæƒè°ƒè¯•
+3. ç‚¹å‡»èŽ·å–è®¾å¤‡åˆ—è¡¨
+4. å·¦è¾¹åˆ—è¡¨å‡ºçŽ°è®¾å¤‡ä¿¡æ¯,å³å¯å¼€å§‹æŽ§åˆ¶æ‰‹æœºï¼ˆæ— éœ€æŠ•å±ï¼‰
 
-## ×¢ÒâÊÂÏî
+## æ³¨æ„äº‹é¡¹
 
-Ö±½Ó¹Ø±Õ²»»áÍË³ö±¾³ÌÐò£¬ÇëÓÒ»÷ÓÒÏÂ½ÇÍ¼±êÍË³ö±¾³ÌÐò
+ç›´æŽ¥å…³é—­ä¸ä¼šé€€å‡ºæœ¬ç¨‹åºï¼Œè¯·å³å‡»å³ä¸‹è§’å›¾æ ‡é€€å‡ºæœ¬ç¨‹åº
 
-### ¿ì½Ý¼üËµÃ÷
+### å¿«æ·é”®è¯´æ˜Ž
 
-¿ì½Ý¼üÄ¬ÈÏÖ»²Ù×÷µÚÒ»¸öÉè±¸
+å¿«æ·é”®é»˜è®¤åªæ“ä½œç¬¬ä¸€ä¸ªè®¾å¤‡
 
-| ¿ì½Ý¼ü | ²Ù×÷|
+| å¿«æ·é”® | æ“ä½œ|
 | --- | --- | 
-|  Alt+D|  ËøÆÁ|  
-|  Alt+¡ü| ÒôÁ¿¼Ó |
-|  Alt+¡ý| ÒôÁ¿¼õ |
-|  Alt+¡û| Ã½Ìå¼ü ÉÏÒ»¸ö|
-|  Alt+¡ú| Ã½Ìå¼ü ÏÂÒ»¸ö|
-|  Alt+5(Ð¡¼üÅÌ)| Ã½Ìå¼ü ²¥·ÅÔÝÍ£|
-|  Alt+2(Ð¡¼üÅÌ)| ÉÏ»¬£¨¶ÔÓ¦¶ÌÊÓÆµÏÂÒ»¸ö£©|
-|  Alt+8(Ð¡¼üÅÌ)| ÏÂ»¬£¨¶ÔÓ¦¶ÌÊÓÆµÉÏÒ»¸ö£©|
+|  Alt+D|  é”å±|  
+|  Alt+â†‘| éŸ³é‡åŠ  |
+|  Alt+â†“| éŸ³é‡å‡ |
+|  Alt+â†| åª’ä½“é”® ä¸Šä¸€ä¸ª|
+|  Alt+â†’| åª’ä½“é”® ä¸‹ä¸€ä¸ª|
+|  Alt+5(å°é”®ç›˜)| åª’ä½“é”® æ’­æ”¾æš‚åœ|
+|  Alt+2(å°é”®ç›˜)| ä¸Šæ»‘ï¼ˆå¯¹åº”çŸ­è§†é¢‘ä¸‹ä¸€ä¸ªï¼‰|
+|  Alt+8(å°é”®ç›˜)| ä¸‹æ»‘ï¼ˆå¯¹åº”çŸ­è§†é¢‘ä¸Šä¸€ä¸ªï¼‰|
 
-### APIËµÃ÷
+### APIè¯´æ˜Ž
 
-´Ë¹¦ÄÜÓÃÓÚ·Ç±¾»ú¿ØÖÆÉè±¸£¬ÐèÒª½÷É÷¿ªÆô¡£
+æ­¤åŠŸèƒ½ç”¨äºŽéžæœ¬æœºæŽ§åˆ¶è®¾å¤‡ï¼Œéœ€è¦è°¨æ…Žå¼€å¯ã€‚
 
-¿ªÊ¼ºó¾ÖÓòÍøÉè±¸¿ÉÒÔÍ¨¹ýAPIÐÎÊ½µ÷ÓÃ±¾»úµÄ¿ØÖÆÖ¸Áî
+å¼€å§‹åŽå±€åŸŸç½‘è®¾å¤‡å¯ä»¥é€šè¿‡APIå½¢å¼è°ƒç”¨æœ¬æœºçš„æŽ§åˆ¶æŒ‡ä»¤
 
-´Ë¹¦ÄÜ´îÅä[Curl](https://curl.se/download.html)Óë[AutoHotkey](https://[AutoHotkey](https://www.autohotkey.com/))ÅäºÏÊ¹ÓÃ£¬µ±¶àÉè±¸Ê±¿ÉÒÔÈÃ¸÷×ÔµÄµçÄÔ²Ù×÷×Ô¼ºµÄÊÖ»ú
-AutoHotkey½Å±¾Ê¾Àý²é¿´docsÄ¿Â¼ÏÂµÄAutoHotkey.ahk
+æ­¤åŠŸèƒ½æ­é…[Curl](https://curl.se/download.html)ä¸Ž[AutoHotkey](https://[AutoHotkey](https://www.autohotkey.com/))é…åˆä½¿ç”¨ï¼Œå½“å¤šè®¾å¤‡æ—¶å¯ä»¥è®©å„è‡ªçš„ç”µè„‘æ“ä½œè‡ªå·±çš„æ‰‹æœº
+AutoHotkeyè„šæœ¬ç¤ºä¾‹æŸ¥çœ‹docsç›®å½•ä¸‹çš„AutoHotkey.ahk
 
-#### API ÁÐ±í
+#### API åˆ—è¡¨
 
-Ä¬ÈÏÔÚ12345¶Ë¿Ú´ò¿ª£¬ÐèÒªÇë×ÔÐÐ½øÈëconfigÎÄ¼þÐÞ¸ÄWebPortÊôÐÔ
+é»˜è®¤åœ¨12345ç«¯å£æ‰“å¼€ï¼Œéœ€è¦è¯·è‡ªè¡Œè¿›å…¥configæ–‡ä»¶ä¿®æ”¹WebPortå±žæ€§
 
-|µØÖ· | ËµÃ÷|
+|åœ°å€ | è¯´æ˜Ž|
 | --- | --- | 
-| /api/Device/Connect| Í¨¹ýIPÁ¬½ÓÉè±¸£¨µÚÒ»²½£© | 
-| /api/Device/List | µ±Ç°µÄÉè±¸ÁÐ±í |  
-| /api/Device/Lock | ·¢ËÍËøÆÁÖ¸Áî |
-| /api/Device/SendKey|  ·¢ËÍ°´¼ü keyCodeÊýÖµÇë×ÔÐÐËÑË÷¹Ø¼ü£¨adb keycode£© |
-| /api/Device/SendSwipe | ·¢ËÍ»¬¶¯Ö¸Áî |
+| /api/Device/Connect| é€šè¿‡IPè¿žæŽ¥è®¾å¤‡ï¼ˆç¬¬ä¸€æ­¥ï¼‰ | 
+| /api/Device/List | å½“å‰çš„è®¾å¤‡åˆ—è¡¨ |  
+| /api/Device/Lock | å‘é€é”å±æŒ‡ä»¤ |
+| /api/Device/SendKey|  å‘é€æŒ‰é”® keyCodeæ•°å€¼è¯·è‡ªè¡Œæœç´¢å…³é”®ï¼ˆadb keycodeï¼‰ |
+| /api/Device/SendSwipe | å‘é€æ»‘åŠ¨æŒ‡ä»¤ |
 
-## ½çÃæÔ¤ÀÀ
+## ç•Œé¢é¢„è§ˆ
 
-Ö÷½çÃæ
+ä¸»ç•Œé¢
 
 ![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/main.png)
 
-IPÁ¬½Ó
+IPè¿žæŽ¥
 
 ![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/ipconnect.png)
 
@@ -71,10 +71,10 @@ API
 ![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/api.png)
 
 
-## ÏîÄ¿¼Æ»®
+## é¡¹ç›®è®¡åˆ’
 
-1. ÓÅ»¯²Ù×÷
-2. ¸üºÃ¶àÉè±¸Ö§³Ö
+1. ä¼˜åŒ–æ“ä½œ
+2. æ›´å¥½å¤šè®¾å¤‡æ”¯æŒ
 
 
 
