@@ -424,7 +424,7 @@ namespace MobileControlGuru
             var dlist= this.deviceItems.Where(n => n.IsSelected).ToList();
             
             foreach( var ditem in dlist) {
-                new DeviceADB(ditem.Name).ClickSecreen(point);
+                new DeviceADB(ditem.Name).TapScreen(point);
             }
             
              

@@ -152,7 +152,7 @@ namespace MobileControlGuru.Src
                 case (int)Event.FastTap:
                     if (device != null)
                     {
-                        dd.ClickSecreen(main.point);
+                        dd.TapScreen(main.point);
                     }
                     break;
             }

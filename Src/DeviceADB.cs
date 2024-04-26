@@ -124,7 +124,7 @@ namespace MobileControlGuru.Src
             var res = SendKeyEvent(ADBKey.Key.KEYCODE_HOME);
             return res;
         }
-        public AdbParse ClickSecreen(Point point)
+        public AdbParse TapScreen(Point point)
         {
             var res = ADB.Exec($"-s {DeviceName} shell input tap  {point.X} {point.Y} ");
             return res;
