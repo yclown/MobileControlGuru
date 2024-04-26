@@ -43,7 +43,7 @@ namespace MobileControlGuru.WebAPI
             }
             else
             {
-                Port = "12345";
+                Port = "12345"; 
             }
         }
 
@@ -52,7 +52,10 @@ namespace MobileControlGuru.WebAPI
             int port = Convert.ToInt32(Port);
             StartOptions options = new StartOptions(); 
             Url = "http://localhost:" + port;
+           
+           // options.Urls.Add(Url);
             options.Urls.Add("http://+:" + port);
+
             myOwinServer = WebApp.Start<Startup>(options); 
            
 

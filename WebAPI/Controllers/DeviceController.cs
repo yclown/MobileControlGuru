@@ -110,9 +110,9 @@ namespace MobileControlGuru.WebAPI.Controllers
         /// <param name="y"></param>
         /// <returns></returns>
         [HttpGet]
-        public string SendSwipe(string devicename, int x,int y)
+        public string SendTap(string devicename, int x,int y)
         {
-            var res = new DeviceADB(devicename).ClickSecreen(new Point(x, y));
+            var res = new DeviceADB(devicename).TapScreen(new Point(x, y));
             
 
             return res.Message;
