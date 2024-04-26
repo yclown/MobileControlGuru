@@ -38,6 +38,7 @@ namespace MobileControlGuru.Src
             RegisterHotKey(mainform.Handle, (int)Event.SwipeUP, KeyModifiers.Alt, Keys.NumPad2);
             RegisterHotKey(mainform.Handle, (int)Event.SwipeDown, KeyModifiers.Alt, Keys.NumPad8);
             RegisterHotKey(mainform.Handle, (int)Event.MediaPlayPause, KeyModifiers.Alt, Keys.NumPad5);
+            RegisterHotKey(mainform.Handle, (int)Event.FastTap, KeyModifiers.Alt, Keys.C);
 
             //RegisterHotKey(Handle, (int)Event.MediaPlayPause, KeyModifiers.Alt| KeyModifiers.Ctrl, Keys.NumPad5); 
         }
@@ -54,6 +55,7 @@ namespace MobileControlGuru.Src
             UnregisterHotKey(mainform.Handle, (int)Event.SwipeUP);
             UnregisterHotKey(mainform.Handle, (int)Event.SwipeDown);
             UnregisterHotKey(mainform.Handle, (int)Event.MediaPlayPause);
+            UnregisterHotKey(mainform.Handle, (int)Event.FastTap);
               
         }
         /// <summary>
@@ -71,6 +73,7 @@ namespace MobileControlGuru.Src
             MediaPlayPause,
             SwipeUP,
             SwipeDown,
+            FastTap,
             //MediaNext,
             //MediaNext,
 
@@ -146,7 +149,12 @@ namespace MobileControlGuru.Src
                         dd.SendKeyEvent(ADBKey.Key.KEYCODE_MEDIA_PLAY_PAUSE);
                     }
                     break;
-
+                case (int)Event.FastTap:
+                    if (device != null)
+                    {
+                        dd.ClickSecreen(main.point);
+                    }
+                    break;
             }
         }
     }

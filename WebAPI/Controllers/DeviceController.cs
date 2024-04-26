@@ -3,6 +3,7 @@ using MobileControlGuru.Src;
 using MobileControlGuru.Tools;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -97,6 +98,22 @@ namespace MobileControlGuru.WebAPI.Controllers
             {
                 res= new DeviceADB(devicename).SendSwipeDown();
             }
+
+            return res.Message;
+        }
+
+        /// <summary>
+        /// 屏幕点击
+        /// </summary>
+        /// <param name="devicename"></param>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public string SendSwipe(string devicename, int x,int y)
+        {
+            var res = new DeviceADB(devicename).ClickSecreen(new Point(x, y));
+            
 
             return res.Message;
         }

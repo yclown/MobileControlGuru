@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MobileControlGuru.Src
 {
@@ -121,6 +122,11 @@ namespace MobileControlGuru.Src
         public AdbParse SendHome()
         {
             var res = SendKeyEvent(ADBKey.Key.KEYCODE_HOME);
+            return res;
+        }
+        public AdbParse ClickSecreen(Point point)
+        {
+            var res = ADB.Exec($"-s {DeviceName} shell input tap  {point.X} {point.Y} ");
             return res;
         }
 

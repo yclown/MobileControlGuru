@@ -416,5 +416,22 @@ namespace MobileControlGuru
             scrcpysetting.StartPosition = FormStartPosition.CenterParent;
             scrcpysetting.ShowDialog(this);
         }
+        public Point point=new Point();
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            point= new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
+            var d= this.deviceItems.Where(n => n.IsSelected).FirstOrDefault();
+            if (d == null)
+            {
+                d = this.deviceItems.FirstOrDefault();
+                if (d == null)
+                {
+                    return;
+                }
+            }
+           
+            new DeviceADB(d.Name).ClickSecreen(point);
+             
+        }
     }
 }

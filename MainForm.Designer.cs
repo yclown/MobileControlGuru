@@ -47,7 +47,14 @@
             this.api_run = new AntdUI.Button();
             this.api_close = new AntdUI.Button();
             this.button4 = new AntdUI.Button();
+            this.x_input = new AntdUI.InputNumber();
+            this.y_input = new AntdUI.Input();
+            this.button5 = new AntdUI.Button();
+            this.flowLayoutPanel1 = new AntdUI.In.FlowLayoutPanel();
+            this.label1 = new AntdUI.Label();
+            this.label2 = new AntdUI.Label();
             this.mini_menustrip.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // table1
@@ -166,10 +173,47 @@
             this.button4.Name = "button4";
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // x_input
+            // 
+            resources.ApplyResources(this.x_input, "x_input");
+            this.x_input.Name = "x_input";
+            // 
+            // y_input
+            // 
+            resources.ApplyResources(this.y_input, "y_input");
+            this.y_input.Name = "y_input";
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.x_input);
+            this.flowLayoutPanel1.Controls.Add(this.label1);
+            this.flowLayoutPanel1.Controls.Add(this.y_input);
+            this.flowLayoutPanel1.Controls.Add(this.button5);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.api_close);
             this.Controls.Add(this.api_run);
@@ -187,6 +231,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Mian_FormClosed);
             this.Load += new System.EventHandler(this.Mian_Load);
             this.mini_menustrip.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -210,6 +255,12 @@
         private AntdUI.Button api_run;
         private AntdUI.Button api_close;
         private AntdUI.Button button4;
+        private AntdUI.InputNumber x_input;
+        private AntdUI.Input y_input;
+        private AntdUI.Button button5;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel1;
+        private AntdUI.Label label2;
+        private AntdUI.Label label1;
     }
 }
 
