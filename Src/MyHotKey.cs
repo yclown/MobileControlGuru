@@ -78,10 +78,14 @@ namespace MobileControlGuru.Src
         /// <summary>
         /// 事件处理
         /// </summary>
-        /// <param name="WParam"></param>
-        public  void Deal(int WParam)
+       
+        public  void Deal(MainForm main, int WParam)
         {
-            var device = DeviceManager.Instance.devices.FirstOrDefault();
+            Model.Device device=  main.deviceItems.Where(n => n.IsSelected).FirstOrDefault();
+            if (device == null)
+            {
+                device = DeviceManager.Instance.devices.FirstOrDefault(); 
+            } 
             if(device == null)
             {
                 return;

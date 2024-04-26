@@ -75,9 +75,10 @@ namespace MobileControlGuru
             this.table1.EmptyText = resources.GetString("tableNoDataText");// "暂无设备，请连接设备后刷新";
 
         }
+        public AntdUI.AntList<DeviceItem> deviceItems = new AntList<DeviceItem>();
         public void UpdateDeviceInfo()
         {
-            AntdUI.AntList<DeviceItem> deviceItems = new AntList<DeviceItem>();
+            deviceItems = new AntList<DeviceItem>();
             foreach (var item in DeviceManager.Instance.devices)
             {
                 deviceItems.Add(new DeviceItem(item));
@@ -218,7 +219,7 @@ namespace MobileControlGuru
             {
                 //监听快捷键 消息
                 case WM_HOTKEY:
-                    hotkey.Deal(m.WParam.ToInt32()); 
+                    hotkey.Deal(this,m.WParam.ToInt32()); 
                     break;
             }
             base.WndProc(ref m);
