@@ -7,6 +7,7 @@ using MobileControlGuru.Properties;
 using MobileControlGuru.Src;
 using MobileControlGuru.Tools;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -420,17 +421,12 @@ namespace MobileControlGuru
         private void button5_Click_1(object sender, EventArgs e)
         {
             point= new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
-            var d= this.deviceItems.Where(n => n.IsSelected).FirstOrDefault();
-            if (d == null)
-            {
-                d = this.deviceItems.FirstOrDefault();
-                if (d == null)
-                {
-                    return;
-                }
+            var dlist= this.deviceItems.Where(n => n.IsSelected).ToList();
+            
+            foreach( var ditem in dlist) {
+                new DeviceADB(ditem.Name).ClickSecreen(point);
             }
-           
-            new DeviceADB(d.Name).ClickSecreen(point);
+            
              
         }
     }
