@@ -13,6 +13,10 @@ namespace MobileControlGuru.Base
     public class ProcessWindowController
     {
         [DllImport("user32.dll")]
+        public static extern bool SetParent(IntPtr hWndChild, IntPtr hWndNewParent);
+        [DllImport("user32.dll")]
+        public static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
+        [DllImport("user32.dll")]
         public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
         [DllImport("user32.dll", CharSet = CharSet.Unicode, SetLastError = true)]

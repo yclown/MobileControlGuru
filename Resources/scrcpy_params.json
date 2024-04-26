@@ -1,0 +1,125 @@
+{
+  "Params": [
+    {
+      //中文名
+      "Name": "无音频",
+      //英文名
+      "EngName": "no-audio",
+      //数据类型 0表示无值 1表示带值
+      "Type": 0,
+      "Val": "",
+      //带值的限定范围
+      "AllowValues": [
+      ],
+      //默认值
+      "DefaultValues": "",
+      //分组 同一分组的不能一起设置
+      "Group": "",
+      //scrcpy 参数
+      "Param": "--no-audio",
+      //scrcpy 短参数
+      "ShortVersion": "", 
+      //是否允许可以设置
+      "AllowSetting": true
+    },
+
+    {
+
+      "Name": "键盘支持",
+      "EngName": "keyboard",
+      "Type": 0,
+      "Val": "",
+      "AllowValues": [
+        {
+          "Name": "sdk ",
+          "EngName": "sdk",
+          "Val": "sdk "
+        },
+        {
+          "Name": "uhid",
+          "EngName": "uhid",
+          "Val": "uhid "
+        },
+        {
+          "Name": "aoa",
+          "EngName": "aoa",
+          "Val": "aoa "
+        },
+        {
+          "Name": "禁用",
+          "EngName": "disabled",
+          "Val": "disabled "
+        }
+      ],
+      "DefaultValues": "sdk",
+      "Group": "",
+      "Param": "--keyboard",
+      "ShortVersion": "",
+      "AllowSetting": true
+    },
+    {
+      "Name": "初始X轴",
+      "EngName": "window-x",
+      "Type": 1,
+      "Param": "--window-x",
+      "ShortVersion": "",
+      "Group": "",
+      "Val": "",
+
+      "AllowSetting": true,
+      "AllowValues": [
+
+      ],
+      "DefaultValues": ""
+
+    },
+    {
+      "Name": "初始Y轴",
+      "EngName": "window-y",
+      "Type": 1,
+      "Param": "--window-y",
+      "ShortVersion": "",
+      "DefaultValues": "",
+      "Group": "", 
+      "AllowSetting": true,
+      "Val": "",
+      "AllowValues": [
+
+      ]
+
+    },
+    {
+      "Name": "默认宽度",
+      "EngName": "window-width",
+      "Type": 1,
+      "Param": "--window-width",
+      "Group": "",
+      "DefaultValues": "",
+      "AllowSetting": true,
+      "ShortVersion": "",
+      "AllowValues": [
+
+      ],
+      "Val": ""
+    },
+    {
+      "Name": "默认高度",
+      "EngName": "window-height",
+      "Type": 1,
+      "Param": "--window-height",
+      "Group": "",
+      "DefaultValues": "",
+      "AllowSetting": true,
+      "ShortVersion": "",
+      "AllowValues": [
+
+      ],
+      "Val": ""
+    }
+  ],
+  //运行时命令
+  "RunningParams": [
+
+
+  ]
+}

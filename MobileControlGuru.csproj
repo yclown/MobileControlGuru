@@ -287,6 +287,7 @@
     <Content Include="Preview\ipconnect.png" />
     <Content Include="Preview\main.png" />
     <None Include="Resources\fanhui.png" />
+    <None Include="Resources\scrcpy_params.json" />
     <None Include="Resources\shouye.png" />
     <None Include="Resources\jietu.png" />
     <None Include="Resources\favicon.ico" />
@@ -304,4 +305,5 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions />
 </Project>
