@@ -30,6 +30,7 @@ namespace MobileControlGuru
                 WindowWidth=WindowWidthInput.Text,
                 WindowX=WindowXInput.Text,
                 WindowY=WindowYInput.Text,
+                KeyboardUhid= KeyboardUhidSwitch.Checked,
             };
             
             ConfigHelp.SetSetting("ScrcpyParamObj", JsonHelp.Obj2Str(scrcpyParam));
@@ -53,6 +54,7 @@ namespace MobileControlGuru
                 WindowWidthInput.Text= scrcpyParam.WindowWidth;
                 WindowXInput.Text= scrcpyParam.WindowX;
                 WindowYInput.Text= scrcpyParam.WindowY;
+                KeyboardUhidSwitch.Checked = scrcpyParam.KeyboardUhid;
             }
         }
     }

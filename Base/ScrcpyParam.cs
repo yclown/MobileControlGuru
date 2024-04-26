@@ -50,7 +50,10 @@ namespace MobileControlGuru.Base
         #endregion
 
 
-
+        #region
+        [ScrcpyParam("--keyboard=uhid")]
+        public bool KeyboardUhid { get; set; }
+        #endregion
 
         public override string ToString()
         {
