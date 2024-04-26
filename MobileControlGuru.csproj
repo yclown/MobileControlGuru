@@ -275,6 +275,7 @@
     </Compile>
     <None Include="README.md" />
     <None Include="Resources\scrcpy-win64-v2.4.zip" />
+    <None Include="Docs\Update.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
