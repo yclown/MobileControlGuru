@@ -142,10 +142,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;table1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="getDevices_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 13</value>
+    <value>476, 12</value>
   </data>
   <data name="getDevices_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 39</value>
@@ -166,10 +166,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;getDevices_btn.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="ipconnect_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>617, 13</value>
+    <value>598, 12</value>
   </data>
   <data name="ipconnect_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 38</value>
@@ -190,7 +190,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ipconnect_btn.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="dropdown1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -223,7 +223,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dropdown1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -343,41 +343,41 @@
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="comboBox1.Items" xml:space="preserve">
+  <data name="lang_select.Items" xml:space="preserve">
     <value>中文</value>
   </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
+  <data name="lang_select.Items1" xml:space="preserve">
     <value>English</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>476, 418</value>
+  <data name="lang_select.Location" type="System.Drawing.Point, System.Drawing">
+    <value>803, 345</value>
   </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lang_select.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 20</value>
   </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="lang_select.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="comboBox1.Visible" type="System.Boolean, mscorlib">
+  <data name="lang_select.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
+  <data name="&gt;&gt;lang_select.Name" xml:space="preserve">
+    <value>lang_select</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;lang_select.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lang_select.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;lang_select.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 108</value>
+    <value>476, 86</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 41</value>
+    <value>83, 41</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -395,7 +395,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="divider1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -422,10 +422,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>598, 108</value>
+    <value>579, 86</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 41</value>
@@ -449,7 +449,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>740, 398</value>
@@ -476,10 +476,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="api_run.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 183</value>
+    <value>476, 395</value>
   </data>
   <data name="api_run.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 41</value>
@@ -500,10 +500,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;api_run.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="api_close.Location" type="System.Drawing.Point, System.Drawing">
-    <value>602, 183</value>
+    <value>583, 395</value>
   </data>
   <data name="api_close.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 41</value>
@@ -524,7 +524,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;api_close.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>825, 398</value>
@@ -548,7 +548,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="x_input.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 3</value>
@@ -558,6 +558,9 @@
   </data>
   <data name="x_input.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
+  </data>
+  <data name="x_input.Text" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;x_input.Name" xml:space="preserve">
     <value>x_input</value>
@@ -652,6 +655,9 @@
   <data name="y_input.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
+  <data name="y_input.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;y_input.Name" xml:space="preserve">
     <value>y_input</value>
   </data>
@@ -665,7 +671,7 @@
     <value>3</value>
   </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 254</value>
+    <value>476, 133</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>379, 64</value>
@@ -683,7 +689,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="divider2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="divider2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 57</value>
+  </data>
+  <data name="divider2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 23</value>
+  </data>
+  <data name="divider2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="divider2.Text" xml:space="preserve">
+    <value>批量操作</value>
+  </data>
+  <data name="&gt;&gt;divider2.Name" xml:space="preserve">
+    <value>divider2</value>
+  </data>
+  <data name="&gt;&gt;divider2.Type" xml:space="preserve">
+    <value>AntdUI.Divider, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;divider2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;divider2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -39,7 +39,7 @@
             this.main_tsmi = new System.Windows.Forms.ToolStripMenuItem();
             this.setting_tmsi = new System.Windows.Forms.ToolStripMenuItem();
             this.exit_tsmi = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lang_select = new System.Windows.Forms.ComboBox();
             this.button1 = new AntdUI.Button();
             this.divider1 = new AntdUI.Divider();
             this.button2 = new AntdUI.Button();
@@ -53,6 +53,7 @@
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
             this.y_input = new AntdUI.InputNumber();
+            this.divider2 = new AntdUI.Divider();
             this.mini_menustrip.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -121,15 +122,15 @@
             resources.ApplyResources(this.exit_tsmi, "exit_tsmi");
             this.exit_tsmi.Click += new System.EventHandler(this.exit_tsmi_Click);
             // 
-            // comboBox1
+            // lang_select
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.lang_select.FormattingEnabled = true;
+            this.lang_select.Items.AddRange(new object[] {
+            resources.GetString("lang_select.Items"),
+            resources.GetString("lang_select.Items1")});
+            resources.ApplyResources(this.lang_select, "lang_select");
+            this.lang_select.Name = "lang_select";
+            this.lang_select.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -209,10 +210,16 @@
             resources.ApplyResources(this.y_input, "y_input");
             this.y_input.Name = "y_input";
             // 
+            // divider2
+            // 
+            resources.ApplyResources(this.divider2, "divider2");
+            this.divider2.Name = "divider2";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.divider2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.api_close);
@@ -221,7 +228,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.divider1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lang_select);
             this.Controls.Add(this.table1);
             this.Controls.Add(this.dropdown1);
             this.Controls.Add(this.ipconnect_btn);
@@ -247,7 +254,7 @@
         private System.Windows.Forms.ToolStripMenuItem setting_tmsi;
         private System.Windows.Forms.ToolStripMenuItem exit_tsmi;
         private System.Windows.Forms.ToolStripMenuItem main_tsmi;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox lang_select;
         private AntdUI.Button button1;
         private AntdUI.Divider divider1;
         private AntdUI.Button button2;
@@ -261,6 +268,7 @@
         private AntdUI.Label label2;
         private AntdUI.Label label1;
         private AntdUI.InputNumber y_input;
+        private AntdUI.Divider divider2;
     }
 }
 

@@ -177,7 +177,7 @@ namespace MobileControlGuru
         #region I18n
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 0)
+            if (lang_select.SelectedIndex == 0)
             {
                 Tools.ConfigHelp.SetSetting("Lang", "zh-CN");
                 ChangeLang("zh-CN");
