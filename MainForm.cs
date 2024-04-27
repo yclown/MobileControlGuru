@@ -481,6 +481,25 @@ namespace MobileControlGuru
                 }
             }
         }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+            var datas = (AntList<Model.DeviceItem>)this.table1.DataSource;
+            var selecteds = datas.Where(n => n.IsSelected).ToList();
+            if (selecteds.Count() == 0)
+            {
+                AntdUI.Message.error(this, "请选择要操作的设备");
+                return;
+            }
+            if (string.IsNullOrEmpty(this.keycode_input.Text))
+            { 
+                return;
+            }
+            foreach (var ditem in selecteds)
+            {
+                new DeviceADB(ditem.Name).SendKeyEvent(this.keycode_input.Text);
+            }
+        }
         #endregion
 
         private void x_input_ValueChanged(object sender, decimal value)
@@ -497,15 +516,6 @@ namespace MobileControlGuru
             Properties.Settings.Default.Save();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            
-            var datas = (AntList<Model.DeviceItem>)this.table1.DataSource;
-            var selecteds = datas.Where(n => n.IsSelected).ToList();
-            foreach (var ditem in selecteds)
-            {
-                new DeviceADB(ditem.Name).SendKeyEvent(this.keycode_input.Text);
-            }
-        }
+       
     }
 }
