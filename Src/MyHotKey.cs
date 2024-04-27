@@ -39,6 +39,7 @@ namespace MobileControlGuru.Src
             RegisterHotKey(mainform.Handle, (int)Event.SwipeDown, KeyModifiers.Alt, Keys.NumPad8);
             RegisterHotKey(mainform.Handle, (int)Event.MediaPlayPause, KeyModifiers.Alt, Keys.NumPad5);
             RegisterHotKey(mainform.Handle, (int)Event.FastTap, KeyModifiers.Alt, Keys.C);
+            RegisterHotKey(mainform.Handle, (int)Event.Home, KeyModifiers.Alt, Keys.H);
 
             //RegisterHotKey(Handle, (int)Event.MediaPlayPause, KeyModifiers.Alt| KeyModifiers.Ctrl, Keys.NumPad5); 
         }
@@ -56,7 +57,7 @@ namespace MobileControlGuru.Src
             UnregisterHotKey(mainform.Handle, (int)Event.SwipeDown);
             UnregisterHotKey(mainform.Handle, (int)Event.MediaPlayPause);
             UnregisterHotKey(mainform.Handle, (int)Event.FastTap);
-              
+            UnregisterHotKey(mainform.Handle, (int)Event.Home);
         }
         /// <summary>
         /// 事件类型
@@ -74,6 +75,7 @@ namespace MobileControlGuru.Src
             SwipeUP,
             SwipeDown,
             FastTap,
+            Home,
             //MediaNext,
             //MediaNext,
 
@@ -153,6 +155,12 @@ namespace MobileControlGuru.Src
                     if (device != null)
                     {
                         dd.TapScreen(main.point);
+                    }
+                    break;
+                case (int)Event.Home:
+                    if (device != null)
+                    {
+                        dd.SendHome();
                     }
                     break;
             }
