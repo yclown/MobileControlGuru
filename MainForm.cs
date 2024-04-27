@@ -496,5 +496,16 @@ namespace MobileControlGuru
             Properties.Settings.Default.ClickPoint = point;
             Properties.Settings.Default.Save();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+            var datas = (AntList<Model.DeviceItem>)this.table1.DataSource;
+            var selecteds = datas.Where(n => n.IsSelected).ToList();
+            foreach (var ditem in selecteds)
+            {
+                new DeviceADB(ditem.Name).SendKeyEvent(this.keycode_input.Text);
+            }
+        }
     }
 }

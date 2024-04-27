@@ -580,25 +580,25 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="input1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="keycode_input.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 3</value>
   </data>
-  <data name="input1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="keycode_input.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 40</value>
   </data>
-  <data name="input1.TabIndex" type="System.Int32, mscorlib">
+  <data name="keycode_input.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;input1.Name" xml:space="preserve">
-    <value>input1</value>
+  <data name="&gt;&gt;keycode_input.Name" xml:space="preserve">
+    <value>keycode_input</value>
   </data>
-  <data name="&gt;&gt;input1.Type" xml:space="preserve">
+  <data name="&gt;&gt;keycode_input.Type" xml:space="preserve">
     <value>AntdUI.Input, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;input1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;keycode_input.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;input1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;keycode_input.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="flowLayoutPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">

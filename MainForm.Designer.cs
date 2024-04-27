@@ -64,7 +64,7 @@
             this.swipe_up_btn = new AntdUI.Button();
             this.swipe_down_btn = new AntdUI.Button();
             this.divider2 = new AntdUI.Divider();
-            this.input1 = new AntdUI.Input();
+            this.keycode_input = new AntdUI.Input();
             this.button1 = new AntdUI.Button();
             this.mini_menustrip.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -196,7 +196,7 @@
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Controls.Add(this.lock_keycode_btn);
             this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.input1);
+            this.flowLayoutPanel1.Controls.Add(this.keycode_input);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel3);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -311,15 +311,16 @@
             resources.ApplyResources(this.divider2, "divider2");
             this.divider2.Name = "divider2";
             // 
-            // input1
+            // keycode_input
             // 
-            resources.ApplyResources(this.input1, "input1");
-            this.input1.Name = "input1";
+            resources.ApplyResources(this.keycode_input, "keycode_input");
+            this.keycode_input.Name = "keycode_input";
             // 
             // button1
             // 
             resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // MainForm
             // 
@@ -386,7 +387,7 @@
         private AntdUI.Divider divider4;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel4;
         private AntdUI.Button button1;
-        private AntdUI.Input input1;
+        private AntdUI.Input keycode_input;
     }
 }
 
