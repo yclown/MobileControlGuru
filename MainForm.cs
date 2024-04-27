@@ -50,6 +50,8 @@ namespace MobileControlGuru
             hotkey = new MyHotKey(this);
             webservice = new WebAPI.WebHelper();
             DeviceManager.Instance.UpdateDevices();
+            this.x_input.Text= Properties.Settings.Default.ClickPoint.X.ToString();
+            this.y_input.Text = Properties.Settings.Default.ClickPoint.Y.ToString();
         }
         private void InitScrcpy()
         {
@@ -421,6 +423,8 @@ namespace MobileControlGuru
         private void button5_Click_1(object sender, EventArgs e)
         {
             point= new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
+            Properties.Settings.Default.ClickPoint=point;
+            Properties.Settings.Default.Save();
             var dlist= this.deviceItems.Where(n => n.IsSelected).ToList();
             
             foreach( var ditem in dlist) {
@@ -429,5 +433,7 @@ namespace MobileControlGuru
             
              
         }
+
+      
     }
 }

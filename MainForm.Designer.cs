@@ -48,11 +48,11 @@
             this.api_close = new AntdUI.Button();
             this.button4 = new AntdUI.Button();
             this.x_input = new AntdUI.InputNumber();
-            this.y_input = new AntdUI.Input();
             this.button5 = new AntdUI.Button();
             this.flowLayoutPanel1 = new AntdUI.In.FlowLayoutPanel();
-            this.label1 = new AntdUI.Label();
             this.label2 = new AntdUI.Label();
+            this.label1 = new AntdUI.Label();
+            this.y_input = new AntdUI.InputNumber();
             this.mini_menustrip.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -178,11 +178,6 @@
             resources.ApplyResources(this.x_input, "x_input");
             this.x_input.Name = "x_input";
             // 
-            // y_input
-            // 
-            resources.ApplyResources(this.y_input, "y_input");
-            this.y_input.Name = "y_input";
-            // 
             // button5
             // 
             resources.ApplyResources(this.button5, "button5");
@@ -199,15 +194,20 @@
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // label2
+            // y_input
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.y_input, "y_input");
+            this.y_input.Name = "y_input";
             // 
             // MainForm
             // 
@@ -256,11 +256,11 @@
         private AntdUI.Button api_close;
         private AntdUI.Button button4;
         private AntdUI.InputNumber x_input;
-        private AntdUI.Input y_input;
         private AntdUI.Button button5;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel1;
         private AntdUI.Label label2;
         private AntdUI.Label label1;
+        private AntdUI.InputNumber y_input;
     }
 }
 

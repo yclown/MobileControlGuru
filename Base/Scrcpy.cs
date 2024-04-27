@@ -40,6 +40,7 @@ namespace MobileControlGuru.Base
                 StandardOutputEncoding = Encoding.UTF8,
                 StandardErrorEncoding = Encoding.UTF8,
             });
+            LogHelper.Info("scrcpy exc" + Arguments);
             p.EnableRaisingEvents = true; 
             return p;
         }
