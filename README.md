@@ -1,7 +1,7 @@
 # 电脑多控手机（MobileControlGuru）
 
 ## V1.0.4
-电脑控制手机的桌面应用，帮助小伙伴愉快的摸鱼
+电脑控制手机的桌面应用，帮助小伙伴愉快的摸鱼,支持快捷键，WebAPI控制
 
 [更新日志](https://github.com/yclown/MobileControlGuru/blob/master/Docs/Update.md)
 
