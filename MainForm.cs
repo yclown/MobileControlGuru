@@ -16,6 +16,7 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Security.Principal;
 using System.Text;
 using System.Threading;
@@ -154,7 +155,14 @@ namespace MobileControlGuru
        
         private void dropdown1_SelectedValueChanged(object sender, object value)
         {
-            
+            switch (value)
+            {
+                case "关于":
+                    var about = new About();
+                    about.StartPosition = FormStartPosition.CenterScreen;
+                    about.Show();
+                    break;
+            }
         }
 
         private void exit_tsmi_Click(object sender, EventArgs e)
@@ -267,19 +275,8 @@ namespace MobileControlGuru
             this.Activate();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            var datas = (AntList<Model.DeviceItem>)this.table1.DataSource;
-            var selecteds = datas.Where(n => n.IsSelected).ToList();
-
-            ADB.Lock(selecteds);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-
-        }
+      
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -420,20 +417,84 @@ namespace MobileControlGuru
             scrcpysetting.ShowDialog(this);
         }
         public Point point=new Point();
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-            point= new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
-            Properties.Settings.Default.ClickPoint=point;
-            Properties.Settings.Default.Save();
-            var dlist= this.deviceItems.Where(n => n.IsSelected).ToList();
+        //private void button5_Click_1(object sender, EventArgs e)
+        //{
+        //    point= new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
+        //    Properties.Settings.Default.ClickPoint=point;
+        //    Properties.Settings.Default.Save();
+        //    var dlist= this.deviceItems.Where(n => n.IsSelected).ToList();
             
-            foreach( var ditem in dlist) {
-                new DeviceADB(ditem.Name).TapScreen(point);
-            }
+        //    foreach( var ditem in dlist) {
+        //        new DeviceADB(ditem.Name).TapScreen(point);
+        //    }
             
              
+        //}
+
+        #region 批量操作按钮
+        
+        private void button_Click(object sender, EventArgs e)
+        {
+            var datas = (AntList<Model.DeviceItem>)this.table1.DataSource;
+            var selecteds = datas.Where(n => n.IsSelected).ToList();
+           
+            if (selecteds.Count() == 0)
+            {
+                AntdUI.Message.error(this, "请选择要操作的设备");
+                return;
+            }
+            var btn= ((AntdUI.Button)sender);
+            string btn_name = btn.Name;
+           
+            if (btn_name.Contains("keycode"))
+            {
+                foreach (var ditem in selecteds)
+                {
+                    new DeviceADB(ditem.Name).SendKeyEvent(btn.Tag.ToString()); 
+                } 
+            }
+            if (btn_name.Contains("swipe"))
+            {
+                
+                if (btn.Tag.ToString() == "up")
+                {
+                    foreach (var ditem in selecteds)
+                    {
+                        new DeviceADB(ditem.Name).SendSwipeUp();
+                    }
+                }
+                else
+                {
+                    foreach (var ditem in selecteds)
+                    {
+                        new DeviceADB(ditem.Name).SendSwipeDown();
+                    }
+                }
+            }
+
+            if (btn_name.Contains("tap"))
+            {
+                point = new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
+                foreach (var ditem in selecteds)
+                {
+                    new DeviceADB(ditem.Name).TapScreen(point);
+                }
+            }
+        }
+        #endregion
+
+        private void x_input_ValueChanged(object sender, decimal value)
+        {
+            point = new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
+            Properties.Settings.Default.ClickPoint = point;
+            Properties.Settings.Default.Save();
         }
 
-      
+        private void y_input_ValueChanged(object sender, decimal value)
+        {
+            point = new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
+            Properties.Settings.Default.ClickPoint = point;
+            Properties.Settings.Default.Save();
+        }
     }
 }

@@ -1,5 +1,6 @@
 # 电脑多控手机（MobileControlGuru）
 
+## V1.0.4
 电脑控制手机的桌面应用，帮助小伙伴愉快的摸鱼
 
 [更新日志](https://github.com/yclown/MobileControlGuru/blob/master/Docs/Update.md)
@@ -32,6 +33,8 @@
 | 快捷键 | 操作|
 | --- | --- | 
 |  Alt+D|  锁屏|  
+|  Alt+H|  Home键|  
+|  Alt+C|  点击屏幕（主界面按钮点击后生效）|  
 |  Alt+↑| 音量加 |
 |  Alt+↓| 音量减 |
 |  Alt+←| 媒体键 上一个|

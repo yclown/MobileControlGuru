@@ -169,6 +169,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="HotKeySetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     <Compile Include="WebAPI\Controllers\HomeController.cs" />
     <Compile Include="WebAPI\Startup.cs" />
     <Compile Include="WebAPI\WebHelper.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HotKeySetting.resx">
       <DependentUpon>HotKeySetting.cs</DependentUpon>
     </EmbeddedResource>

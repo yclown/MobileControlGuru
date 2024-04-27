@@ -34,5 +34,17 @@ namespace MobileControlGuru.Properties {
                 this["ClickPoint"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LastDeviceIP {
+            get {
+                return ((string)(this["LastDeviceIP"]));
+            }
+            set {
+                this["LastDeviceIP"] = value;
+            }
+        }
     }
 }

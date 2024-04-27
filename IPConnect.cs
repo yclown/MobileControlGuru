@@ -33,6 +33,8 @@ namespace MobileControlGuru
             string port = this.port_input.Text;
             var adbinfo = ADB.Connect($"{device_ip}:{port}");
             DeviceManager.Instance.UpdateDevices();
+            Properties.Settings.Default.LastDeviceIP = device_ip;
+            Properties.Settings.Default.Save();
             this.Close();
         }
 
@@ -44,9 +46,9 @@ namespace MobileControlGuru
         }
         private void IPConnect_Load(object sender, EventArgs e)
         {
-           
+            this.ip_input.Text = Properties.Settings.Default.LastDeviceIP;
+             
 
-           
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -60,6 +62,10 @@ namespace MobileControlGuru
                 return;
             }
             DeviceManager.Instance.BindDevicesProcees(device_ip + ":" + port, p);
+            Properties.Settings.Default.LastDeviceIP = device_ip;
+            Properties.Settings.Default.Save();
+
+
             this.Close();
 
         }
