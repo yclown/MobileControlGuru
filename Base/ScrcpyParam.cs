@@ -52,7 +52,11 @@ namespace MobileControlGuru.Base
 
         #region
         [ScrcpyParam("--keyboard=uhid")]
-        public bool KeyboardUhid { get; set; }
+        public bool KeyboardUhid { get; set; } 
+        [ScrcpyParam("--stay-awake")]
+        public bool StayAwake { get; set; }
+        [ScrcpyParam("--turn-screen-off")]
+        public bool TurnScreenOff { get; set; }
         #endregion
 
         public override string ToString()

@@ -43,6 +43,10 @@
             this.label6 = new AntdUI.Label();
             this.flowLayoutPanel1 = new AntdUI.In.FlowLayoutPanel();
             this.flowLayoutPanel2 = new AntdUI.In.FlowLayoutPanel();
+            this.label7 = new AntdUI.Label();
+            this.turn_screen_off = new AntdUI.Switch();
+            this.label8 = new AntdUI.Label();
+            this.stay_awake = new AntdUI.Switch();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -127,7 +131,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(617, 224);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 41);
             this.button1.TabIndex = 10;
             this.button1.Text = "保存";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -154,9 +158,13 @@
             this.flowLayoutPanel1.Controls.Add(this.NoAudioSwitch);
             this.flowLayoutPanel1.Controls.Add(this.label6);
             this.flowLayoutPanel1.Controls.Add(this.KeyboardUhidSwitch);
+            this.flowLayoutPanel1.Controls.Add(this.label7);
+            this.flowLayoutPanel1.Controls.Add(this.turn_screen_off);
+            this.flowLayoutPanel1.Controls.Add(this.label8);
+            this.flowLayoutPanel1.Controls.Add(this.stay_awake);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(22, 12);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(464, 41);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(582, 41);
             this.flowLayoutPanel1.TabIndex = 13;
             // 
             // flowLayoutPanel2
@@ -173,6 +181,38 @@
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(670, 100);
             this.flowLayoutPanel2.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(217, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 23);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "投屏后息屏";
+            // 
+            // turn_screen_off
+            // 
+            this.turn_screen_off.Location = new System.Drawing.Point(295, 3);
+            this.turn_screen_off.Name = "turn_screen_off";
+            this.turn_screen_off.Size = new System.Drawing.Size(44, 23);
+            this.turn_screen_off.TabIndex = 13;
+            this.turn_screen_off.Text = "投屏后息屏";
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(345, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 23);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "保持唤醒";
+            // 
+            // stay_awake
+            // 
+            this.stay_awake.Location = new System.Drawing.Point(408, 3);
+            this.stay_awake.Name = "stay_awake";
+            this.stay_awake.Size = new System.Drawing.Size(44, 23);
+            this.stay_awake.TabIndex = 15;
+            this.stay_awake.Text = "投屏后息屏";
             // 
             // ScrcpySetting
             // 
@@ -208,5 +248,9 @@
         private AntdUI.Label label6;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel1;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel2;
+        private AntdUI.Label label7;
+        private AntdUI.Switch turn_screen_off;
+        private AntdUI.Label label8;
+        private AntdUI.Switch stay_awake;
     }
 }
