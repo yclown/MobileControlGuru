@@ -48,6 +48,8 @@
             this.x_input = new AntdUI.InputNumber();
             this.tap_btn = new AntdUI.Button();
             this.flowLayoutPanel1 = new AntdUI.In.FlowLayoutPanel();
+            this.button1 = new AntdUI.Button();
+            this.keycode_input = new AntdUI.Input();
             this.flowLayoutPanel3 = new AntdUI.In.FlowLayoutPanel();
             this.divider3 = new AntdUI.Divider();
             this.play_keycode_btn = new AntdUI.Button();
@@ -63,9 +65,9 @@
             this.y_input = new AntdUI.InputNumber();
             this.swipe_up_btn = new AntdUI.Button();
             this.swipe_down_btn = new AntdUI.Button();
+            this.button2 = new AntdUI.Button();
             this.divider2 = new AntdUI.Divider();
-            this.keycode_input = new AntdUI.Input();
-            this.button1 = new AntdUI.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.mini_menustrip.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -182,8 +184,12 @@
             // x_input
             // 
             resources.ApplyResources(this.x_input, "x_input");
+            this.x_input.Maximum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
             this.x_input.Name = "x_input";
-            this.x_input.ValueChanged += new AntdUI.DecimalEventHandler(this.x_input_ValueChanged);
             // 
             // tap_btn
             // 
@@ -200,6 +206,17 @@
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel3);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // keycode_input
+            // 
+            resources.ApplyResources(this.keycode_input, "keycode_input");
+            this.keycode_input.Name = "keycode_input";
             // 
             // flowLayoutPanel3
             // 
@@ -259,6 +276,7 @@
             this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel4);
             this.flowLayoutPanel2.Controls.Add(this.swipe_up_btn);
             this.flowLayoutPanel2.Controls.Add(this.swipe_down_btn);
+            this.flowLayoutPanel2.Controls.Add(this.button2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
             // divider4
@@ -289,8 +307,12 @@
             // y_input
             // 
             resources.ApplyResources(this.y_input, "y_input");
+            this.y_input.Maximum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
             this.y_input.Name = "y_input";
-            this.y_input.ValueChanged += new AntdUI.DecimalEventHandler(this.y_input_ValueChanged);
             // 
             // swipe_up_btn
             // 
@@ -306,21 +328,20 @@
             this.swipe_down_btn.Tag = "down";
             this.swipe_down_btn.Click += new System.EventHandler(this.button_Click);
             // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // divider2
             // 
             resources.ApplyResources(this.divider2, "divider2");
             this.divider2.Name = "divider2";
             // 
-            // keycode_input
+            // backgroundWorker1
             // 
-            resources.ApplyResources(this.keycode_input, "keycode_input");
-            this.keycode_input.Name = "keycode_input";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // MainForm
             // 
@@ -388,6 +409,8 @@
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel4;
         private AntdUI.Button button1;
         private AntdUI.Input keycode_input;
+        private AntdUI.Button button2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

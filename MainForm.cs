@@ -437,7 +437,9 @@ namespace MobileControlGuru
         {
             var datas = (AntList<Model.DeviceItem>)this.table1.DataSource;
             var selecteds = datas.Where(n => n.IsSelected).ToList();
-           
+            point = new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
+            Properties.Settings.Default.ClickPoint = point;
+            Properties.Settings.Default.Save();
             if (selecteds.Count() == 0)
             {
                 AntdUI.Message.error(this, "请选择要操作的设备");
@@ -501,21 +503,16 @@ namespace MobileControlGuru
             }
         }
         #endregion
+ 
 
-        private void x_input_ValueChanged(object sender, decimal value)
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            point = new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
-            Properties.Settings.Default.ClickPoint = point;
-            Properties.Settings.Default.Save();
+
         }
 
-        private void y_input_ValueChanged(object sender, decimal value)
+        private void button2_Click(object sender, EventArgs e)
         {
-            point = new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
-            Properties.Settings.Default.ClickPoint = point;
-            Properties.Settings.Default.Save();
-        }
 
-       
+        }
     }
 }
