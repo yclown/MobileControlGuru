@@ -32,10 +32,10 @@
             this.ip_input = new AntdUI.Input();
             this.label1 = new AntdUI.Label();
             this.panel1 = new AntdUI.Panel();
+            this.button1 = new AntdUI.Button();
             this.connect_btn = new AntdUI.Button();
             this.port_input = new AntdUI.InputNumber();
             this.label2 = new AntdUI.Label();
-            this.button1 = new AntdUI.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,14 +51,22 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.connect_btn);
             this.panel1.Controls.Add(this.port_input);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.ip_input);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.Type = AntdUI.TTypeMini.Success;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // connect_btn
             // 
@@ -76,13 +84,6 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.Type = AntdUI.TTypeMini.Success;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // IPConnect
             // 

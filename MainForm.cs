@@ -26,17 +26,17 @@ using System.Windows.Forms;
 
 namespace MobileControlGuru
 {
-    public partial class MainForm : Form
+    public partial class MainForm : BaseForm
     {
       
-        ComponentResourceManager resources = new ComponentResourceManager(typeof(MainForm));
+        
         WebAPI.WebHelper webservice = new WebAPI.WebHelper();
         private MyHotKey hotkey;
 
         public MainForm()
         {
             InitializeComponent();
-
+            resources = new ComponentResourceManager(typeof(MainForm));
             this.Resize += new EventHandler(MainForm_Resize);
             DeviceManager.Instance.updateDelegates += UpdateDeviceInfo;
             this.api_close.Visible = false;
@@ -47,12 +47,21 @@ namespace MobileControlGuru
         {
 
             InitScrcpy();
-            InitTable(); 
+            
             hotkey = new MyHotKey(this);
             webservice = new WebAPI.WebHelper();
             DeviceManager.Instance.UpdateDevices();
             this.x_input.Text= Properties.Settings.Default.ClickPoint.X.ToString();
             this.y_input.Text = Properties.Settings.Default.ClickPoint.Y.ToString();
+            var lang= Tools.ConfigHelp.GetConfig("Lang");
+            if (!string.IsNullOrEmpty(lang))
+            {
+                ChangeLang(lang);
+                ApplyResource();
+                
+            }
+            Init();
+            InitTable();
         }
         private void InitScrcpy()
         {
@@ -78,6 +87,12 @@ namespace MobileControlGuru
             this.table1.Columns = cols;
             this.table1.EmptyText = resources.GetString("tableNoDataText");// "暂无设备，请连接设备后刷新";
 
+        }
+
+        private void Init()
+        {
+            this.dropdown1.Items = new AntdUI.BaseCollection {
+                    resources.GetString("AboutText")};
         }
         public AntdUI.AntList<DeviceItem> deviceItems = new AntList<DeviceItem>();
         public void UpdateDeviceInfo()
@@ -155,14 +170,12 @@ namespace MobileControlGuru
        
         private void dropdown1_SelectedValueChanged(object sender, object value)
         {
-            switch (value)
-            {
-                case "关于":
-                    var about = new About();
-                    about.StartPosition = FormStartPosition.CenterScreen;
-                    about.Show();
-                    break;
+            if (value.ToString()== resources.GetString("AboutText")) {
+                var about = new About();
+                about.StartPosition = FormStartPosition.CenterScreen;
+                about.Show();
             }
+             
         }
 
         private void exit_tsmi_Click(object sender, EventArgs e)
@@ -182,39 +195,45 @@ namespace MobileControlGuru
         }
 
          
-        #region I18n
+        #region I18n 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lang_select.SelectedIndex == 0)
             {
                 Tools.ConfigHelp.SetSetting("Lang", "zh-CN");
                 ChangeLang("zh-CN");
+                ApplyResource();
+                InitTable();
+                Init();
             }
             else
             {
                 Tools.ConfigHelp.SetSetting("Lang", "en");
-                ChangeLang("en"); 
+                ChangeLang("en");
+                ApplyResource();
+                InitTable();
+                Init();
             }  
         }
 
-        private void ChangeLang(string lang)
-        {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
-            ApplyResource();
-        }
+        //private void ChangeLang(string lang)
+        //{
+        //    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
+        //    ApplyResource();
+        //}
       
         // 遍历控件，并根据资源文件替换相应属性
-        private void ApplyResource()
-        {
-            foreach (Control ctl in this.Controls)
-            {
-                resources.ApplyResources(ctl, ctl.Name);
-            }
-            this.ResumeLayout(false);
-            this.PerformLayout();
-            resources.ApplyResources(this, "$this");
-            InitTable();
-        }
+        //private void ApplyResource()
+        //{
+        //    foreach (Control ctl in this.Controls)
+        //    {
+        //        resources.ApplyResources(ctl, ctl.Name);
+        //    }
+        //    this.ResumeLayout(false);
+        //    this.PerformLayout();
+        //    resources.ApplyResources(this, "$this");
+        //    InitTable();
+        //}
 
         #endregion
        

@@ -117,19 +117,81 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="NoAudioSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 24</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 24</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>IP Address</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>CastScreen</value>
-  </data>
-  <data name="connect_btn.Text" xml:space="preserve">
-    <value>Connect</value>
+    <value>NoAudio</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Port</value>
+    <value>Width</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 182</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="KeyboardUhidSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 24</value>
+  </data>
+  <data name="KeyboardUhidSwitch.Text" xml:space="preserve">
+    <value>音频</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 24</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Keybord</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 24</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>TurnScreenOff</value>
+  </data>
+  <data name="turn_screen_off.Location" type="System.Drawing.Point, System.Drawing">
+    <value>325, 24</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 24</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 23</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>StayAwake</value>
+  </data>
+  <data name="stay_awake.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 24</value>
+  </data>
+  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>670, 79</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>700, 235</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Wireless Connect</value>
+    <value>ScrcpySetting</value>
   </data>
 </root>

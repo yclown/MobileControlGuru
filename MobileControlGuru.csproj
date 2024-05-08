@@ -235,8 +235,17 @@
     <Compile Include="WebAPI\Controllers\HomeController.cs" />
     <Compile Include="WebAPI\Startup.cs" />
     <Compile Include="WebAPI\WebHelper.cs" />
+    <EmbeddedResource Include="About.en.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.zh-CN.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HotKeySetting.resx">
       <DependentUpon>HotKeySetting.cs</DependentUpon>
@@ -252,12 +261,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.en.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.zh-CN.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -272,10 +284,17 @@
     <EmbeddedResource Include="ScrcpyConrtrolPanel.resx">
       <DependentUpon>ScrcpyConrtrolPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ScrcpySetting.en.resx">
+      <DependentUpon>ScrcpySetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ScrcpySetting.resx">
       <DependentUpon>ScrcpySetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ScrcpySetting.zh-CN.resx">
+      <DependentUpon>ScrcpySetting.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Docs\autohotkey.ahk" />
+    <None Include="Docs\Update.en.md" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -286,6 +305,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="README.en.md" />
     <None Include="README.md" />
     <None Include="Resources\scrcpy-win64-v2.4.zip" />
     <None Include="Docs\Update.md" />

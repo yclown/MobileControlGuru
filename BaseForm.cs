@@ -12,20 +12,37 @@ namespace MobileControlGuru
 {
     public class BaseForm : Form
     {
-        ComponentResourceManager resources;
+        public ComponentResourceManager resources;
         public BaseForm()
         {
-            resources = new ComponentResourceManager();
+            //resources = new ComponentResourceManager();
         }
 
-        private void ChangeLang(string lang)
+        public void ChangeLang(string lang)
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
-            ApplyResource();
+            
         }
 
-        // 遍历控件，并根据资源文件替换相应属性
-        private void ApplyResource()
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // BaseForm
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "BaseForm";
+            this.Load += new System.EventHandler(this.BaseForm_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void BaseForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void ApplyResource()
         {
             foreach (Control ctl in this.Controls)
             {
@@ -34,8 +51,9 @@ namespace MobileControlGuru
             this.ResumeLayout(false);
             this.PerformLayout();
             resources.ApplyResources(this, "$this");
-           
-        }
 
+
+         
+        }
     }
 }

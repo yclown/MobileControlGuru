@@ -117,19 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
+  </data>
+  <data name="linkLabel1.Text" xml:space="preserve">
+    <value>github</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>IP Address</value>
+    <value>This software is free and open source software, and commercial use is prohibited</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>CastScreen</value>
+  <data name="linkLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 12</value>
   </data>
-  <data name="connect_btn.Text" xml:space="preserve">
-    <value>Connect</value>
+  <data name="linkLabel2.Text" xml:space="preserve">
+    <value>Bluestone Download password 7njs</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Port</value>
+  <data name="linkLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Wireless Connect</value>
+  <data name="linkLabel3.Text" xml:space="preserve">
+    <value>git download</value>
   </data>
 </root>

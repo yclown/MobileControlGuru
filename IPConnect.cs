@@ -17,12 +17,13 @@ namespace MobileControlGuru
 {
     public partial class IPConnect : BaseForm
     {
-        ComponentResourceManager resources = new ComponentResourceManager(typeof(IPConnect));
+       
         public MobileControlGuru.MainForm main { set; get; }
         public IPConnect(MobileControlGuru.MainForm _main)
         {
             this.main = _main;
             InitializeComponent();
+            resources = new ComponentResourceManager(typeof(IPConnect));
         }
 
 
@@ -39,11 +40,7 @@ namespace MobileControlGuru
         }
 
       
-        private void ChangeLang(string lang)
-        {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
-            ApplyResource();
-        }
+   
         private void IPConnect_Load(object sender, EventArgs e)
         {
             this.ip_input.Text = Properties.Settings.Default.LastDeviceIP;
@@ -58,30 +55,25 @@ namespace MobileControlGuru
             var p = Scrcpy.IPConnet(device_ip, port);
             if (p == null)
             {
-                MessageBox.Show("连接失败 检查连接参数");
+                MessageBox.Show(resources.GetString("connetError"));
                 return;
             }
             DeviceManager.Instance.BindDevicesProcees(device_ip + ":" + port, p);
             Properties.Settings.Default.LastDeviceIP = device_ip;
             Properties.Settings.Default.Save();
-
-
+             
             this.Close();
 
         }
-        // 遍历控件，并根据资源文件替换相应属性
-        private void ApplyResource()
+       
+        private void panel1_Click(object sender, EventArgs e)
         {
-            foreach (Control ctl in this.Controls)
+            var lang = Tools.ConfigHelp.GetConfig("Lang");
+            if (!string.IsNullOrEmpty(lang))
             {
-                resources.ApplyResources(ctl, ctl.Name);
+                ChangeLang(lang);
+                ApplyResource();
             }
-            this.ResumeLayout(false);
-            this.PerformLayout();
-            resources.ApplyResources(this, "$this");
-            
         }
-
-     
     }
 }

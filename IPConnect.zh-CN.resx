@@ -201,6 +201,9 @@
   <data name="connect_btn.Text" xml:space="preserve">
     <value>连接设备</value>
   </data>
+  <data name="connetError" xml:space="preserve">
+    <value>连接失败 检查连接参数</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>IP地址</value>
   </data>

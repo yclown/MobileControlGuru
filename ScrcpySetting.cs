@@ -1,5 +1,6 @@
 ﻿using AntdUI;
 using MobileControlGuru.Base;
+using MobileControlGuru.Properties;
 using MobileControlGuru.Tools;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace MobileControlGuru
         public ScrcpySetting()
         {
             InitializeComponent();
+            resources = new ComponentResourceManager(typeof(ScrcpySetting));
         }
 
         public void GetParams()
@@ -60,6 +62,14 @@ namespace MobileControlGuru
                  turn_screen_off.Checked= scrcpyParam.TurnScreenOff;
                 stay_awake.Checked= scrcpyParam.StayAwake ;
             }
+            var lang = Tools.ConfigHelp.GetConfig("Lang");
+            if (!string.IsNullOrEmpty(lang))
+            {
+                ChangeLang(lang);
+                ApplyResource();
+            }
         }
+
+       
     }
 }
