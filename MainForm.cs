@@ -91,8 +91,10 @@ namespace MobileControlGuru
 
         private void Init()
         {
-            this.dropdown1.Items = new AntdUI.BaseCollection {
-                    resources.GetString("AboutText")};
+           
+            this.dropdown1.Items.Clear();
+            this.dropdown1.Items.AddRange(new object[] {
+            resources.GetString("AboutText")}) ;
             this.Text = this.Text +"V"+System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
         public AntdUI.AntList<DeviceItem> deviceItems = new AntList<DeviceItem>();

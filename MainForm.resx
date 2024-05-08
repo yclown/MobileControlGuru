@@ -222,12 +222,12 @@
   <data name="&gt;&gt;dropdown1.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
-  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>17, 17</value>
-  </metadata>
-  <metadata name="mini_menustrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  </data>
+  <data name="mini_menustrip.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>136, 17</value>
-  </metadata>
+  </data>
   <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 22</value>
   </data>
@@ -940,12 +940,12 @@
   <data name="&gt;&gt;divider2.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>278, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
@@ -990,5 +990,8 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>MobileControlGuru.BaseForm, MobileControlGuru, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>关于</value>
   </data>
 </root>

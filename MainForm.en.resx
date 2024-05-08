@@ -251,4 +251,7 @@
   <data name="$this.Text" xml:space="preserve">
     <value>MobileControlGuru</value>
   </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>About</value>
+  </data>
 </root>

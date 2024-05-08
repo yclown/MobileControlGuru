@@ -239,4 +239,7 @@
   <data name="$this.Text" xml:space="preserve">
     <value>手机控制大师</value>
   </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>关于</value>
+  </data>
 </root>
