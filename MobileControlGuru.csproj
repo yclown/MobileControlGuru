@@ -317,7 +317,9 @@
     <Content Include=".gitignore" />
     <Content Include="adb_cmds.txt" />
     <Content Include="Preview\api.png" />
+    <Content Include="Preview\ipconnect.en.png" />
     <Content Include="Preview\ipconnect.png" />
+    <Content Include="Preview\main.en.png" />
     <Content Include="Preview\main.png" />
     <None Include="Resources\fanhui.png" />
     <None Include="Resources\scrcpy_params.json" />
