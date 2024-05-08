@@ -1,7 +1,8 @@
 # 电脑多控手机（MobileControlGuru） 支持快捷键，WebAPI控制
 
-## V1.0.4
-电脑控制手机的桌面应用，帮助小伙伴愉快的摸鱼,支持快捷键，WebAPI控制
+
+<h3>简体中文 | <a href="README.en.md">English</a></h3>
+
 
 [更新日志](https://github.com/yclown/MobileControlGuru/blob/master/Docs/Update.md)
 
@@ -48,7 +49,7 @@
 开始后局域网设备可以通过API形式调用本机的控制指令
 
 此功能搭配[Curl](https://curl.se/download.html)与[AutoHotkey](https://[AutoHotkey](https://www.autohotkey.com/))配合使用，当多设备时可以让各自的电脑操作自己的手机
-AutoHotkey脚本示例查看docs目录下的AutoHotkey.ahk
+AutoHotkey脚本示例查看docs目录下的<a href="Docs/autohotkey.md">autohotkey.ahk</a>
 
 #### API 列表
 
