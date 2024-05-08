@@ -2,7 +2,7 @@
 
 <h3><a href="README.md">简体中文</a> | English</h3>
 
-[Update Log](https://github.com/yclown/MobileControlGuru/blob/master/Docs/Update.en.md)
+<a href="Docs/Update.en.md">Update Log</a>
 
 ## Feature
 
