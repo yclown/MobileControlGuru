@@ -1,4 +1,8 @@
 # Update Log
+## V 1.0.7
+1. Add English support
+
+
 ## V 1.0.6
 1. Add screen casting parameters to set wake up and screen after screen casting
 

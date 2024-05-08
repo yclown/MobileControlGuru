@@ -83,8 +83,8 @@
             // 
             // ipconnect_btn
             // 
-            resources.ApplyResources(this.ipconnect_btn, "ipconnect_btn");
             this.ipconnect_btn.BorderWidth = 1F;
+            resources.ApplyResources(this.ipconnect_btn, "ipconnect_btn");
             this.ipconnect_btn.Name = "ipconnect_btn";
             this.ipconnect_btn.Click += new System.EventHandler(this.ipconnect_btn_Click);
             // 
@@ -101,44 +101,44 @@
             // 
             // notifyIcon1
             // 
-            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
             this.notifyIcon1.ContextMenuStrip = this.mini_menustrip;
+            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // mini_menustrip
             // 
-            resources.ApplyResources(this.mini_menustrip, "mini_menustrip");
             this.mini_menustrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.main_tsmi,
             this.setting_tmsi,
             this.exit_tsmi});
             this.mini_menustrip.Name = "mini_menustrip";
+            resources.ApplyResources(this.mini_menustrip, "mini_menustrip");
             // 
             // main_tsmi
             // 
-            resources.ApplyResources(this.main_tsmi, "main_tsmi");
             this.main_tsmi.Name = "main_tsmi";
+            resources.ApplyResources(this.main_tsmi, "main_tsmi");
             this.main_tsmi.Click += new System.EventHandler(this.main_tsmi_Click);
             // 
             // setting_tmsi
             // 
-            resources.ApplyResources(this.setting_tmsi, "setting_tmsi");
             this.setting_tmsi.Name = "setting_tmsi";
+            resources.ApplyResources(this.setting_tmsi, "setting_tmsi");
             this.setting_tmsi.Click += new System.EventHandler(this.setting_tmsi_Click);
             // 
             // exit_tsmi
             // 
-            resources.ApplyResources(this.exit_tsmi, "exit_tsmi");
             this.exit_tsmi.Name = "exit_tsmi";
+            resources.ApplyResources(this.exit_tsmi, "exit_tsmi");
             this.exit_tsmi.Click += new System.EventHandler(this.exit_tsmi_Click);
             // 
             // lang_select
             // 
-            resources.ApplyResources(this.lang_select, "lang_select");
             this.lang_select.FormattingEnabled = true;
             this.lang_select.Items.AddRange(new object[] {
             resources.GetString("lang_select.Items"),
             resources.GetString("lang_select.Items1")});
+            resources.ApplyResources(this.lang_select, "lang_select");
             this.lang_select.Name = "lang_select";
             this.lang_select.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 

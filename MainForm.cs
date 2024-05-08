@@ -45,7 +45,7 @@ namespace MobileControlGuru
 
         private void Mian_Load(object sender, EventArgs e)
         {
-
+            
             InitScrcpy();
             
             hotkey = new MyHotKey(this);
@@ -93,6 +93,7 @@ namespace MobileControlGuru
         {
             this.dropdown1.Items = new AntdUI.BaseCollection {
                     resources.GetString("AboutText")};
+            this.Text = this.Text +"V"+System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
         public AntdUI.AntList<DeviceItem> deviceItems = new AntList<DeviceItem>();
         public void UpdateDeviceInfo()
