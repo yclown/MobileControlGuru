@@ -994,4 +994,16 @@
   <data name="AboutText" xml:space="preserve">
     <value>关于</value>
   </data>
+  <data name="tablebtnsText" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="tableNameText" xml:space="preserve">
+    <value>设备列表</value>
+  </data>
+  <data name="tableNoDataText" xml:space="preserve">
+    <value>暂无设备</value>
+  </data>
+  <data name="tableStatusText" xml:space="preserve">
+    <value>设备状态</value>
+  </data>
 </root>

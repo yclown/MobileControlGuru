@@ -254,4 +254,16 @@
   <data name="AboutText" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="tablebtnsText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableNameText" xml:space="preserve">
+    <value>Devices</value>
+  </data>
+  <data name="tableNoDataText" xml:space="preserve">
+    <value>no device connected</value>
+  </data>
+  <data name="tableStatusText" xml:space="preserve">
+    <value>Status</value>
+  </data>
 </root>

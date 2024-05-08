@@ -47,7 +47,7 @@ namespace MobileControlGuru
         {
             
             InitScrcpy();
-            
+            InitTable();
             hotkey = new MyHotKey(this);
             webservice = new WebAPI.WebHelper();
             DeviceManager.Instance.UpdateDevices();
@@ -61,7 +61,7 @@ namespace MobileControlGuru
                 
             }
             Init();
-            InitTable();
+          
         }
         private void InitScrcpy()
         {
@@ -76,12 +76,12 @@ namespace MobileControlGuru
         private void InitTable()
         {
             AntdUI.Column[] cols = new Column[] { 
-                new AntdUI.ColumnCheck("IsSelected"), 
+                new AntdUI.ColumnCheck("IsSelected"),
                 new AntdUI.Column("Name", resources.GetString("tableNameText")),
-                 new AntdUI.Column("status", resources.GetString("tableStatusText")),
+                new AntdUI.Column("status", resources.GetString("tableStatusText")),
                 new AntdUI.Column("btns", resources.GetString("tablebtnsText")),
-               
-
+                // new AntdUI.Column("Name", "设备"),
+              
             };
 
             this.table1.Columns = cols;
