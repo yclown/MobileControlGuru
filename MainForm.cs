@@ -531,10 +531,20 @@ namespace MobileControlGuru
         {
 
         }
-
+        System.Windows.Forms.Timer timer =new System.Windows.Forms.Timer();
         private void button2_Click(object sender, EventArgs e)
         {
+            if (timer.Enabled) {
+                timer.Enabled = false;
+                timer.Stop();
 
+            }
+            else
+            {
+                 
+
+            }
         }
+
     }
 }
