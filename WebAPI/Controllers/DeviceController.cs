@@ -54,6 +54,23 @@ namespace MobileControlGuru.WebAPI.Controllers
             
             return res.Message;
         }
+
+        /// <summary>
+        /// 无线授权调试
+        /// </summary>
+        /// <param name="devicename">设备IP</param>
+        /// <param name="port">端口号</param>
+        /// <param name="code">6位配对码</param>
+        /// <returns></returns>
+        [HttpGet]
+        public string Pair(string devicename,int port,int code)
+        {
+
+            var res = ADB.Pair(devicename,port,code);
+
+            return res.Message;
+        }
+
         /// <summary>
         /// 发送锁屏键
         /// </summary>

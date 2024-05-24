@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="getDevices_btn.Text" xml:space="preserve">
-    <value>Devices</value>
-  </data>
-  <data name="ipconnect_btn.Text" xml:space="preserve">
-    <value>IPConnect</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="notifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -200,55 +194,7 @@
         AAfwAAAP+AAAH/wAAD/+AAB//4AB///wD/8=
 </value>
   </data>
-  <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>MobileControlGuru</value>
-  </data>
-  <data name="main_tsmi.Text" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="lock_keycode_btn.Text" xml:space="preserve">
-    <value>Lock</value>
-  </data>
-  <data name="api_run.Text" xml:space="preserve">
-    <value>OpenAPI</value>
-  </data>
-  <data name="api_close.Text" xml:space="preserve">
-    <value>CloseAPI</value>
-  </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>ScrcpySetting</value>
-  </data>
-  <data name="tap_btn.Text" xml:space="preserve">
-    <value>TapScreen</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>SendKey</value>
-  </data>
-  <data name="play_keycode_btn.Text" xml:space="preserve">
-    <value>Play</value>
-  </data>
-  <data name="prv_keycode_btn.Text" xml:space="preserve">
-    <value>Previous</value>
-  </data>
-  <data name="next_keycode_btn.Text" xml:space="preserve">
-    <value>Next</value>
-  </data>
-  <data name="vadd_keycode_btn.Text" xml:space="preserve">
-    <value>VolumeUp</value>
-  </data>
-  <data name="bdiv_keycode_btn.Text" xml:space="preserve">
-    <value>VolumeDown</value>
-  </data>
-  <data name="swipe_up_btn.Text" xml:space="preserve">
-    <value>SwipeUp</value>
-  </data>
-  <data name="swipe_down_btn.Text" xml:space="preserve">
-    <value>SwipeDown</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 41</value>
-  </data>
   <data name="button3.Text" xml:space="preserve">
-    <value>Wifi Pair</value>
+    <value>无线配对</value>
   </data>
 </root>

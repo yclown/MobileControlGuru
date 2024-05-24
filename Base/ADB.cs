@@ -75,6 +75,14 @@ namespace MobileControlGuru.Base
             DeviceManager.Instance.UpdateDevices();
             return res;
         }
+
+        public static AdbParse Pair(string device,int port,int code)
+        {
+
+            var res = Exec($"pair {device}:{port} {code}");
+            DeviceManager.Instance.UpdateDevices();
+            return res;
+        }
         public static AdbParse SendKeyEvent(string device, ADBKey.Key key)
         {
 

@@ -30,73 +30,43 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.table1 = new AntdUI.Table();
-            this.getDevices_btn = new AntdUI.Button();
-            this.ipconnect_btn = new AntdUI.Button();
-            this.dropdown1 = new AntdUI.Dropdown();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.mini_menustrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.main_tsmi = new System.Windows.Forms.ToolStripMenuItem();
             this.setting_tmsi = new System.Windows.Forms.ToolStripMenuItem();
             this.exit_tsmi = new System.Windows.Forms.ToolStripMenuItem();
-            this.lang_select = new System.Windows.Forms.ComboBox();
-            this.lock_keycode_btn = new AntdUI.Button();
-            this.divider1 = new AntdUI.Divider();
-            this.api_run = new AntdUI.Button();
-            this.api_close = new AntdUI.Button();
-            this.button4 = new AntdUI.Button();
-            this.x_input = new AntdUI.InputNumber();
-            this.tap_btn = new AntdUI.Button();
-            this.button1 = new AntdUI.Button();
-            this.keycode_input = new AntdUI.Input();
-            this.divider3 = new AntdUI.Divider();
-            this.play_keycode_btn = new AntdUI.Button();
-            this.prv_keycode_btn = new AntdUI.Button();
-            this.next_keycode_btn = new AntdUI.Button();
-            this.vadd_keycode_btn = new AntdUI.Button();
-            this.bdiv_keycode_btn = new AntdUI.Button();
-            this.divider4 = new AntdUI.Divider();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button3 = new AntdUI.Button();
             this.label2 = new AntdUI.Label();
-            this.label1 = new AntdUI.Label();
-            this.y_input = new AntdUI.InputNumber();
             this.swipe_up_btn = new AntdUI.Button();
             this.swipe_down_btn = new AntdUI.Button();
+            this.x_input = new AntdUI.InputNumber();
             this.button2 = new AntdUI.Button();
+            this.divider4 = new AntdUI.Divider();
+            this.label1 = new AntdUI.Label();
+            this.play_keycode_btn = new AntdUI.Button();
+            this.y_input = new AntdUI.InputNumber();
+            this.prv_keycode_btn = new AntdUI.Button();
+            this.tap_btn = new AntdUI.Button();
+            this.divider3 = new AntdUI.Divider();
+            this.next_keycode_btn = new AntdUI.Button();
+            this.lock_keycode_btn = new AntdUI.Button();
+            this.vadd_keycode_btn = new AntdUI.Button();
+            this.button1 = new AntdUI.Button();
+            this.bdiv_keycode_btn = new AntdUI.Button();
+            this.keycode_input = new AntdUI.Input();
             this.divider2 = new AntdUI.Divider();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button4 = new AntdUI.Button();
+            this.api_close = new AntdUI.Button();
+            this.api_run = new AntdUI.Button();
+            this.divider1 = new AntdUI.Divider();
+            this.lang_select = new System.Windows.Forms.ComboBox();
+            this.table1 = new AntdUI.Table();
+            this.getDevices_btn = new AntdUI.Button();
+            this.ipconnect_btn = new AntdUI.Button();
+            this.dropdown1 = new AntdUI.Dropdown();
             this.mini_menustrip.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // table1
-            // 
-            resources.ApplyResources(this.table1, "table1");
-            this.table1.Bordered = true;
-            this.table1.EditMode = AntdUI.TEditMode.DoubleClick;
-            this.table1.Name = "table1";
-            this.table1.CellButtonClick += new AntdUI.Table.ClickButtonEventHandler(this.table1_CellButtonClick);
-            // 
-            // getDevices_btn
-            // 
-            resources.ApplyResources(this.getDevices_btn, "getDevices_btn");
-            this.getDevices_btn.Name = "getDevices_btn";
-            this.getDevices_btn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // ipconnect_btn
-            // 
-            this.ipconnect_btn.BorderWidth = 1F;
-            resources.ApplyResources(this.ipconnect_btn, "ipconnect_btn");
-            this.ipconnect_btn.Name = "ipconnect_btn";
-            this.ipconnect_btn.Click += new System.EventHandler(this.ipconnect_btn_Click);
-            // 
-            // dropdown1
-            // 
-            resources.ApplyResources(this.dropdown1, "dropdown1");
-            this.dropdown1.ImageSize = new System.Drawing.Size(32, 32);
-            this.dropdown1.ImageSvg = resources.GetString("dropdown1.ImageSvg");
-            this.dropdown1.Items.AddRange(new object[] { 
-            "关于"});
-            this.dropdown1.Name = "dropdown1";
-            this.dropdown1.SelectedValueChanged += new AntdUI.ObjectNEventHandler(this.dropdown1_SelectedValueChanged);
             // 
             // notifyIcon1
             // 
@@ -131,138 +101,20 @@
             resources.ApplyResources(this.exit_tsmi, "exit_tsmi");
             this.exit_tsmi.Click += new System.EventHandler(this.exit_tsmi_Click);
             // 
-            // lang_select
+            // backgroundWorker1
             // 
-            this.lang_select.FormattingEnabled = true;
-            this.lang_select.Items.AddRange(new object[] {
-            resources.GetString("lang_select.Items"),
-            resources.GetString("lang_select.Items1")});
-            resources.ApplyResources(this.lang_select, "lang_select");
-            this.lang_select.Name = "lang_select";
-            this.lang_select.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
-            // lock_keycode_btn
+            // button3
             // 
-            resources.ApplyResources(this.lock_keycode_btn, "lock_keycode_btn");
-            this.lock_keycode_btn.Name = "lock_keycode_btn";
-            this.lock_keycode_btn.Tag = "KEYCODE_POWER";
-            this.lock_keycode_btn.Click += new System.EventHandler(this.button_Click);
-            // 
-            // divider1
-            // 
-            resources.ApplyResources(this.divider1, "divider1");
-            this.divider1.Name = "divider1";
-            this.divider1.Vertical = true;
-            // 
-            // api_run
-            // 
-            resources.ApplyResources(this.api_run, "api_run");
-            this.api_run.Name = "api_run";
-            this.api_run.Click += new System.EventHandler(this.api_run_Click);
-            // 
-            // api_close
-            // 
-            resources.ApplyResources(this.api_close, "api_close");
-            this.api_close.Name = "api_close";
-            this.api_close.Click += new System.EventHandler(this.api_close_Click);
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // x_input
-            // 
-            resources.ApplyResources(this.x_input, "x_input");
-            this.x_input.Maximum = new decimal(new int[] {
-            9000,
-            0,
-            0,
-            0});
-            this.x_input.Name = "x_input";
-            // 
-            // tap_btn
-            // 
-            resources.ApplyResources(this.tap_btn, "tap_btn");
-            this.tap_btn.Name = "tap_btn";
-            this.tap_btn.Click += new System.EventHandler(this.button_Click);
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // keycode_input
-            // 
-            resources.ApplyResources(this.keycode_input, "keycode_input");
-            this.keycode_input.Name = "keycode_input";
-            // 
-            // divider3
-            // 
-            resources.ApplyResources(this.divider3, "divider3");
-            this.divider3.Name = "divider3";
-            // 
-            // play_keycode_btn
-            // 
-            resources.ApplyResources(this.play_keycode_btn, "play_keycode_btn");
-            this.play_keycode_btn.Name = "play_keycode_btn";
-            this.play_keycode_btn.Tag = "KEYCODE_MEDIA_PLAY_PAUSE";
-            this.play_keycode_btn.Click += new System.EventHandler(this.button_Click);
-            // 
-            // prv_keycode_btn
-            // 
-            resources.ApplyResources(this.prv_keycode_btn, "prv_keycode_btn");
-            this.prv_keycode_btn.Name = "prv_keycode_btn";
-            this.prv_keycode_btn.Tag = "KEYCODE_MEDIA_PREVIOUS";
-            this.prv_keycode_btn.Click += new System.EventHandler(this.button_Click);
-            // 
-            // next_keycode_btn
-            // 
-            resources.ApplyResources(this.next_keycode_btn, "next_keycode_btn");
-            this.next_keycode_btn.Name = "next_keycode_btn";
-            this.next_keycode_btn.Tag = "KEYCODE_MEDIA_NEXT";
-            this.next_keycode_btn.Click += new System.EventHandler(this.button_Click);
-            // 
-            // vadd_keycode_btn
-            // 
-            resources.ApplyResources(this.vadd_keycode_btn, "vadd_keycode_btn");
-            this.vadd_keycode_btn.Name = "vadd_keycode_btn";
-            this.vadd_keycode_btn.Tag = "KEYCODE_VOLUME_UP";
-            this.vadd_keycode_btn.Click += new System.EventHandler(this.button_Click);
-            // 
-            // bdiv_keycode_btn
-            // 
-            resources.ApplyResources(this.bdiv_keycode_btn, "bdiv_keycode_btn");
-            this.bdiv_keycode_btn.Name = "bdiv_keycode_btn";
-            this.bdiv_keycode_btn.Tag = "KEYCODE_VOLUME_DOWN";
-            this.bdiv_keycode_btn.Click += new System.EventHandler(this.button_Click);
-            // 
-            // divider4
-            // 
-            resources.ApplyResources(this.divider4, "divider4");
-            this.divider4.Name = "divider4";
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // y_input
-            // 
-            resources.ApplyResources(this.y_input, "y_input");
-            this.y_input.Maximum = new decimal(new int[] {
-            9000,
-            0,
-            0,
-            0});
-            this.y_input.Name = "y_input";
             // 
             // swipe_up_btn
             // 
@@ -278,25 +130,181 @@
             this.swipe_down_btn.Tag = "down";
             this.swipe_down_btn.Click += new System.EventHandler(this.button_Click);
             // 
+            // x_input
+            // 
+            resources.ApplyResources(this.x_input, "x_input");
+            this.x_input.Maximum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
+            this.x_input.Name = "x_input";
+            // 
             // button2
             // 
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // divider4
+            // 
+            resources.ApplyResources(this.divider4, "divider4");
+            this.divider4.Name = "divider4";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // play_keycode_btn
+            // 
+            resources.ApplyResources(this.play_keycode_btn, "play_keycode_btn");
+            this.play_keycode_btn.Name = "play_keycode_btn";
+            this.play_keycode_btn.Tag = "KEYCODE_MEDIA_PLAY_PAUSE";
+            this.play_keycode_btn.Click += new System.EventHandler(this.button_Click);
+            // 
+            // y_input
+            // 
+            resources.ApplyResources(this.y_input, "y_input");
+            this.y_input.Maximum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
+            this.y_input.Name = "y_input";
+            // 
+            // prv_keycode_btn
+            // 
+            resources.ApplyResources(this.prv_keycode_btn, "prv_keycode_btn");
+            this.prv_keycode_btn.Name = "prv_keycode_btn";
+            this.prv_keycode_btn.Tag = "KEYCODE_MEDIA_PREVIOUS";
+            this.prv_keycode_btn.Click += new System.EventHandler(this.button_Click);
+            // 
+            // tap_btn
+            // 
+            resources.ApplyResources(this.tap_btn, "tap_btn");
+            this.tap_btn.Name = "tap_btn";
+            this.tap_btn.Click += new System.EventHandler(this.button_Click);
+            // 
+            // divider3
+            // 
+            resources.ApplyResources(this.divider3, "divider3");
+            this.divider3.Name = "divider3";
+            // 
+            // next_keycode_btn
+            // 
+            resources.ApplyResources(this.next_keycode_btn, "next_keycode_btn");
+            this.next_keycode_btn.Name = "next_keycode_btn";
+            this.next_keycode_btn.Tag = "KEYCODE_MEDIA_NEXT";
+            this.next_keycode_btn.Click += new System.EventHandler(this.button_Click);
+            // 
+            // lock_keycode_btn
+            // 
+            resources.ApplyResources(this.lock_keycode_btn, "lock_keycode_btn");
+            this.lock_keycode_btn.Name = "lock_keycode_btn";
+            this.lock_keycode_btn.Tag = "KEYCODE_POWER";
+            this.lock_keycode_btn.Click += new System.EventHandler(this.button_Click);
+            // 
+            // vadd_keycode_btn
+            // 
+            resources.ApplyResources(this.vadd_keycode_btn, "vadd_keycode_btn");
+            this.vadd_keycode_btn.Name = "vadd_keycode_btn";
+            this.vadd_keycode_btn.Tag = "KEYCODE_VOLUME_UP";
+            this.vadd_keycode_btn.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // bdiv_keycode_btn
+            // 
+            resources.ApplyResources(this.bdiv_keycode_btn, "bdiv_keycode_btn");
+            this.bdiv_keycode_btn.Name = "bdiv_keycode_btn";
+            this.bdiv_keycode_btn.Tag = "KEYCODE_VOLUME_DOWN";
+            this.bdiv_keycode_btn.Click += new System.EventHandler(this.button_Click);
+            // 
+            // keycode_input
+            // 
+            resources.ApplyResources(this.keycode_input, "keycode_input");
+            this.keycode_input.Name = "keycode_input";
+            // 
             // divider2
             // 
             resources.ApplyResources(this.divider2, "divider2");
             this.divider2.Name = "divider2";
             // 
-            // backgroundWorker1
+            // button4
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // api_close
+            // 
+            resources.ApplyResources(this.api_close, "api_close");
+            this.api_close.Name = "api_close";
+            this.api_close.Click += new System.EventHandler(this.api_close_Click);
+            // 
+            // api_run
+            // 
+            resources.ApplyResources(this.api_run, "api_run");
+            this.api_run.Name = "api_run";
+            this.api_run.Click += new System.EventHandler(this.api_run_Click);
+            // 
+            // divider1
+            // 
+            resources.ApplyResources(this.divider1, "divider1");
+            this.divider1.Name = "divider1";
+            this.divider1.Vertical = true;
+            // 
+            // lang_select
+            // 
+            this.lang_select.FormattingEnabled = true;
+            this.lang_select.Items.AddRange(new object[] {
+            resources.GetString("lang_select.Items"),
+            resources.GetString("lang_select.Items1")});
+            resources.ApplyResources(this.lang_select, "lang_select");
+            this.lang_select.Name = "lang_select";
+            this.lang_select.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // table1
+            // 
+            resources.ApplyResources(this.table1, "table1");
+            this.table1.Bordered = true;
+            this.table1.EditMode = AntdUI.TEditMode.DoubleClick;
+            this.table1.Name = "table1";
+            this.table1.CellButtonClick += new AntdUI.Table.ClickButtonEventHandler(this.table1_CellButtonClick);
+            // 
+            // getDevices_btn
+            // 
+            resources.ApplyResources(this.getDevices_btn, "getDevices_btn");
+            this.getDevices_btn.Name = "getDevices_btn";
+            this.getDevices_btn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ipconnect_btn
+            // 
+            this.ipconnect_btn.BorderWidth = 1F;
+            resources.ApplyResources(this.ipconnect_btn, "ipconnect_btn");
+            this.ipconnect_btn.Name = "ipconnect_btn";
+            this.ipconnect_btn.Click += new System.EventHandler(this.ipconnect_btn_Click);
+            // 
+            // dropdown1
+            // 
+            resources.ApplyResources(this.dropdown1, "dropdown1");
+            this.dropdown1.ImageSize = new System.Drawing.Size(32, 32);
+            this.dropdown1.ImageSvg = resources.GetString("dropdown1.ImageSvg");
+            this.dropdown1.Items.AddRange(new object[] {
+            "关于"});
+            this.dropdown1.Name = "dropdown1";
+            this.dropdown1.SelectedValueChanged += new AntdUI.ObjectNEventHandler(this.dropdown1_SelectedValueChanged);
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.swipe_up_btn);
             this.Controls.Add(this.swipe_down_btn);
@@ -370,6 +378,7 @@
         private AntdUI.Input keycode_input;
         private AntdUI.Button button2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private AntdUI.Button button3;
     }
 }
 

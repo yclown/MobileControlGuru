@@ -546,5 +546,11 @@ namespace MobileControlGuru
             }
         }
 
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            IPPair ippair = new IPPair(this);
+            ippair.StartPosition = FormStartPosition.CenterParent;
+            ippair.ShowDialog(this);
+        }
     }
 }
