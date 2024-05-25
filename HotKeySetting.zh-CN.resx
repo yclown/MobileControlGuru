@@ -122,4 +122,7 @@
 1.选择对应的修饰按键
 2.点击要修改的快捷键，按下对应的按键（英文输入法）</value>
   </data>
+  <data name="SaveInfo" xml:space="preserve">
+    <value>保存成功</value>
+  </data>
 </root>

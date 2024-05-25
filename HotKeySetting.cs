@@ -48,7 +48,7 @@ namespace MobileControlGuru
                 ConfigHelp.SetSetting("hotkeys", GetSetting());
                 myHotKey.UnRegister();
                 myHotKey.Register();
-                MessageBox.Show("设置成功");
+                MessageBox.Show(resources.GetString("SaveInfo"));
             }
             catch(Exception ex)
             {
