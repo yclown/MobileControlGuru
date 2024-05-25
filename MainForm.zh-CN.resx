@@ -254,4 +254,7 @@
   <data name="tableStatusText" xml:space="preserve">
     <value>设备状态</value>
   </data>
+  <data name="HotSetText" xml:space="preserve">
+    <value>快捷键</value>
+  </data>
 </root>

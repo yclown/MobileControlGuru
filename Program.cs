@@ -18,6 +18,7 @@ namespace MobileControlGuru
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+            //Application.Run(new HotKeySetting());
         }
         //private static bool IsRunningAsAdministrator()
         //{

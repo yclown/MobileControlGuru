@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotKeySetting));
+            this.button1 = new AntdUI.Button();
+            this.flowLayoutPanel1 = new AntdUI.In.FlowLayoutPanel();
+            this.label1 = new AntdUI.Label();
+            this.SuspendLayout();
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.AutoEllipsis = true;
+            this.button1.Name = "button1";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // HotKeySetting
+            // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "HotKeySetting";
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.button1);
+            this.Name = "HotKeySetting";
+            this.Load += new System.EventHandler(this.HotKeySetting_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+        private AntdUI.Button button1;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel1;
+        private AntdUI.Label label1;
     }
 }

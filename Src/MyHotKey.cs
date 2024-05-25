@@ -1,4 +1,6 @@
 ﻿using MobileControlGuru.Base;
+using MobileControlGuru.Model;
+using MobileControlGuru.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,26 +25,134 @@ namespace MobileControlGuru.Src
             Register();
         }
 
+        public static List<KeyItem> GetKeyItems()
+        {
+
+            var hotkeys = ConfigHelp.GetConfig("hotkeys");
+            List<KeyItem> keys = new List<KeyItem>();
+            if (string.IsNullOrEmpty(hotkeys))
+            {
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "锁屏",
+                    EventEngName = "Lock",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.DeviceLock,
+                    Key = Keys.D.ToString()
+                });
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "主页",
+                    EventEngName = "Home",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.Home,
+                    Key = Keys.H.ToString()
+                });
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "音量加",
+                    EventEngName = "VolumeUp",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.VolumeUp,
+                    Key = Keys.Up.ToString()
+                });
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "音量减",
+                    EventEngName = "VolumeDown",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.VolumeDown,
+                    Key = Keys.Down.ToString()
+                });
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "前一个(媒体)",
+                    EventEngName = "MediaPrevious",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.MediaPrevious,
+                    Key = Keys.Left.ToString()
+                });
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "后一个(媒体)",
+                    EventEngName = "MediaNext",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.MediaPrevious,
+                    Key = Keys.Right.ToString()
+                });
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "播放暂停(媒体)",
+                    EventEngName = "MediaPlayPause",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.MediaPlayPause,
+                    Key = Keys.NumPad5.ToString()
+                });
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "上滑",
+                    EventEngName = "SwipeUP",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.SwipeUP,
+                    Key = Keys.NumPad2.ToString()
+                });
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "下滑",
+                    EventEngName = "SwipeDown",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.SwipeDown,
+                    Key = Keys.NumPad8.ToString()
+                });
+                keys.Add(new Model.KeyItem()
+                {
+                    EventName = "点击屏幕",
+                    EventEngName = "FastTap",
+                    ModifyKey = "Alt",
+                    EventID = (int)MyHotKey.Event.FastTap,
+                    Key = Keys.C.ToString()
+                });
+
+            }
+            else
+            {
+                keys = Newtonsoft.Json.JsonConvert.DeserializeObject<List<KeyItem>>(hotkeys);
+            }
+
+            return keys;
+
+        }
 
         /// <summary>
         /// 注册快捷键
         /// </summary>
        
-        public  void Register()
+        public void Register()
         { 
-            RegisterHotKey(mainform.Handle, (int)Event.DeviceLock, KeyModifiers.Alt, Keys.D);
-            RegisterHotKey(mainform.Handle, (int)Event.VolumeUp, KeyModifiers.Alt, Keys.Up);
-            RegisterHotKey(mainform.Handle, (int)Event.VolumeDown, KeyModifiers.Alt, Keys.Down);
-            RegisterHotKey(mainform.Handle, (int)Event.MediaPrevious, KeyModifiers.Alt, Keys.Left);
-            RegisterHotKey(mainform.Handle, (int)Event.MediaNext, KeyModifiers.Alt, Keys.Right);
-            RegisterHotKey(mainform.Handle, (int)Event.SwipeUP, KeyModifiers.Alt, Keys.NumPad2);
-            RegisterHotKey(mainform.Handle, (int)Event.SwipeDown, KeyModifiers.Alt, Keys.NumPad8);
-            RegisterHotKey(mainform.Handle, (int)Event.MediaPlayPause, KeyModifiers.Alt, Keys.NumPad5);
-            RegisterHotKey(mainform.Handle, (int)Event.FastTap, KeyModifiers.Alt, Keys.C);
-            RegisterHotKey(mainform.Handle, (int)Event.Home, KeyModifiers.Alt, Keys.H);
-
-            //RegisterHotKey(Handle, (int)Event.MediaPlayPause, KeyModifiers.Alt| KeyModifiers.Ctrl, Keys.NumPad5); 
+           
+            
+            foreach (KeyItem key in GetKeyItems() )
+            {
+                    
+                    
+                Keys selfkey = (Keys)new KeysConverter().ConvertFromInvariantString(key.Key);
+                if (key.ModifyKey == "Ctrl+Alt")
+                {
+                    RegisterHotKey(mainform.Handle, key.EventID, KeyModifiers.Alt|KeyModifiers.Ctrl, selfkey);
+                }
+                else if (key.ModifyKey == "Ctrl") {
+                    RegisterHotKey(mainform.Handle, key.EventID, KeyModifiers.Ctrl, selfkey);
+                }
+                else
+                {
+                    RegisterHotKey(mainform.Handle, key.EventID, KeyModifiers.Alt, selfkey);
+                }
+                    
+            }
+             
         }
+
+
         /// <summary>
         /// 取消注册快捷键
         /// </summary>

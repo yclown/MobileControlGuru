@@ -1,4 +1,11 @@
 # Update Log
+
+## V 1.0.8.0
+1. Add the function of custom shortcut keys (the entry is set icon in the upper right corner)
+2. Add wireless authorization (not via usb authorization)
+3. Add wireless authorization API
+
+
 ## V 1.0.7
 1. Add English support
 

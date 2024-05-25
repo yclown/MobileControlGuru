@@ -296,7 +296,8 @@
             this.dropdown1.ImageSize = new System.Drawing.Size(32, 32);
             this.dropdown1.ImageSvg = resources.GetString("dropdown1.ImageSvg");
             this.dropdown1.Items.AddRange(new object[] {
-            "关于"});
+            "关于",
+            "快捷键设置"});
             this.dropdown1.Name = "dropdown1";
             this.dropdown1.SelectedValueChanged += new AntdUI.ObjectNEventHandler(this.dropdown1_SelectedValueChanged);
             // 

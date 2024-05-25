@@ -251,4 +251,10 @@
   <data name="button3.Text" xml:space="preserve">
     <value>Wifi Pair</value>
   </data>
+  <data name="HotSetText" xml:space="preserve">
+    <value>HotKey</value>
+  </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>About</value>
+  </data>
 </root>

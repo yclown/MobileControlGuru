@@ -94,7 +94,10 @@ namespace MobileControlGuru
            
             this.dropdown1.Items.Clear();
             this.dropdown1.Items.AddRange(new object[] {
-            resources.GetString("AboutText")}) ;
+                resources.GetString("AboutText"),
+                resources.GetString("HotSetText")
+
+            });
             this.Text = this.Text +"V"+System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
         public AntdUI.AntList<DeviceItem> deviceItems = new AntList<DeviceItem>();
@@ -177,8 +180,13 @@ namespace MobileControlGuru
                 var about = new About();
                 about.StartPosition = FormStartPosition.CenterScreen;
                 about.Show();
+            }else if (value.ToString() == resources.GetString("HotSetText"))
+            {
+                var hot = new HotKeySetting(hotkey);
+                hot.StartPosition = FormStartPosition.CenterScreen;
+                hot.Show();
             }
-             
+           
         }
 
         private void exit_tsmi_Click(object sender, EventArgs e)
@@ -552,5 +560,8 @@ namespace MobileControlGuru
             ippair.StartPosition = FormStartPosition.CenterParent;
             ippair.ShowDialog(this);
         }
+
+
+
     }
 }
