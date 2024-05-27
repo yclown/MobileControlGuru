@@ -30,6 +30,7 @@ namespace MobileControlGuru.Base
 
         public static Process Exec(string Arguments)
         {
+            LogHelper.Info("exc [scrcpy " + Arguments+"]");
             var p = Process.Start(new System.Diagnostics.ProcessStartInfo(PATH)
             {
                 Arguments = Arguments,
@@ -39,8 +40,7 @@ namespace MobileControlGuru.Base
                 RedirectStandardError = true,
                 StandardOutputEncoding = Encoding.UTF8,
                 StandardErrorEncoding = Encoding.UTF8,
-            });
-            LogHelper.Info("scrcpy exc" + Arguments);
+            }); 
             p.EnableRaisingEvents = true; 
             return p;
         }

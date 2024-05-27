@@ -20,7 +20,7 @@ namespace MobileControlGuru.Base
         {
             try
             {
-               
+                LogHelper.Info("exc [adb " + Arguments+"]");
                 var p = Process.Start(new System.Diagnostics.ProcessStartInfo(ADB_PATH)
                 {
                     Arguments = Arguments,
@@ -33,7 +33,7 @@ namespace MobileControlGuru.Base
                 });
                 //获取cmd窗口的输出信息
                 string output = p.StandardOutput.ReadToEnd();
-                LogHelper.Info("adb exc" + Arguments+"\n"+output);
+                LogHelper.Info("adb output： " +  output);
                 p.WaitForExit();//等待程序执行完退出进程
                 p.Close();
                 //p.Dispose();
@@ -41,6 +41,7 @@ namespace MobileControlGuru.Base
             }
             catch(Exception e)
             {
+                LogHelper.Error(e, "exc error：[adb " + Arguments + "]\n");
                 return new AdbParse(false,e.Message);
 
             }
