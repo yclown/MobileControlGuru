@@ -1,5 +1,9 @@
 # Update Log
 
+
+## V 1.0.8.1
+1. Add window top and screen top
+
 ## V 1.0.8.0
 1. Add the function of custom shortcut keys (the entry is set icon in the upper right corner)
 2. Add wireless authorization (not via usb authorization)
