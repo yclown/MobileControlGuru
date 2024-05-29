@@ -373,6 +373,8 @@
     <Content Include="Preview\ipconnect.png" />
     <Content Include="Preview\main.en.png" />
     <Content Include="Preview\main.png" />
+    <None Include="Resources\ontop_blur.png" />
+    <None Include="Resources\ontop.png" />
     <None Include="Resources\fanhui.png" />
     <None Include="Resources\scrcpy_params.json" />
     <None Include="Resources\shouye.png" />

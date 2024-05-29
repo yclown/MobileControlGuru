@@ -131,6 +131,21 @@
   <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>658, 78</value>
   </data>
+  <data name="AlwaysOnTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="AlwaysOnTop.Text" xml:space="preserve">
+    <value>投屏后息屏</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>489, 28</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 23</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>投屏置顶</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>697, 243</value>
   </data>

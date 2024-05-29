@@ -47,6 +47,8 @@
             this.label8 = new AntdUI.Label();
             this.stay_awake = new AntdUI.Switch();
             this.flowLayoutPanel2 = new AntdUI.In.FlowLayoutPanel();
+            this.AlwaysOnTop = new AntdUI.Switch();
+            this.label9 = new AntdUI.Label();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,10 +151,22 @@
             this.flowLayoutPanel2.Controls.Add(this.WindowYInput);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
+            // AlwaysOnTop
+            // 
+            resources.ApplyResources(this.AlwaysOnTop, "AlwaysOnTop");
+            this.AlwaysOnTop.Name = "AlwaysOnTop";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
             // ScrcpySetting
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.AlwaysOnTop);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NoAudioSwitch);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -190,5 +204,7 @@
         private AntdUI.Switch turn_screen_off;
         private AntdUI.Label label8;
         private AntdUI.Switch stay_awake;
+        private AntdUI.Switch AlwaysOnTop;
+        private AntdUI.Label label9;
     }
 }

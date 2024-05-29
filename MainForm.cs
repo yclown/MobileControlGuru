@@ -561,7 +561,12 @@ namespace MobileControlGuru
             ippair.ShowDialog(this);
         }
 
+       
 
-
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            this.TopMost = !this.TopMost;
+            ((AntdUI.Button)sender).BackgroundImage= this.TopMost? Resources.ontop: Resources.ontop_blur;
+        }
     }
 }

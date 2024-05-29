@@ -65,6 +65,7 @@
             this.getDevices_btn = new AntdUI.Button();
             this.ipconnect_btn = new AntdUI.Button();
             this.dropdown1 = new AntdUI.Dropdown();
+            this.button5 = new AntdUI.Button();
             this.mini_menustrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -261,11 +262,11 @@
             // 
             // lang_select
             // 
+            resources.ApplyResources(this.lang_select, "lang_select");
             this.lang_select.FormattingEnabled = true;
             this.lang_select.Items.AddRange(new object[] {
             resources.GetString("lang_select.Items"),
             resources.GetString("lang_select.Items1")});
-            resources.ApplyResources(this.lang_select, "lang_select");
             this.lang_select.Name = "lang_select";
             this.lang_select.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -301,10 +302,20 @@
             this.dropdown1.Name = "dropdown1";
             this.dropdown1.SelectedValueChanged += new AntdUI.ObjectNEventHandler(this.dropdown1_SelectedValueChanged);
             // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::MobileControlGuru.Properties.Resources.ontop_blur;
+            this.button5.Ghost = true;
+            this.button5.ImageSvg = "";
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.swipe_up_btn);
@@ -380,6 +391,7 @@
         private AntdUI.Button button2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private AntdUI.Button button3;
+        private AntdUI.Button button5;
     }
 }
 

@@ -117,13 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </data>
-  <data name="mini_menustrip.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  </metadata>
+  <metadata name="mini_menustrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>136, 17</value>
-  </data>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 22</value>
   </data>
@@ -237,9 +237,9 @@
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>278, 17</value>
-  </data>
+  </metadata>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>582, 13</value>
   </data>
@@ -262,7 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>492, 238</value>
@@ -286,7 +286,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="swipe_up_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>492, 274</value>
@@ -310,7 +310,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;swipe_up_btn.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="swipe_down_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>573, 274</value>
@@ -334,7 +334,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;swipe_down_btn.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="x_input.Location" type="System.Drawing.Point, System.Drawing">
     <value>520, 238</value>
@@ -358,7 +358,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;x_input.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>654, 274</value>
@@ -385,7 +385,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="divider4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -395,13 +395,13 @@
     <value>485, 209</value>
   </data>
   <data name="divider4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 23</value>
+    <value>436, 23</value>
   </data>
   <data name="divider4.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="divider4.Text" xml:space="preserve">
-    <value>Screen</value>
+    <value>屏幕</value>
   </data>
   <data name="&gt;&gt;divider4.Name" xml:space="preserve">
     <value>divider4</value>
@@ -413,7 +413,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider4.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>601, 238</value>
@@ -437,7 +437,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="play_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>485, 152</value>
@@ -461,7 +461,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;play_keycode_btn.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="y_input.Location" type="System.Drawing.Point, System.Drawing">
     <value>627, 238</value>
@@ -485,7 +485,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;y_input.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="prv_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>566, 152</value>
@@ -509,7 +509,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;prv_keycode_btn.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="tap_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>708, 238</value>
@@ -533,7 +533,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tap_btn.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="divider3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -542,13 +542,13 @@
     <value>485, 123</value>
   </data>
   <data name="divider3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 23</value>
+    <value>436, 23</value>
   </data>
   <data name="divider3.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
   <data name="divider3.Text" xml:space="preserve">
-    <value>Media</value>
+    <value>媒体</value>
   </data>
   <data name="&gt;&gt;divider3.Name" xml:space="preserve">
     <value>divider3</value>
@@ -560,7 +560,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider3.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="next_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>647, 152</value>
@@ -584,7 +584,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;next_keycode_btn.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="lock_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>482, 86</value>
@@ -608,7 +608,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lock_keycode_btn.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="vadd_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>728, 152</value>
@@ -632,7 +632,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;vadd_keycode_btn.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>563, 86</value>
@@ -656,7 +656,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="bdiv_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>809, 152</value>
@@ -680,7 +680,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bdiv_keycode_btn.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="keycode_input.Location" type="System.Drawing.Point, System.Drawing">
     <value>644, 86</value>
@@ -701,7 +701,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;keycode_input.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="divider2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -710,13 +710,13 @@
     <value>476, 57</value>
   </data>
   <data name="divider2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>458, 23</value>
+    <value>457, 23</value>
   </data>
   <data name="divider2.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
   <data name="divider2.Text" xml:space="preserve">
-    <value>Operations</value>
+    <value>操作</value>
   </data>
   <data name="&gt;&gt;divider2.Name" xml:space="preserve">
     <value>divider2</value>
@@ -728,13 +728,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider2.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>835, 466</value>
+    <value>707, 464</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 40</value>
@@ -755,13 +755,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="api_close.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
   <data name="api_close.Location" type="System.Drawing.Point, System.Drawing">
-    <value>586, 465</value>
+    <value>586, 463</value>
   </data>
   <data name="api_close.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 41</value>
@@ -782,13 +782,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;api_close.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="api_run.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
   <data name="api_run.Location" type="System.Drawing.Point, System.Drawing">
-    <value>479, 465</value>
+    <value>479, 463</value>
   </data>
   <data name="api_run.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 41</value>
@@ -809,7 +809,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;api_run.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="divider1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -818,7 +818,7 @@
     <value>455, 3</value>
   </data>
   <data name="divider1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 503</value>
+    <value>15, 501</value>
   </data>
   <data name="divider1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -836,7 +836,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider1.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
+  </data>
+  <data name="lang_select.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="lang_select.Items" xml:space="preserve">
     <value>中文</value>
@@ -845,7 +848,7 @@
     <value>English</value>
   </data>
   <data name="lang_select.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 479</value>
+    <value>812, 477</value>
   </data>
   <data name="lang_select.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 20</value>
@@ -863,7 +866,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lang_select.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="table1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -872,7 +875,7 @@
     <value>1, 3</value>
   </data>
   <data name="table1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 503</value>
+    <value>448, 501</value>
   </data>
   <data name="table1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -887,7 +890,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;table1.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="getDevices_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>479, 11</value>
@@ -911,7 +914,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;getDevices_btn.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="ipconnect_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>681, 11</value>
@@ -935,7 +938,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ipconnect_btn.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="dropdown1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -944,10 +947,10 @@
     <value>&lt;svg t="1713417553387" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2563" width="256" height="256"&gt;&lt;path d="M424.89856 954.61888a25.01632 25.01632 0 0 1-24.20224-18.89792l-26.7008-106.90048-90.50112 60.29824a24.90368 24.90368 0 0 1-31.09888-2.80064l-121.29792-117.2992a24.92416 24.92416 0 0 1-3.3024-31.8976l62.40256-91.49952L83.2 619.52a24.81664 24.81664 0 0 1-19.00032-24.20224V432.72192a24.91904 24.91904 0 0 1 19.0976-24.20224l114.29888-27.60192-57.79456-85.49888a24.91392 24.91392 0 0 1 3.3024-31.8976l120.6016-116.59776a25.04704 25.04704 0 0 1 30.80192-3.0976L386.0992 202.5216l27.40224-105.90208a24.91904 24.91904 0 0 1 24.09984-18.69824h162.49856a24.832 24.832 0 0 1 24.20224 19.00032l27.29984 111.20128 91.60192-54.70208a24.9344 24.9344 0 0 1 30.19776 3.59936l117.89824 115.2a24.98048 24.98048 0 0 1 3.79904 30.8992l-58.50112 95.20128 104.29952 24.80128c11.20256 2.69824 19.2 12.6976 19.2 24.20224v161.89952a25.04192 25.04192 0 0 1-20.1984 24.4992l-107.49952 20.80256 58.19904 86.00064a24.832 24.832 0 0 1-3.00032 31.49824l-116.59776 117.2992a25.1136 25.1136 0 0 1-30.19776 3.99872l-103.30112-59.89888-20.39808 99.3024a24.81152 24.81152 0 0 1-24.09984 19.90144l-167.90016 2.00192h-0.2048z m-35.29728-191.09888c3.00032 0 6.09792 0.50176 9.00096 1.69984a24.8064 24.8064 0 0 1 15.20128 17.19808l30.49984 122.10176 128.1024-1.50016 23.30112-113.60256a24.6272 24.6272 0 0 1 14.19776-17.69984 24.9344 24.9344 0 0 1 22.70208 1.19808l116.59776 67.59936 88.6016-89.09824-67.79904-100.1984c-4.70016-6.90176-5.60128-15.80032-2.40128-23.5008s10.10176-13.30176 18.29888-14.8992l124.40064-24.09984v-121.6l-118.70208-28.09856c-7.79776-1.80224-14.19776-7.30112-17.30048-14.69952s-2.40128-15.80032 1.80224-22.59968l66.0992-107.60192-89.99936-87.90016-104.09984 62.10048c-6.79936 3.99872-15.09888 4.70016-22.4 1.60256a24.93952 24.93952 0 0 1-14.60224-16.9984l-30.69952-124.9024H456.80128l-31.09888 120.4992c-2.00192 7.70048-7.59808 14.10048-15.0016 16.9984s-15.80032 2.0992-22.5024-2.2016L284.20096 196.72064 192.79872 285.02016l66.2016 97.89952c4.59776 6.79936 5.49888 15.29856 2.60096 22.99904a25.088 25.088 0 0 1-17.39776 15.20128l-130.2016 31.20128v123.40224l122.90048 29.99808c7.90016 1.89952 14.40256 7.70048 17.30048 15.29856s1.89952 16.19968-2.69824 22.99904l-70.79936 103.90016 91.6992 88.69888 103.19872-68.80256a24.79104 24.79104 0 0 1 13.99808-4.29568z" fill="#4887ED" p-id="2564"&gt;&lt;/path&gt;&lt;path d="M512.1024 699.71968c-101.09952 0-183.3984-82.29888-183.3984-183.3984s82.29888-183.3984 183.3984-183.3984 183.3984 82.29888 183.3984 183.3984-82.2016 183.3984-183.3984 183.3984z" fill="#639DF6" p-id="2565"&gt;&lt;/path&gt;&lt;path d="M512.1024 382.8224c-73.6 0-133.49888 59.89888-133.49888 133.49888s59.89888 133.49888 133.49888 133.49888 133.49888-59.89888 133.49888-133.49888-59.8016-133.49888-133.49888-133.49888z" fill="#8EB7FE" p-id="2566"&gt;&lt;/path&gt;&lt;/svg&gt;</value>
   </data>
   <data name="dropdown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>892, 22</value>
+    <value>900, 13</value>
   </data>
   <data name="dropdown1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 29</value>
+    <value>33, 36</value>
   </data>
   <data name="dropdown1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -965,19 +968,43 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dropdown1.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>847, 14</value>
+  </data>
+  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 36</value>
+  </data>
+  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="button5.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>946, 511</value>
+    <value>945, 509</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>MobileControlGuru</value>
+    <value>手机控制大师</value>
   </data>
   <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
     <value>notifyIcon1</value>
@@ -1013,12 +1040,6 @@
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MobileControlGuru.BaseForm, MobileControlGuru, Version=1.0.7.2, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="HotSetText" xml:space="preserve">
-    <value>快捷键</value>
-  </data>
-  <data name="AboutText" xml:space="preserve">
-    <value>关于</value>
+    <value>MobileControlGuru.BaseForm, MobileControlGuru, Version=1.0.8.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

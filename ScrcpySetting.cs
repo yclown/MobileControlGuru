@@ -35,6 +35,7 @@ namespace MobileControlGuru
                 KeyboardUhid= KeyboardUhidSwitch.Checked,
                 TurnScreenOff=turn_screen_off.Checked,
                 StayAwake=stay_awake.Checked,
+                AlwaysOnTop= AlwaysOnTop.Checked
             };
             
             ConfigHelp.SetSetting("ScrcpyParamObj", JsonHelp.Obj2Str(scrcpyParam));
@@ -59,8 +60,9 @@ namespace MobileControlGuru
                 WindowXInput.Text= scrcpyParam.WindowX;
                 WindowYInput.Text= scrcpyParam.WindowY;
                 KeyboardUhidSwitch.Checked = scrcpyParam.KeyboardUhid;
-                 turn_screen_off.Checked= scrcpyParam.TurnScreenOff;
+                turn_screen_off.Checked= scrcpyParam.TurnScreenOff;
                 stay_awake.Checked= scrcpyParam.StayAwake ;
+                 AlwaysOnTop.Checked= scrcpyParam.AlwaysOnTop;
             }
             var lang = Tools.ConfigHelp.GetConfig("Lang");
             if (!string.IsNullOrEmpty(lang))

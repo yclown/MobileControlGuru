@@ -137,6 +137,9 @@
   <data name="KeyboardUhidSwitch.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 23</value>
   </data>
@@ -149,17 +152,17 @@
   <data name="KeyboardUhidSwitch.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>AntdUI.Label, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="NoAudioSwitch.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="WindowYInput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 3</value>
+  <data name="&gt;&gt;switch1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>AntdUI.Label, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;AlwaysOnTop.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;KeyboardUhidSwitch.Name" xml:space="preserve">
     <value>KeyboardUhidSwitch</value>
@@ -170,14 +173,20 @@
   <data name="&gt;&gt;KeyboardUhidSwitch.Type" xml:space="preserve">
     <value>AntdUI.Switch, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="WindowYInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 3</value>
+  </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>保持唤醒</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="WindowYInput.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -189,7 +198,7 @@
     <value>7</value>
   </data>
   <data name="&gt;&gt;NoAudioSwitch.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>$this</value>
@@ -201,7 +210,7 @@
     <value>4</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MobileControlGuru.BaseForm, MobileControlGuru, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MobileControlGuru.BaseForm, MobileControlGuru, Version=1.0.8.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WindowHeightInput.Name" xml:space="preserve">
     <value>WindowHeightInput</value>
@@ -227,14 +236,20 @@
   <data name="turn_screen_off.Text" xml:space="preserve">
     <value>投屏后息屏</value>
   </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 28</value>
+  </data>
+  <data name="AlwaysOnTop.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
   <data name="WindowHeightInput.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="&gt;&gt;WindowWidthInput.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 3</value>
+  <data name="&gt;&gt;switch1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>默认高度</value>
@@ -257,8 +272,8 @@
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 28</value>
+  <data name="label7.Text" xml:space="preserve">
+    <value>投屏后息屏</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -275,8 +290,14 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>投屏后息屏</value>
+  <data name="AlwaysOnTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 28</value>
+  </data>
+  <data name="&gt;&gt;AlwaysOnTop.Type" xml:space="preserve">
+    <value>AntdUI.Switch, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>AntdUI.Label, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -286,6 +307,9 @@
   </data>
   <data name="turn_screen_off.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
+  </data>
+  <data name="NoAudioSwitch.Text" xml:space="preserve">
+    <value>音频</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -336,13 +360,13 @@
     <value>75, 32</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;turn_screen_off.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -351,6 +375,9 @@
     <value>75, 32</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;WindowWidthInput.Name" xml:space="preserve">
@@ -362,8 +389,11 @@
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>AntdUI.Label, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;AlwaysOnTop.Name" xml:space="preserve">
+    <value>AlwaysOnTop</value>
   </data>
   <data name="NoAudioSwitch.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
@@ -376,6 +406,9 @@
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 32</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>AntdUI.Label, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WindowYInput.Type" xml:space="preserve">
     <value>AntdUI.Input, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
@@ -390,7 +423,10 @@
     <value>58, 32</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 28</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>AntdUI.Label, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
@@ -398,8 +434,8 @@
   <data name="&gt;&gt;NoAudioSwitch.Name" xml:space="preserve">
     <value>NoAudioSwitch</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 28</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 28</value>
   </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>AntdUI.Label, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
@@ -429,25 +465,25 @@
     <value>52, 32</value>
   </data>
   <data name="&gt;&gt;KeyboardUhidSwitch.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
-  <data name="stay_awake.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="&gt;&gt;switch1.Type" xml:space="preserve">
+    <value>AntdUI.Switch, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 3</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
   </data>
   <data name="&gt;&gt;WindowXInput.Type" xml:space="preserve">
     <value>AntdUI.Input, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 23</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>默认宽度</value>
@@ -456,7 +492,7 @@
     <value>14</value>
   </data>
   <data name="&gt;&gt;stay_awake.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
@@ -485,6 +521,15 @@
   <data name="label1.Text" xml:space="preserve">
     <value>无音频</value>
   </data>
+  <data name="&gt;&gt;AlwaysOnTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;switch1.Name" xml:space="preserve">
+    <value>switch1</value>
+  </data>
+  <data name="stay_awake.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
   <data name="stay_awake.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 23</value>
   </data>
@@ -494,14 +539,17 @@
   <data name="&gt;&gt;turn_screen_off.Type" xml:space="preserve">
     <value>AntdUI.Switch, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="switch1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>540, 28</value>
+  </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="&gt;&gt;WindowYInput.Name" xml:space="preserve">
     <value>WindowYInput</value>
   </data>
-  <data name="NoAudioSwitch.Text" xml:space="preserve">
-    <value>音频</value>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 23</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>617, 224</value>
@@ -539,11 +587,17 @@
   <data name="stay_awake.Text" xml:space="preserve">
     <value>投屏后息屏</value>
   </data>
+  <data name="switch1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
   <data name="&gt;&gt;WindowXInput.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>AntdUI.Label, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 23</value>
