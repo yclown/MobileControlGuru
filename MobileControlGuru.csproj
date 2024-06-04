@@ -195,6 +195,31 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AutoTask\TaskEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoTask\TaskEdit.Designer.cs">
+      <DependentUpon>TaskEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoTask\TaskEditItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoTask\TaskEditItem.Designer.cs">
+      <DependentUpon>TaskEditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoTask\TaskJson.cs" />
+    <Compile Include="AutoTask\TaskShowItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoTask\TaskShowItem.Designer.cs">
+      <DependentUpon>TaskShowItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoTask\TaskList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoTask\TaskList.Designer.cs">
+      <DependentUpon>TaskList.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +300,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="About.zh-CN.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoTask\TaskEdit.resx">
+      <DependentUpon>TaskEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoTask\TaskEditItem.resx">
+      <DependentUpon>TaskEditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoTask\TaskShowItem.resx">
+      <DependentUpon>TaskShowItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoTask\TaskList.resx">
+      <DependentUpon>TaskList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
