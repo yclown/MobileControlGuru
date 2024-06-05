@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,9 +31,13 @@ namespace MobileControlGuru.AutoTask
 
             if (taskInfo != null)
             {
-                this.label2.Text = taskInfo.Name;
+                this.input1.Text = taskInfo.Name;
 
-
+                foreach(var item in taskInfo.TaskItems)
+                {
+                    var edit = new TaskEditItem(item);
+                    this.flowLayoutPanel1.Controls.Add(edit);
+                }
 
             }
 
@@ -68,7 +73,18 @@ namespace MobileControlGuru.AutoTask
 
         private void button2_Click(object sender, EventArgs e)
         {
-            GetTaksInfo();
+
+            var t= GetTaksInfo();
+            if(t.id == 0)
+            {
+                TaskJson.AddTask(t); 
+            }
+            else
+            {
+                TaskJson.EditTask(t);
+            }
+            this.Close();
+
         }
 
 
@@ -84,12 +100,13 @@ namespace MobileControlGuru.AutoTask
             if(taskInfo != null)
             {
                 taskInfo.TaskItems=list;
+                taskInfo.Name=this.input1.Text;
                 return taskInfo;
             }
             else
-            {
+            { 
                 return new TaskJson.TaskInfo() {
-                    Name = "",
+                    Name = this.input1.Text,
                     TaskItems = list
                 };
             }

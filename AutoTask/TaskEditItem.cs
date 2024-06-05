@@ -17,11 +17,18 @@ namespace MobileControlGuru.AutoTask
         public delegate void Delete(int index);
         public int Index;
         public Delete deleteEevnt {  get; set; }
+
+        public TaskJson.TaskItem taskItem;
         public TaskEditItem()
         {
             InitializeComponent();
         }
-        
+        public TaskEditItem(TaskJson.TaskItem taskItem)
+        {
+            this.taskItem = taskItem;
+            InitializeComponent();
+           
+        }
         public void SetIndex(int index)
         {
             Index=index;
@@ -48,6 +55,19 @@ namespace MobileControlGuru.AutoTask
         private void TaskEditItem_Load(object sender, EventArgs e)
         {
             this.select1.Items = TaskJson.Configs;
+            this.select1.SelectedIndex = 0;
+
+            if (taskItem != null)
+            {
+                //this.label1.Text = "操作：" + Index;
+                var d= TaskJson.OpTypes.Where(n => n.Oprate == taskItem.Oprate).FirstOrDefault();
+                int i= TaskJson.OpTypes.IndexOf(d);
+                if(i != -1)
+                {
+                    this.select1.SelectedIndex = i; 
+                } 
+                this.input1.Text = taskItem.Param;
+            }
             
         }
 

@@ -42,6 +42,7 @@
             this.button1.Size = new System.Drawing.Size(75, 36);
             this.button1.TabIndex = 0;
             this.button1.Text = "编 辑";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -50,6 +51,7 @@
             this.button2.Size = new System.Drawing.Size(75, 36);
             this.button2.TabIndex = 1;
             this.button2.Text = "删 除";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -74,7 +76,12 @@
             this.inputNumber1.Name = "inputNumber1";
             this.inputNumber1.Size = new System.Drawing.Size(92, 35);
             this.inputNumber1.TabIndex = 4;
-            this.inputNumber1.Text = "0";
+            this.inputNumber1.Text = "1";
+            this.inputNumber1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // TaskShowItem
             // 

@@ -71,6 +71,7 @@
     <Reference Include="Microsoft.Owin.Hosting, Version=4.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Owin.Hosting.4.2.2\lib\net45\Microsoft.Owin.Hosting.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.WindowsAPICodePack.Core, Version=7.0.4.0, Culture=neutral, PublicKeyToken=8afb38e9204fc0a9, processorArchitecture=MSIL">
       <HintPath>packages\WindowsAPICodePack.7.0.4\lib\net48\Microsoft.WindowsAPICodePack.Core.dll</HintPath>
     </Reference>

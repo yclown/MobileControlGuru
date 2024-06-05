@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,7 +25,7 @@ namespace MobileControlGuru.AutoTask
                 return Name;
             }
 
-            public OpType(string name, string oprate,bool isAdb=true)
+            public OpType(string name, string oprate, bool isAdb = true)
             {
                 Name = name;
                 Oprate = oprate;
@@ -32,14 +33,29 @@ namespace MobileControlGuru.AutoTask
             }
         }
 
-        public static AntdUI.BaseCollection Configs = new AntdUI.BaseCollection { 
-           new OpType("点击","shell input keyevent"),
+        public static List<OpType> OpTypes = new List<OpType>() {
+           new OpType("点击","shell input tap"),
            new OpType("滑动","shell input swipe"),
            new OpType("按键","shell input keyevent"),
            new OpType("启动APP","shell am start -n"),
            new OpType("睡眠","sleep",false),
            new OpType("自定义命令","custom",false),
+
         };
+        private static AntdUI.BaseCollection _Configs=null;
+        public static AntdUI.BaseCollection Configs { get {
+                if(_Configs == null)
+                {
+                    _Configs = new AntdUI.BaseCollection();
+                    foreach (var config in OpTypes)
+                    {
+                        _Configs.Add(config);
+                    }
+                }
+                return _Configs;
+            } 
+        
+        }
 
 
         
@@ -57,6 +73,7 @@ namespace MobileControlGuru.AutoTask
 
             public string Name;
             public List<TaskItem> TaskItems;
+            public int id;
             
             //public string Name;
         }
@@ -103,13 +120,18 @@ namespace MobileControlGuru.AutoTask
                 if(!File.Exists(jsonFilePath))
                 {
                     File.Create(jsonFilePath);
-                    instance.tasks=new List<TaskInfo>();
+                    Instance.tasks=new List<TaskInfo>();
                     return;
                 }
                 // 读取JSON文件内容  
                 string jsonString = File.ReadAllText(jsonFilePath);
+                if(!string.IsNullOrEmpty(jsonString))
+                {
+                    var list = JsonConvert.DeserializeObject<List<TaskInfo>>(jsonString);
+                    Instance.tasks = JsonConvert.DeserializeObject<List<TaskInfo>>(jsonString);
+                }
                  
-                instance.tasks = JsonConvert.DeserializeObject<List<TaskInfo>>(jsonString); 
+                
             }
             catch (Exception ex)
             {
@@ -141,6 +163,28 @@ namespace MobileControlGuru.AutoTask
                 //MessageBox.Show("Error loading JSON data: " + ex.Message);
             }
         }
-
+        public static void AddTask(TaskInfo task)
+        {
+            task.id = 1;
+            if (instance.tasks.Count != 0)
+            {
+                task.id = Instance.tasks.Max(n => n.id)+1;
+            }
+             
+            instance.tasks.Add(task);
+            SaveJsonData();
+        }
+        public static void DelTask(int id)
+        {
+            instance.tasks.Remove(Instance.tasks.Where(n => n.id == id).First());
+            SaveJsonData();
+        }
+        public static void EditTask(TaskInfo task)
+        {
+            var t= Instance.tasks.Where(n => n.id == task.id).First();
+            t.TaskItems = task.TaskItems;
+            t.Name= task.Name;
+            SaveJsonData();
+        }
     }
 }
