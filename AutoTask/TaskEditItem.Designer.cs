@@ -28,18 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new AntdUI.Label();
+            this.button1 = new AntdUI.Button();
+            this.input1 = new AntdUI.Input();
+            this.select1 = new AntdUI.Select();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 37);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "操作";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(321, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(68, 37);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "删 除";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // input1
+            // 
+            this.input1.Location = new System.Drawing.Point(194, 4);
+            this.input1.Name = "input1";
+            this.input1.Size = new System.Drawing.Size(111, 37);
+            this.input1.TabIndex = 3;
+            // 
+            // select1
+            // 
+            this.select1.Location = new System.Drawing.Point(74, 3);
+            this.select1.Name = "select1";
+            this.select1.Size = new System.Drawing.Size(114, 37);
+            this.select1.TabIndex = 4;
+            this.select1.Text = "select1";
+            this.select1.SelectedIndexChanged += new AntdUI.IntEventHandler(this.select1_SelectedIndexChanged);
             // 
             // TaskEditItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.select1);
+            this.Controls.Add(this.input1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Name = "TaskEditItem";
-            this.Size = new System.Drawing.Size(307, 52);
+            this.Size = new System.Drawing.Size(396, 48);
+            this.Load += new System.EventHandler(this.TaskEditItem_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        private AntdUI.Label label1;
+        private AntdUI.Button button1;
+        private AntdUI.Input input1;
+        private AntdUI.Select select1;
     }
 }

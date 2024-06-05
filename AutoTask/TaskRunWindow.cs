@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace MobileControlGuru.AutoTask
 {
-    public partial class TaskShowItem : UserControl
+    public partial class TaskRunWindow : BaseForm
     {
-        public TaskShowItem()
+        public TaskRunWindow()
         {
             InitializeComponent();
-        }
-
-        private void TaskShowItem_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -208,6 +208,13 @@
       <DependentUpon>TaskEditItem.cs</DependentUpon>
     </Compile>
     <Compile Include="AutoTask\TaskJson.cs" />
+    <Compile Include="AutoTask\TaskRun.cs" />
+    <Compile Include="AutoTask\TaskRunWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoTask\TaskRunWindow.Designer.cs">
+      <DependentUpon>TaskRunWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutoTask\TaskShowItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -223,6 +230,7 @@
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Base\CMD.cs" />
     <Compile Include="HotKeyControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -306,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AutoTask\TaskEditItem.resx">
       <DependentUpon>TaskEditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoTask\TaskRunWindow.resx">
+      <DependentUpon>TaskRunWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AutoTask\TaskShowItem.resx">
       <DependentUpon>TaskShowItem.cs</DependentUpon>
@@ -398,7 +409,9 @@
     <None Include="Docs\Update.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />

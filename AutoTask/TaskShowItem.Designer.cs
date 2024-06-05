@@ -32,50 +32,62 @@
             this.button2 = new AntdUI.Button();
             this.button3 = new AntdUI.Button();
             this.label1 = new AntdUI.Label();
+            this.inputNumber1 = new AntdUI.InputNumber();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(101, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 36);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "编 辑";
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(182, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(75, 36);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "删 除";
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(263, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(75, 36);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
+            this.button3.Text = "运行";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.AutoEllipsis = true;
+            this.label1.Location = new System.Drawing.Point(3, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 23);
+            this.label1.Size = new System.Drawing.Size(82, 36);
             this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label1.Text = "";
             // 
-            // TaskItemShow
+            // inputNumber1
+            // 
+            this.inputNumber1.Location = new System.Drawing.Point(345, 4);
+            this.inputNumber1.Name = "inputNumber1";
+            this.inputNumber1.Size = new System.Drawing.Size(92, 35);
+            this.inputNumber1.TabIndex = 4;
+            this.inputNumber1.Text = "0";
+            // 
+            // TaskShowItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.inputNumber1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "TaskItemShow";
-            this.Size = new System.Drawing.Size(344, 32);
+            this.Name = "TaskShowItem";
+            this.Size = new System.Drawing.Size(440, 43);
+            this.Load += new System.EventHandler(this.TaskShowItem_Load);
             this.ResumeLayout(false);
 
         }
@@ -86,5 +98,6 @@
         private AntdUI.Button button2;
         private AntdUI.Button button3;
         private AntdUI.Label label1;
+        private AntdUI.InputNumber inputNumber1;
     }
 }

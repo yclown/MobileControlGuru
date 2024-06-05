@@ -41,7 +41,6 @@
             this.swipe_up_btn = new AntdUI.Button();
             this.swipe_down_btn = new AntdUI.Button();
             this.x_input = new AntdUI.InputNumber();
-            this.button2 = new AntdUI.Button();
             this.divider4 = new AntdUI.Divider();
             this.label1 = new AntdUI.Label();
             this.play_keycode_btn = new AntdUI.Button();
@@ -66,6 +65,8 @@
             this.ipconnect_btn = new AntdUI.Button();
             this.dropdown1 = new AntdUI.Dropdown();
             this.button5 = new AntdUI.Button();
+            this.button6 = new AntdUI.Button();
+            this.divider5 = new AntdUI.Divider();
             this.mini_menustrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,12 +141,6 @@
             0,
             0});
             this.x_input.Name = "x_input";
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // divider4
             // 
@@ -311,17 +306,28 @@
             this.button5.Name = "button5";
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
+            // button6
+            // 
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.Name = "button6";
+            // 
+            // divider5
+            // 
+            resources.ApplyResources(this.divider5, "divider5");
+            this.divider5.Name = "divider5";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.divider5);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.swipe_up_btn);
             this.Controls.Add(this.swipe_down_btn);
             this.Controls.Add(this.x_input);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.divider4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.play_keycode_btn);
@@ -388,10 +394,11 @@
         private AntdUI.Divider divider4;
         private AntdUI.Button button1;
         private AntdUI.Input keycode_input;
-        private AntdUI.Button button2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private AntdUI.Button button3;
         private AntdUI.Button button5;
+        private AntdUI.Button button6;
+        private AntdUI.Divider divider5;
     }
 }
 
