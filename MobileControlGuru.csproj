@@ -228,6 +228,12 @@
     <Compile Include="AutoTask\TaskList.Designer.cs">
       <DependentUpon>TaskList.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControl.Designer.cs">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MoblieControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MoblieControl.Designer.cs">
+      <DependentUpon>MoblieControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Device.cs" />
     <Compile Include="Model\KeyItem.cs" />
     <Compile Include="Program.cs" />
@@ -271,6 +283,12 @@
     </Compile>
     <Compile Include="ScrcpyConrtrolPanel.Designer.cs">
       <DependentUpon>ScrcpyConrtrolPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrcpyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrcpyForm.Designer.cs">
+      <DependentUpon>ScrcpyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ScrcpySetting.cs">
       <SubType>Form</SubType>
@@ -325,6 +343,9 @@
     <EmbeddedResource Include="AutoTask\TaskList.resx">
       <DependentUpon>TaskList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BaseControl.resx">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -370,6 +391,9 @@
     <EmbeddedResource Include="MainForm.zh-Hans.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MoblieControl.resx">
+      <DependentUpon>MoblieControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -382,6 +406,9 @@
     </Compile>
     <EmbeddedResource Include="ScrcpyConrtrolPanel.resx">
       <DependentUpon>ScrcpyConrtrolPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrcpyForm.resx">
+      <DependentUpon>ScrcpyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScrcpySetting.en.resx">
       <DependentUpon>ScrcpySetting.cs</DependentUpon>

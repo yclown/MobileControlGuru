@@ -67,6 +67,7 @@
             this.button5 = new AntdUI.Button();
             this.button6 = new AntdUI.Button();
             this.divider5 = new AntdUI.Divider();
+            this.flowLayoutPanel1 = new AntdUI.In.FlowLayoutPanel();
             this.mini_menustrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -316,10 +317,16 @@
             resources.ApplyResources(this.divider5, "divider5");
             this.divider5.Name = "divider5";
             // 
+            // flowLayoutPanel1
+            // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.divider5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -399,6 +406,7 @@
         private AntdUI.Button button5;
         private AntdUI.Button button6;
         private AntdUI.Divider divider5;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

@@ -244,7 +244,7 @@
     <value>582, 13</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 37</value>
+    <value>75, 37</value>
   </data>
   <data name="button3.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -262,7 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>479, 238</value>
@@ -286,7 +286,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="swipe_up_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>479, 274</value>
@@ -310,7 +310,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;swipe_up_btn.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="swipe_down_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>560, 274</value>
@@ -334,7 +334,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;swipe_down_btn.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="x_input.Location" type="System.Drawing.Point, System.Drawing">
     <value>507, 238</value>
@@ -358,7 +358,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;x_input.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="divider4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -386,7 +386,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider4.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>588, 238</value>
@@ -410,7 +410,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="play_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>479, 152</value>
@@ -434,7 +434,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;play_keycode_btn.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="y_input.Location" type="System.Drawing.Point, System.Drawing">
     <value>614, 238</value>
@@ -458,7 +458,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;y_input.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="prv_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>560, 152</value>
@@ -482,7 +482,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;prv_keycode_btn.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="tap_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>695, 238</value>
@@ -506,7 +506,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tap_btn.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="divider3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -533,7 +533,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="next_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>641, 152</value>
@@ -557,7 +557,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;next_keycode_btn.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="lock_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>476, 86</value>
@@ -581,7 +581,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lock_keycode_btn.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="vadd_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>722, 152</value>
@@ -605,7 +605,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;vadd_keycode_btn.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>563, 86</value>
@@ -629,7 +629,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="bdiv_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>803, 152</value>
@@ -653,7 +653,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bdiv_keycode_btn.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="keycode_input.Location" type="System.Drawing.Point, System.Drawing">
     <value>644, 86</value>
@@ -674,7 +674,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;keycode_input.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="divider2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -701,7 +701,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider2.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -728,7 +728,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="api_close.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -755,7 +755,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;api_close.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="api_run.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -782,7 +782,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;api_run.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="divider1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -809,7 +809,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider1.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="lang_select.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -839,19 +839,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lang_select.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="table1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
   <data name="table1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 3</value>
+    <value>832, 394</value>
   </data>
   <data name="table1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 501</value>
+    <value>83, 38</value>
   </data>
   <data name="table1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="table1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;table1.Name" xml:space="preserve">
     <value>table1</value>
@@ -863,13 +866,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;table1.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="getDevices_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>476, 11</value>
+    <value>476, 14</value>
   </data>
   <data name="getDevices_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 39</value>
+    <value>87, 36</value>
   </data>
   <data name="getDevices_btn.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -887,13 +890,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;getDevices_btn.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="ipconnect_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 11</value>
+    <value>663, 13</value>
   </data>
   <data name="ipconnect_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 38</value>
+    <value>72, 36</value>
   </data>
   <data name="ipconnect_btn.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -911,7 +914,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ipconnect_btn.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="dropdown1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -941,7 +944,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dropdown1.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
     <value>847, 14</value>
@@ -965,7 +968,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
     <value>479, 364</value>
@@ -989,7 +992,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="divider5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1016,7 +1019,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;divider5.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
+  </data>
+  <data name="flowLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="flowLayoutPanel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 12</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 485</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>AntdUI.In.FlowLayoutPanel, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

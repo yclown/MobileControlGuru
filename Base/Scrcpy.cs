@@ -66,6 +66,20 @@ namespace MobileControlGuru.Base
             return p;
         }
 
+        public static Process Put(string device,string CustomSetting="")
+        {
+            Process p = null;
+            if (string.IsNullOrEmpty(CustomSetting))
+            {
+                p = Exec($"  -s {device} --window-borderless --window-title={device} " + CustomSetting);
+            }
+            else
+            {
+                p = Exec($"  -s {device} --window-borderless --window-title={device} " + Scrcpy.GetDefaultSetting());
+            }
+            
+            return p;
+        }
         #endregion
 
 

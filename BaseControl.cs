@@ -1,7 +1,8 @@
-﻿using MobileControlGuru.Properties;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -10,38 +11,20 @@ using System.Windows.Forms;
 
 namespace MobileControlGuru
 {
-    public class BaseForm : Form
+    public partial class BaseControl : UserControl
     {
+
         public ComponentResourceManager resources;
-        public BaseForm()
+        public BaseControl()
         {
-            //resources = new ComponentResourceManager();
+            InitializeComponent();
         }
 
         public void ChangeLang(string lang)
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
-            
-        }
-
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // BaseForm
-            // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "BaseForm";
-            this.Load += new System.EventHandler(this.BaseForm_Load);
-            this.ResumeLayout(false);
 
         }
-
-        private void BaseForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         public void ApplyResource()
         {
             foreach (Control ctl in this.Controls)
@@ -51,7 +34,6 @@ namespace MobileControlGuru
             this.ResumeLayout(false);
             this.PerformLayout();
             resources.ApplyResources(this, "$this"); 
-         
         }
     }
 }

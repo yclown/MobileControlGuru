@@ -22,11 +22,13 @@ namespace MobileControlGuru.Model
         public string Name { get; set; }
         public Process ScrcpyProcess { get; set; }
         public string ScrcpyParams { get; set; }
-
+        public bool Selected { get; set; }
         public string Status { set; get; }
         //public IntPtr hook { set; get; }
         public ScrcpyMonitor monitor { set; get; }
         //public bool IsTcpIP { get; set; }
+
+        public ScrcpyForm form { set; get; }
     }
   
 

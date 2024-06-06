@@ -38,7 +38,8 @@ namespace MobileControlGuru
             InitializeComponent();
             resources = new ComponentResourceManager(typeof(MainForm));
             this.Resize += new EventHandler(MainForm_Resize);
-            DeviceManager.Instance.updateDelegates += UpdateDeviceInfo;
+            //DeviceManager.Instance.updateDelegates += UpdateDeviceInfo;
+            DeviceManager.Instance.updateDelegates += UpdateDeviceList;
             this.api_close.Visible = false;
         }
        
@@ -47,7 +48,7 @@ namespace MobileControlGuru
         {
             
             InitScrcpy();
-            InitTable();
+            //InitTable();
             hotkey = new MyHotKey(this);
             webservice = new WebAPI.WebHelper();
             DeviceManager.Instance.UpdateDevices();
@@ -71,8 +72,23 @@ namespace MobileControlGuru
             } 
         }
 
+        public void UpdateDeviceList()
+        {
+            this.flowLayoutPanel1.Controls.Clear();
+
+
+            foreach (var d in DeviceManager.Instance.devices)
+            {
+                var s = new MoblieControl(d);
+                this.flowLayoutPanel1.Controls.Add(s);
+            }
+
+
+        }
+
+
         #region table
-         
+
         private void InitTable()
         {
             AntdUI.Column[] cols = new Column[] { 
@@ -110,6 +126,7 @@ namespace MobileControlGuru
             }
             this.table1.Binding(deviceItems);
         }
+
 
         /// <summary>
         /// 列表 按钮事件
