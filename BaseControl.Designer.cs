@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "BaseControl";
             this.Size = new System.Drawing.Size(305, 50);
+            this.Load += new System.EventHandler(this.BaseControl_Load);
             this.ResumeLayout(false);
 
         }

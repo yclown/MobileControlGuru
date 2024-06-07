@@ -1,5 +1,8 @@
-﻿using MobileControlGuru.Base;
+﻿using AntdUI;
+using Microsoft.VisualBasic;
+using MobileControlGuru.Base;
 using MobileControlGuru.Model;
+using MobileControlGuru.Properties;
 using MobileControlGuru.Src;
 using System;
 using System.Collections.Generic;
@@ -9,9 +12,11 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Microsoft.WindowsAPICodePack.Shell.PropertySystem.SystemProperties.System;
 
 namespace MobileControlGuru
 {
@@ -25,7 +30,9 @@ namespace MobileControlGuru
         }
         public MoblieControl(Model.Device device)
         {
+            resources = new ComponentResourceManager(typeof(MoblieControl));
             InitializeComponent();
+
             this.device = device;
 
         }
@@ -33,7 +40,12 @@ namespace MobileControlGuru
         {
             this.input1.Text = device.Name;
 
-            this.checkbox1.Checked=device.Selected;
+            this.checkbox1.Checked=device.Selected; 
+            this.wireless_connect.Visible = !this.device.IsTcpIP; 
+            this.disconnect.Visible = this.device.IsTcpIP;
+            this.ontop.BackgroundImage = this.device.IsTop ? Resources.ontop : Resources.ontop_blur;
+            this.disput.Visible= this.device.ScrcpyProcess!=null;
+            this.put.Visible = this.device.ScrcpyProcess == null;
         }
 
         private void put_Click(object sender, EventArgs e)
@@ -46,36 +58,67 @@ namespace MobileControlGuru
                 Thread.Sleep(100);
             }
             
-            device.form=new ScrcpyForm(process); 
-
+            device.form=new ScrcpyForm(device.Name,process);
+            device.ScrcpyProcess= process;
             device.form.Show();
+            device.form.FormClosed += ScrcpyClosed;
+            //if (process != null)
+            //{
+            //    ((AntdUI.Button)sender).Visible = false;
+            //}
+            DeviceManager.Instance.UpdateDevices();
+        }
 
-            if (process != null)
-            {
-                ((AntdUI.Button)sender).Visible = false;
-            }
+        private void ScrcpyClosed(object sender, FormClosedEventArgs e)
+        {
+            //device.ScrcpyProcess.Kill();
+            device.ScrcpyProcess = null;
+            DeviceManager.Instance.UpdateDevices();
         }
 
         private void checkbox1_CheckedChanged(object sender, bool value)
         {
             device.Selected = value;
-
-            //var a= DeviceManager.Instance.devices;
+             
         }
 
         private void wireless_connect_Click(object sender, EventArgs e)
         {
-
+            ADB.Exec($"-s {this.device.Name} tcpip 5555");
+            string str = Interaction.InputBox("提示信息", "请输入手机IP", "", -1, -1); 
+            ADB.Connect(str);  
         }
 
         private void disconnect_Click(object sender, EventArgs e)
         {
-
+            DialogResult AF = MessageBox.Show("确定断开连接吗？", "确认框", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (AF == DialogResult.OK)
+            {
+                ADB.Exec("disconnect " + this.device.Name);
+                DeviceManager.Instance.UpdateDevices();
+            } 
         }
 
         private void disput_Click(object sender, EventArgs e)
         {
+           
+            DialogResult AF = MessageBox.Show("确定关闭投屏", "确认框", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (AF == DialogResult.OK)
+            {
 
+                device.ScrcpyProcess.Kill();
+                device.ScrcpyProcess = null;
+                device.form.Dispose();
+                device.form = null;
+                DeviceManager.Instance.UpdateDevices();
+            }
+        }
+
+        private void ontop_Click(object sender, EventArgs e)
+        {
+            this.device.IsTop = !this.device.IsTop;
+            ((AntdUI.Button)sender).BackgroundImage = this.device.IsTop ? Resources.ontop : Resources.ontop_blur;
+            DeviceManager.Instance.UpdateDevices();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MobileControlGuru.Base
@@ -31,11 +32,26 @@ namespace MobileControlGuru.Base
                     StandardOutputEncoding = Encoding.UTF8,
                     StandardErrorEncoding = Encoding.UTF8,
                 });
-                //获取cmd窗口的输出信息
-                string output = p.StandardOutput.ReadToEnd();
-                LogHelper.Info("adb output： " +  output);
-                p.WaitForExit();//等待程序执行完退出进程
-                p.Close();
+
+                // 用于存储标准输出的StringBuilder  
+                //StringBuilder outputBuilder = new StringBuilder(); 
+                //// 异步读取标准输出  
+                //p.OutputDataReceived += (sender, e) =>
+                //{
+                //    if (!string.IsNullOrEmpty(e.Data))
+                //    {
+                //        outputBuilder.AppendLine(e.Data);
+                //    }
+                //};
+                //p.BeginOutputReadLine(); 
+
+
+                //p.WaitForExit();//等待程序执行完退出进程
+                //string output = outputBuilder.ToString();
+                string output = p.StandardOutput.ReadToEndAsync().Result;
+                LogHelper.Info("adb output： " + output);
+
+                //p.Close();
                 //p.Dispose();
                 return new AdbParse(output);
             }
@@ -73,6 +89,7 @@ namespace MobileControlGuru.Base
         {
 
             var res = Exec($"connect {device}");
+            
             DeviceManager.Instance.UpdateDevices();
             return res;
         }
@@ -122,6 +139,8 @@ namespace MobileControlGuru.Base
                     {
                         Name = deviceId,
                         Status = deviceStatus,
+                        IsTcpIP= Tools.Common.IsValidIP(deviceId)
+ 
                     });
                 }
             }

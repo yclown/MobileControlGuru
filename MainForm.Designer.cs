@@ -58,7 +58,6 @@
             this.button4 = new AntdUI.Button();
             this.api_close = new AntdUI.Button();
             this.api_run = new AntdUI.Button();
-            this.divider1 = new AntdUI.Divider();
             this.lang_select = new System.Windows.Forms.ComboBox();
             this.table1 = new AntdUI.Table();
             this.getDevices_btn = new AntdUI.Button();
@@ -68,40 +67,52 @@
             this.button6 = new AntdUI.Button();
             this.divider5 = new AntdUI.Divider();
             this.flowLayoutPanel1 = new AntdUI.In.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new AntdUI.In.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new AntdUI.In.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new AntdUI.In.FlowLayoutPanel();
+            this.flowLayoutPanel5 = new AntdUI.In.FlowLayoutPanel();
+            this.flowLayoutPanel6 = new AntdUI.In.FlowLayoutPanel();
+            this.flowLayoutPanel7 = new AntdUI.In.FlowLayoutPanel();
             this.mini_menustrip.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
+            this.flowLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // notifyIcon1
             // 
-            this.notifyIcon1.ContextMenuStrip = this.mini_menustrip;
             resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
+            this.notifyIcon1.ContextMenuStrip = this.mini_menustrip;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // mini_menustrip
             // 
+            resources.ApplyResources(this.mini_menustrip, "mini_menustrip");
             this.mini_menustrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.main_tsmi,
             this.setting_tmsi,
             this.exit_tsmi});
             this.mini_menustrip.Name = "mini_menustrip";
-            resources.ApplyResources(this.mini_menustrip, "mini_menustrip");
             // 
             // main_tsmi
             // 
-            this.main_tsmi.Name = "main_tsmi";
             resources.ApplyResources(this.main_tsmi, "main_tsmi");
+            this.main_tsmi.Name = "main_tsmi";
             this.main_tsmi.Click += new System.EventHandler(this.main_tsmi_Click);
             // 
             // setting_tmsi
             // 
-            this.setting_tmsi.Name = "setting_tmsi";
             resources.ApplyResources(this.setting_tmsi, "setting_tmsi");
+            this.setting_tmsi.Name = "setting_tmsi";
             this.setting_tmsi.Click += new System.EventHandler(this.setting_tmsi_Click);
             // 
             // exit_tsmi
             // 
-            this.exit_tsmi.Name = "exit_tsmi";
             resources.ApplyResources(this.exit_tsmi, "exit_tsmi");
+            this.exit_tsmi.Name = "exit_tsmi";
             this.exit_tsmi.Click += new System.EventHandler(this.exit_tsmi_Click);
             // 
             // backgroundWorker1
@@ -250,12 +261,6 @@
             this.api_run.Name = "api_run";
             this.api_run.Click += new System.EventHandler(this.api_run_Click);
             // 
-            // divider1
-            // 
-            resources.ApplyResources(this.divider1, "divider1");
-            this.divider1.Name = "divider1";
-            this.divider1.Vertical = true;
-            // 
             // lang_select
             // 
             resources.ApplyResources(this.lang_select, "lang_select");
@@ -282,8 +287,8 @@
             // 
             // ipconnect_btn
             // 
-            this.ipconnect_btn.BorderWidth = 1F;
             resources.ApplyResources(this.ipconnect_btn, "ipconnect_btn");
+            this.ipconnect_btn.BorderWidth = 1F;
             this.ipconnect_btn.Name = "ipconnect_btn";
             this.ipconnect_btn.Click += new System.EventHandler(this.ipconnect_btn_Click);
             // 
@@ -300,10 +305,10 @@
             // 
             // button5
             // 
+            resources.ApplyResources(this.button5, "button5");
             this.button5.BackgroundImage = global::MobileControlGuru.Properties.Resources.ontop_blur;
             this.button5.Ghost = true;
             this.button5.ImageSvg = "";
-            resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
@@ -320,49 +325,91 @@
             // flowLayoutPanel1
             // 
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // flowLayoutPanel2
+            // 
+            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
+            this.flowLayoutPanel2.Controls.Add(this.getDevices_btn);
+            this.flowLayoutPanel2.Controls.Add(this.button3);
+            this.flowLayoutPanel2.Controls.Add(this.ipconnect_btn);
+            this.flowLayoutPanel2.Controls.Add(this.button5);
+            this.flowLayoutPanel2.Controls.Add(this.dropdown1);
+            this.flowLayoutPanel2.Controls.Add(this.table1);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            // 
+            // flowLayoutPanel3
+            // 
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel2);
+            this.flowLayoutPanel3.Controls.Add(this.divider2);
+            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel4);
+            this.flowLayoutPanel3.Controls.Add(this.divider3);
+            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel5);
+            this.flowLayoutPanel3.Controls.Add(this.divider4);
+            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel6);
+            this.flowLayoutPanel3.Controls.Add(this.divider5);
+            this.flowLayoutPanel3.Controls.Add(this.button6);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            // 
+            // flowLayoutPanel4
+            // 
+            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
+            this.flowLayoutPanel4.Controls.Add(this.lock_keycode_btn);
+            this.flowLayoutPanel4.Controls.Add(this.button1);
+            this.flowLayoutPanel4.Controls.Add(this.keycode_input);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            // 
+            // flowLayoutPanel5
+            // 
+            resources.ApplyResources(this.flowLayoutPanel5, "flowLayoutPanel5");
+            this.flowLayoutPanel5.Controls.Add(this.play_keycode_btn);
+            this.flowLayoutPanel5.Controls.Add(this.vadd_keycode_btn);
+            this.flowLayoutPanel5.Controls.Add(this.bdiv_keycode_btn);
+            this.flowLayoutPanel5.Controls.Add(this.prv_keycode_btn);
+            this.flowLayoutPanel5.Controls.Add(this.next_keycode_btn);
+            this.flowLayoutPanel5.Controls.Add(this.swipe_up_btn);
+            this.flowLayoutPanel5.Controls.Add(this.swipe_down_btn);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            // 
+            // flowLayoutPanel6
+            // 
+            resources.ApplyResources(this.flowLayoutPanel6, "flowLayoutPanel6");
+            this.flowLayoutPanel6.Controls.Add(this.label2);
+            this.flowLayoutPanel6.Controls.Add(this.y_input);
+            this.flowLayoutPanel6.Controls.Add(this.label1);
+            this.flowLayoutPanel6.Controls.Add(this.x_input);
+            this.flowLayoutPanel6.Controls.Add(this.tap_btn);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            // 
+            // flowLayoutPanel7
+            // 
+            resources.ApplyResources(this.flowLayoutPanel7, "flowLayoutPanel7");
+            this.flowLayoutPanel7.Controls.Add(this.api_run);
+            this.flowLayoutPanel7.Controls.Add(this.api_close);
+            this.flowLayoutPanel7.Controls.Add(this.button4);
+            this.flowLayoutPanel7.Controls.Add(this.lang_select);
+            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.divider5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.swipe_up_btn);
-            this.Controls.Add(this.swipe_down_btn);
-            this.Controls.Add(this.x_input);
-            this.Controls.Add(this.divider4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.play_keycode_btn);
-            this.Controls.Add(this.y_input);
-            this.Controls.Add(this.prv_keycode_btn);
-            this.Controls.Add(this.tap_btn);
-            this.Controls.Add(this.divider3);
-            this.Controls.Add(this.next_keycode_btn);
-            this.Controls.Add(this.lock_keycode_btn);
-            this.Controls.Add(this.vadd_keycode_btn);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bdiv_keycode_btn);
-            this.Controls.Add(this.keycode_input);
-            this.Controls.Add(this.divider2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.api_close);
-            this.Controls.Add(this.api_run);
-            this.Controls.Add(this.divider1);
-            this.Controls.Add(this.lang_select);
-            this.Controls.Add(this.table1);
-            this.Controls.Add(this.dropdown1);
-            this.Controls.Add(this.ipconnect_btn);
-            this.Controls.Add(this.getDevices_btn);
+            this.Controls.Add(this.flowLayoutPanel7);
             this.Name = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Mian_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Mian_FormClosed);
             this.Load += new System.EventHandler(this.Mian_Load);
             this.mini_menustrip.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel6.ResumeLayout(false);
+            this.flowLayoutPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -380,7 +427,6 @@
         private System.Windows.Forms.ToolStripMenuItem main_tsmi;
         private System.Windows.Forms.ComboBox lang_select;
         private AntdUI.Button lock_keycode_btn;
-        private AntdUI.Divider divider1;
         private AntdUI.Button api_run;
         private AntdUI.Button api_close;
         private AntdUI.Button button4;
@@ -407,6 +453,12 @@
         private AntdUI.Button button6;
         private AntdUI.Divider divider5;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel1;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel2;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel3;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel4;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel5;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel6;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel7;
     }
 }
 

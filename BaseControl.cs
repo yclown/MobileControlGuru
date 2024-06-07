@@ -35,5 +35,15 @@ namespace MobileControlGuru
             this.PerformLayout();
             resources.ApplyResources(this, "$this"); 
         }
+
+        private void BaseControl_Load(object sender, EventArgs e)
+        {
+            var lang = Tools.ConfigHelp.GetConfig("Lang");
+            if (!string.IsNullOrEmpty(lang))
+            {
+                ChangeLang(lang);
+                ApplyResource();
+            }
+        }
     }
 }

@@ -72,7 +72,7 @@ namespace MobileControlGuru.Src
             }
             //添加新的
             var addItems = data.Where(n => !oldDevices.Contains(n.Name)).ToList();
-            DeviceManager.Instance.devices = DeviceManager.Instance.devices.Concat(addItems).ToList();
+            DeviceManager.Instance.devices = DeviceManager.Instance.devices.Concat(addItems).OrderByDescending(n=>n.IsTop).ToList();
              
             //状态更新
             foreach(var r in DeviceManager.Instance.devices)

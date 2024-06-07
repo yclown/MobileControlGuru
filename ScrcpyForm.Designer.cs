@@ -35,20 +35,19 @@
             this.screencap_btn = new AntdUI.Button();
             this.exit_btn = new AntdUI.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.inputNumber1 = new AntdUI.InputNumber();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.home_btn);
             this.flowLayoutPanel1.Controls.Add(this.back_btn);
             this.flowLayoutPanel1.Controls.Add(this.screencap_btn);
             this.flowLayoutPanel1.Controls.Add(this.exit_btn);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(897, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(424, 12);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(76, 551);
             this.flowLayoutPanel1.TabIndex = 6;
@@ -63,6 +62,7 @@
             this.home_btn.Size = new System.Drawing.Size(70, 61);
             this.home_btn.TabIndex = 0;
             this.home_btn.Type = AntdUI.TTypeMini.Info;
+            this.home_btn.Click += new System.EventHandler(this.home_btn_Click);
             // 
             // back_btn
             // 
@@ -74,6 +74,7 @@
             this.back_btn.Size = new System.Drawing.Size(70, 61);
             this.back_btn.TabIndex = 2;
             this.back_btn.Type = AntdUI.TTypeMini.Info;
+            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
             // screencap_btn
             // 
@@ -97,32 +98,24 @@
             this.exit_btn.Size = new System.Drawing.Size(70, 61);
             this.exit_btn.TabIndex = 4;
             this.exit_btn.Type = AntdUI.TTypeMini.Primary;
+            this.exit_btn.Visible = false;
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(735, 539);
+            this.panel1.Size = new System.Drawing.Size(406, 551);
             this.panel1.TabIndex = 7;
-            // 
-            // inputNumber1
-            // 
-            this.inputNumber1.Location = new System.Drawing.Point(753, 15);
-            this.inputNumber1.Name = "inputNumber1";
-            this.inputNumber1.Size = new System.Drawing.Size(116, 38);
-            this.inputNumber1.TabIndex = 8;
-            this.inputNumber1.Text = "inputNumber1";
-            this.inputNumber1.ValueChanged += new AntdUI.DecimalEventHandler(this.inputNumber1_ValueChanged);
             // 
             // ScrcpyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 555);
-            this.Controls.Add(this.inputNumber1);
+            this.ClientSize = new System.Drawing.Size(503, 567);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "ScrcpyForm";
@@ -143,6 +136,5 @@
         private AntdUI.Button screencap_btn;
         private AntdUI.Button exit_btn;
         private System.Windows.Forms.Panel panel1;
-        private AntdUI.InputNumber inputNumber1;
     }
 }

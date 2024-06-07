@@ -44,14 +44,35 @@ namespace MobileControlGuru
 
         public void ApplyResource()
         {
-            foreach (Control ctl in this.Controls)
-            {
-                resources.ApplyResources(ctl, ctl.Name);
-            }
+            //foreach (Control ctl in this.Controls)
+            //{
+            //    resources.ApplyResources(ctl, ctl.Name);
+
+            //    if (ctl.Controls.Count>0 )
+            //    {
+
+
+            //    }
+            //}
+            Apply(this.Controls);
             this.ResumeLayout(false);
             this.PerformLayout();
             resources.ApplyResources(this, "$this"); 
          
+        }
+
+
+        public void Apply(Control.ControlCollection controls)
+        {
+            foreach (Control ctl in controls)
+            {
+                resources.ApplyResources(ctl, ctl.Name);
+                if(ctl.Controls.Count>0)
+                {
+                    Apply(ctl.Controls);
+                }
+               
+            }
         }
     }
 }

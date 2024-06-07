@@ -1,5 +1,6 @@
 ﻿using AntdUI;
 using MobileControlGuru.Base;
+using MobileControlGuru.Src;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,11 +18,12 @@ namespace MobileControlGuru
     {
         public Process ScrcpyProcess { get; set; }
         IntPtr childHwnd ;
-        float Rate = 1;
-        public ScrcpyForm(Process ScrcpyProcess)
+        public string DeviceName { set; get; }
+        public ScrcpyForm(string DeviceName, Process ScrcpyProcess)
         {
 
             this.ScrcpyProcess = ScrcpyProcess;
+            this.DeviceName= DeviceName;
             InitializeComponent(); 
         }
 
@@ -37,13 +39,10 @@ namespace MobileControlGuru
             int height = fx.Bottom - fx.Top;                   //窗口的高度
             int x = fx.Left;
             int y = fx.Top;
-
-            //width =  ;
-            Rate = (float)width / height;
-            this.inputNumber1.Value = (decimal)Rate;
-            ProcessWindowController.MoveWindow(childHwnd, 
-                this.panel1.Width / 2 - width / 2, 0, 
-                (int)(Rate* this.panel1.Height), this.panel1.Height, true);
+ 
+            ProcessWindowController.MoveWindow(childHwnd,
+                -10, -30,
+                this.panel1.Width + 20, this.panel1.Height + 30, true);
         }
 
         private void ScrcpyForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -55,18 +54,27 @@ namespace MobileControlGuru
         private void ScrcpyForm_Resize(object sender, EventArgs e)
         {
 
-            int width = (int)(Rate * this.panel1.Height);
+            int width = this.panel1.Width;
             int height = this.panel1.Height;
             ProcessWindowController.MoveWindow(childHwnd,
-               this.panel1.Width / 2 - width / 2, 0,
-              width, height, true);
+              -10, -30,
+              width+20, height+30, true);
         }
 
         private void inputNumber1_ValueChanged(object sender, decimal value)
         {
-
-            this.Rate = (float)value;
+             
             ScrcpyForm_Resize(null, null);
+        }
+
+        private void home_btn_Click(object sender, EventArgs e)
+        {
+            new DeviceADB(DeviceName).SendHome();
+        }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            new DeviceADB(DeviceName).SendKeyEvent(ADBKey.Key.KEYCODE_BACK);
         }
     }
 }

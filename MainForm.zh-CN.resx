@@ -117,10 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="getDevices_btn.Text" xml:space="preserve">
-    <value>刷新设备</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="main_tsmi.Text" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="setting_tmsi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="setting_tmsi.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="exit_tsmi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="exit_tsmi.Text" xml:space="preserve">
+    <value>退出</value>
+  </data>
   <data name="mini_menustrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 70</value>
   </data>
@@ -206,55 +221,7 @@
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>手机控制大师</value>
   </data>
-  <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
-  </data>
-  <data name="main_tsmi.Text" xml:space="preserve">
-    <value>主页</value>
-  </data>
-  <data name="setting_tmsi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
-  </data>
-  <data name="setting_tmsi.Text" xml:space="preserve">
-    <value>设置</value>
-  </data>
-  <data name="exit_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
-  </data>
-  <data name="exit_tsmi.Text" xml:space="preserve">
-    <value>退出</value>
-  </data>
-  <data name="divider3.Text" xml:space="preserve">
-    <value>媒体</value>
-  </data>
-  <data name="divider4.Text" xml:space="preserve">
-    <value>屏幕</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>定时下滑</value>
-  </data>
-  <data name="divider2.Text" xml:space="preserve">
-    <value>操作</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>手机控制大师</value>
-  </data>
-  <data name="AboutText" xml:space="preserve">
-    <value>关于</value>
-  </data>
-  <data name="tablebtnsText" xml:space="preserve">
-    <value>操作</value>
-  </data>
-  <data name="tableNameText" xml:space="preserve">
-    <value>设备列表</value>
-  </data>
-  <data name="tableNoDataText" xml:space="preserve">
-    <value>暂无设备</value>
-  </data>
-  <data name="tableStatusText" xml:space="preserve">
-    <value>设备状态</value>
-  </data>
-  <data name="HotSetText" xml:space="preserve">
-    <value>快捷键</value>
+  <data name="getDevices_btn.Text" xml:space="preserve">
+    <value>刷新设备</value>
   </data>
 </root>

@@ -71,11 +71,11 @@ namespace MobileControlGuru.Base
             Process p = null;
             if (string.IsNullOrEmpty(CustomSetting))
             {
-                p = Exec($"  -s {device} --window-borderless --window-title={device} " + CustomSetting);
+                p = Exec($"  -s {device} --window-title={device} " + CustomSetting);
             }
             else
             {
-                p = Exec($"  -s {device} --window-borderless --window-title={device} " + Scrcpy.GetDefaultSetting());
+                p = Exec($"  -s {device} --window-title={device} " + Scrcpy.GetDefaultSetting());
             }
             
             return p;

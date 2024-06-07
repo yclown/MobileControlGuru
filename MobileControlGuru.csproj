@@ -391,7 +391,13 @@
     <EmbeddedResource Include="MainForm.zh-Hans.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MoblieControl.en.resx">
+      <DependentUpon>MoblieControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MoblieControl.resx">
+      <DependentUpon>MoblieControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoblieControl.zh-Hans.resx">
       <DependentUpon>MoblieControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

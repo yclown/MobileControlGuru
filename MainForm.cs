@@ -58,8 +58,7 @@ namespace MobileControlGuru
             if (!string.IsNullOrEmpty(lang))
             {
                 ChangeLang(lang);
-                ApplyResource();
-                
+                ApplyResource(); 
             }
             Init();
           
@@ -231,16 +230,18 @@ namespace MobileControlGuru
                 Tools.ConfigHelp.SetSetting("Lang", "zh-CN");
                 ChangeLang("zh-CN");
                 ApplyResource();
-                InitTable();
+                //InitTable();
                 Init();
+                DeviceManager.Instance.UpdateDevices();
             }
             else
             {
                 Tools.ConfigHelp.SetSetting("Lang", "en");
                 ChangeLang("en");
                 ApplyResource();
-                InitTable();
+                //InitTable();
                 Init();
+                DeviceManager.Instance.UpdateDevices();
             }  
         }
 
@@ -482,8 +483,8 @@ namespace MobileControlGuru
         
         private void button_Click(object sender, EventArgs e)
         {
-            var datas = (AntList<Model.DeviceItem>)this.table1.DataSource;
-            var selecteds = datas.Where(n => n.IsSelected).ToList();
+           
+            var selecteds = DeviceManager.Instance.devices.Where(n => n.Selected).ToList();
             point = new Point(Convert.ToInt32(x_input.Text), Convert.ToInt32(y_input.Text));
             Properties.Settings.Default.ClickPoint = point;
             Properties.Settings.Default.Save();
@@ -533,8 +534,7 @@ namespace MobileControlGuru
         private void button1_Click_1(object sender, EventArgs e)
         {
 
-            var datas = (AntList<Model.DeviceItem>)this.table1.DataSource;
-            var selecteds = datas.Where(n => n.IsSelected).ToList();
+            var selecteds = DeviceManager.Instance.devices.Where(n => n.Selected).ToList();
             if (selecteds.Count() == 0)
             {
                 AntdUI.Message.error(this, "请选择要操作的设备");
