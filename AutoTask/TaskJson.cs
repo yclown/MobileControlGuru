@@ -74,7 +74,13 @@ namespace MobileControlGuru.AutoTask
             public string Name;
             public List<TaskItem> TaskItems;
             public int id;
-            
+            public int RunTimes;
+
+            public TaskInfo()
+            {
+                this.RunTimes = 1;
+            }
+
             //public string Name;
         }
 

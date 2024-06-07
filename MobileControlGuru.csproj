@@ -196,6 +196,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AutoTask\SelectDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoTask\SelectDevice.Designer.cs">
+      <DependentUpon>SelectDevice.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutoTask\TaskEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="About.zh-CN.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoTask\SelectDevice.resx">
+      <DependentUpon>SelectDevice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AutoTask\TaskEdit.resx">
       <DependentUpon>TaskEdit.cs</DependentUpon>

@@ -60,6 +60,7 @@
             this.button3.Size = new System.Drawing.Size(75, 36);
             this.button3.TabIndex = 2;
             this.button3.Text = "运行";
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -82,6 +83,7 @@
             0,
             0,
             0});
+            this.inputNumber1.ValueChanged += new AntdUI.DecimalEventHandler(this.inputNumber1_ValueChanged);
             // 
             // TaskShowItem
             // 

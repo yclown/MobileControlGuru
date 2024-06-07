@@ -51,7 +51,7 @@ namespace MobileControlGuru.AutoTask
             TaskEdit diglog = new TaskEdit(taskinfo);
             diglog.StartPosition = FormStartPosition.CenterParent;
             diglog.FormClosed += EditFormClosed;
-            diglog.ShowDialog(this);
+            diglog.Show(this);
             
         }
 

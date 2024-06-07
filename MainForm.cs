@@ -585,5 +585,12 @@ namespace MobileControlGuru
             this.TopMost = !this.TopMost;
             ((AntdUI.Button)sender).BackgroundImage= this.TopMost? Resources.ontop: Resources.ontop_blur;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AutoTask.TaskList iPConnect = new AutoTask.TaskList();
+          
+            iPConnect.Show(this);
+        }
     }
 }

@@ -36,6 +36,7 @@ namespace MobileControlGuru.AutoTask
                 foreach(var item in taskInfo.TaskItems)
                 {
                     var edit = new TaskEditItem(item);
+                    edit.deleteEevnt += ItemDelete;
                     this.flowLayoutPanel1.Controls.Add(edit);
                 }
 
@@ -119,10 +120,25 @@ namespace MobileControlGuru.AutoTask
             UpdateItemIndex();
         }
 
+
+        SelectDevice selectDevice;
         private void button4_Click(object sender, EventArgs e)
         {
-            TaskRun tr=new TaskRun(GetTaksInfo());
-            tr.Run();
+           
+            selectDevice = new SelectDevice();
+            selectDevice.button1.Click += SureDevice;
+            selectDevice.ShowDialog(this);  
+            //tr.Run();
+
+
+        } 
+        private void SureDevice(object sender, EventArgs e)
+        {
+            var name= this.selectDevice.select1.SelectedValue.ToString();
+            selectDevice.Dispose();
+            TaskRunWindow tr = new TaskRunWindow(name,GetTaksInfo(),true);
+            tr.Text = "debug on:"+name;
+            tr.ShowDialog(this);
         }
     }
 }

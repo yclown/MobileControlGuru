@@ -18,6 +18,7 @@ namespace MobileControlGuru.AutoTask
         }
         public TaskJson.TaskInfo taskInfo;
         public TaskList taskList;
+        TaskRunWindow runWindow;
         public TaskShowItem(TaskJson.TaskInfo taskInfo)
         {
             this.taskInfo = taskInfo;
@@ -29,6 +30,7 @@ namespace MobileControlGuru.AutoTask
             if (taskInfo != null)
             {
                 this.label1.Text = taskInfo.Name;
+                this.inputNumber1.Value=taskInfo.RunTimes;
             }
             
 
@@ -54,6 +56,27 @@ namespace MobileControlGuru.AutoTask
                 
             }
            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (runWindow != null)
+            {
+                runWindow.Dispose();
+                runWindow = null;
+            }
+            else
+            {
+                runWindow = new TaskRunWindow("419218f7", taskInfo);
+                runWindow.Show();
+                runWindow.RunTask();
+            }
+        }
+
+        private void inputNumber1_ValueChanged(object sender, decimal value)
+        {
+            taskInfo.RunTimes=Convert.ToInt32(value);
+            TaskJson.EditTask(taskInfo);
         }
     }
 }

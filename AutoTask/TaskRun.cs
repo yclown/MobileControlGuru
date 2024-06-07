@@ -7,37 +7,50 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using MobileControlGuru.Tools;
+using MobileControlGuru.Src;
+using static MobileControlGuru.AutoTask.TaskRun;
 namespace MobileControlGuru.AutoTask
 {
     public class TaskRun
     {
         TaskJson.TaskInfo taskInfo;
-
-
+        string DeviceName;
+        bool Debug=false;
+        
         public delegate void TaskStartDelegate();
         public delegate void TaskFinishedDelegate();
-        public delegate void TaskSingleEndDelegate();
+        
+        public delegate void TaskSingleEndDelegate(string cmd);
+        public delegate void TaskSingleStartDelegate(string cmd);
 
+        //任务开始委托
+        public TaskStartDelegate taskStartDelegate;
+        //任务结束委托
+        public TaskFinishedDelegate taskFinishedDelegate;
 
-        public TaskStartDelegate taskstartdelegate;
-        public TaskFinishedDelegate taskfinisheddelegate;
-        public TaskSingleEndDelegate tasksingleenddelegate;
-         
+        //单条指令开始
+        public TaskSingleStartDelegate singleStartDelegate;
+        //单条指令结束 
+        public TaskSingleEndDelegate singleEndDelegate;
 
-        public TaskRun(TaskJson.TaskInfo taskInfo)
+        public TaskRun(string deviceName, TaskJson.TaskInfo taskInfo, bool debug=false)
         {
+            DeviceName = deviceName;
             this.taskInfo = taskInfo;
+            Debug = debug;
         }
 
         public string R(TaskJson.TaskItem taskItem)
         {
             try
             {
+                singleStartDelegate(taskItem.Oprate + " " + taskItem.Param);
+                string res = "";
                 if (taskItem.IsAdb)
                 {
-                    var adb= ADB.Exec("-s 192.168.191.2:38773" +" "+taskItem.Oprate + " " + taskItem.Param);
-
-                     return adb.Message;
+                  
+                    var adb= ADB.Exec("-s "+ DeviceName + " "+taskItem.Oprate + " " + taskItem.Param); 
+                    res= adb.Message;
                 }
                 else
                 {
@@ -47,16 +60,17 @@ namespace MobileControlGuru.AutoTask
                     }
                     else
                     {
-                        var cmd=  CMD.Exec(taskItem.Param);
-                        return cmd;
-                    }
-
+                        res=  CMD.Exec(taskItem.Param);
+                        
+                    } 
                 }
-                return "";
+                singleEndDelegate(res);
+                return res;
             }
             catch (Exception ex)
             {
                 LogHelper.Error(ex, taskItem.Oprate+""+ taskItem.Param);
+                singleEndDelegate("run error"+ ex.Message);
                 return ex.Message;
             }
            
@@ -65,12 +79,37 @@ namespace MobileControlGuru.AutoTask
 
         public  void Run()
         {
-            foreach(var t in taskInfo.TaskItems)
+
+            if (taskStartDelegate != null)
             {
-                R(t);
+                taskStartDelegate();
+            }
+            if (Debug)
+            {
+                foreach (var t in taskInfo.TaskItems)
+                {
+                    R(t);
+                }
+            }
+            else
+            {
+                int i = taskInfo.RunTimes;
+                while (i != 0)
+                {
+                    foreach (var t in taskInfo.TaskItems)
+                    {
+                        R(t);
+                    }
+                    i--;
+                }
+
             }
 
 
+            if (taskFinishedDelegate != null)
+            {
+                taskFinishedDelegate();
+            }
         }
 
         public  async Task RunAsync()
