@@ -93,6 +93,16 @@ namespace MobileControlGuru.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap nosee {
+            get {
+                object obj = ResourceManager.GetObject("nosee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap ontop {
             get {
                 object obj = ResourceManager.GetObject("ontop", resourceCulture);
@@ -127,6 +137,16 @@ namespace MobileControlGuru.Properties {
             get {
                 object obj = ResourceManager.GetObject("scrcpy_params", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap see {
+            get {
+                object obj = ResourceManager.GetObject("see", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

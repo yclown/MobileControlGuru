@@ -46,26 +46,30 @@ namespace MobileControlGuru
             this.ontop.BackgroundImage = this.device.IsTop ? Resources.ontop : Resources.ontop_blur;
             this.disput.Visible= this.device.ScrcpyProcess!=null;
             this.put.Visible = this.device.ScrcpyProcess == null;
+
+            if (device.form != null)
+            {
+                this.show.Visible = true;
+                this.show.BackgroundImage = device.form.Visible? Resources.see: Resources.nosee; 
+            }
+            else
+            {
+                this.show.Visible = false;
+            }
+            
         }
 
         private void put_Click(object sender, EventArgs e)
         {
-            Process process = Scrcpy.Put(this.device.Name);
-            //DeviceManager.Instance.BindDevicesProcees(device.Name, process);
-            //process.Exited += new EventHandler(exitHandle);
+            Process process = Scrcpy.Put(this.device.Name); 
             while (process.MainWindowHandle == IntPtr.Zero)
             {
                 Thread.Sleep(100);
-            }
-            
+            } 
             device.form=new ScrcpyForm(device.Name,process);
             device.ScrcpyProcess= process;
             device.form.Show();
-            device.form.FormClosed += ScrcpyClosed;
-            //if (process != null)
-            //{
-            //    ((AntdUI.Button)sender).Visible = false;
-            //}
+            device.form.FormClosed += ScrcpyClosed; 
             DeviceManager.Instance.UpdateDevices();
         }
 
@@ -119,6 +123,24 @@ namespace MobileControlGuru
             this.device.IsTop = !this.device.IsTop;
             ((AntdUI.Button)sender).BackgroundImage = this.device.IsTop ? Resources.ontop : Resources.ontop_blur;
             DeviceManager.Instance.UpdateDevices();
+        }
+
+        private void show_Click(object sender, EventArgs e)
+        {
+            if(this.device.form==null) {
+                return;
+            }
+            var btn = (AntdUI.Button)sender;
+            if (this.device.form.Visible)
+            {
+                this.device.form.Hide();  
+            }
+            else
+            {
+                this.device.form.Show();
+            }
+            btn.BackgroundImage = device.form.Visible ? Resources.see : Resources.nosee;
+
         }
     }
 }

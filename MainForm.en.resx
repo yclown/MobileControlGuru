@@ -263,4 +263,10 @@
   <data name="divider5.Text" xml:space="preserve">
     <value>AutoTask</value>
   </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="HotSetText" xml:space="preserve">
+    <value>HotKey</value>
+  </data>
 </root>

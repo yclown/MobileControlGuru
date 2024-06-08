@@ -466,6 +466,9 @@
     <Content Include="Preview\ipconnect.png" />
     <Content Include="Preview\main.en.png" />
     <Content Include="Preview\main.png" />
+    <None Include="Resources\see.png" />
+    <None Include="Resources\nosee.png" />
+    <None Include="Resources\see.bmp" />
     <None Include="Resources\ontop_blur.png" />
     <None Include="Resources\ontop.png" />
     <None Include="Resources\fanhui.png" />

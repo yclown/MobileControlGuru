@@ -36,6 +36,7 @@
             this.checkbox1 = new AntdUI.Checkbox();
             this.disput = new AntdUI.Button();
             this.disconnect = new AntdUI.Button();
+            this.show = new AntdUI.Button();
             this.ontop = new AntdUI.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,14 +62,15 @@
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Controls.Add(this.checkbox1);
             this.flowLayoutPanel1.Controls.Add(this.input1);
             this.flowLayoutPanel1.Controls.Add(this.put);
             this.flowLayoutPanel1.Controls.Add(this.disput);
             this.flowLayoutPanel1.Controls.Add(this.wireless_connect);
             this.flowLayoutPanel1.Controls.Add(this.disconnect);
+            this.flowLayoutPanel1.Controls.Add(this.show);
             this.flowLayoutPanel1.Controls.Add(this.ontop);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // checkbox1
@@ -91,12 +93,21 @@
             this.disconnect.Type = AntdUI.TTypeMini.Error;
             this.disconnect.Click += new System.EventHandler(this.disconnect_Click);
             // 
+            // show
+            // 
+            this.show.BackgroundImage = global::MobileControlGuru.Properties.Resources.see;
+            this.show.Ghost = true;
+            this.show.ImageSvg = "";
+            resources.ApplyResources(this.show, "show");
+            this.show.Name = "show";
+            this.show.Click += new System.EventHandler(this.show_Click);
+            // 
             // ontop
             // 
-            resources.ApplyResources(this.ontop, "ontop");
-            this.ontop.BackgroundImage = global::MobileControlGuru.Properties.Resources.ontop_blur;
+            this.ontop.BackgroundImage = global::MobileControlGuru.Properties.Resources.ontop;
             this.ontop.Ghost = true;
             this.ontop.ImageSvg = "";
+            resources.ApplyResources(this.ontop, "ontop");
             this.ontop.Name = "ontop";
             this.ontop.Click += new System.EventHandler(this.ontop_Click);
             // 
@@ -122,5 +133,6 @@
         private AntdUI.Button disput;
         private AntdUI.Checkbox checkbox1;
         private AntdUI.Button ontop;
+        private AntdUI.Button show;
     }
 }

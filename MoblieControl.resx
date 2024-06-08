@@ -117,210 +117,235 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="disput.Text" xml:space="preserve">
-    <value>停止投屏</value>
-  </data>
-  <data name="&gt;&gt;disput.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;wireless_connect.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="put.Text" xml:space="preserve">
-    <value>投屏</value>
-  </data>
-  <data name="&gt;&gt;wireless_connect.Name" xml:space="preserve">
-    <value>wireless_connect</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MobileControlGuru.BaseControl, MobileControlGuru, Version=1.0.8.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 44</value>
-  </data>
-  <data name="wireless_connect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 3</value>
-  </data>
-  <data name="&gt;&gt;input1.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;checkbox1.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ontop.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+  <data name="input1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 3</value>
   </data>
   <data name="input1.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 39</value>
   </data>
-  <data name="&gt;&gt;disconnect.Type" xml:space="preserve">
-    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="disput.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;wireless_connect.Type" xml:space="preserve">
-    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;disput.Name" xml:space="preserve">
-    <value>disput</value>
-  </data>
-  <data name="&gt;&gt;checkbox1.Name" xml:space="preserve">
-    <value>checkbox1</value>
-  </data>
-  <data name="wireless_connect.Text" xml:space="preserve">
-    <value>无线连接</value>
-  </data>
-  <data name="disconnect.Text" xml:space="preserve">
-    <value>断开连接</value>
-  </data>
-  <data name="&gt;&gt;disput.Type" xml:space="preserve">
-    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="wireless_connect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 38</value>
-  </data>
-  <data name="ontop.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="checkbox1.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="checkbox1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="wireless_connect.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;checkbox1.Type" xml:space="preserve">
-    <value>AntdUI.Checkbox, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;disconnect.Name" xml:space="preserve">
-    <value>disconnect</value>
-  </data>
-  <data name="disput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 38</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="input1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;input1.Name" xml:space="preserve">
     <value>input1</value>
   </data>
-  <data name="&gt;&gt;ontop.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;put.Type" xml:space="preserve">
-    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="put.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 51</value>
-  </data>
-  <data name="input1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;disconnect.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="checkbox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 38</value>
-  </data>
-  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 36</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>AntdUI.In.FlowLayoutPanel, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ontop.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="disconnect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 3</value>
-  </data>
-  <data name="&gt;&gt;disput.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MoblieControl</value>
-  </data>
   <data name="&gt;&gt;input1.Type" xml:space="preserve">
     <value>AntdUI.Input, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="put.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 3</value>
-  </data>
-  <data name="&gt;&gt;disconnect.Parent" xml:space="preserve">
+  <data name="&gt;&gt;input1.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;input1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="ontop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 3</value>
+  <data name="put.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 3</value>
   </data>
-  <data name="&gt;&gt;checkbox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="put.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 38</value>
   </data>
-  <data name="disconnect.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="put.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="put.Text" xml:space="preserve">
+    <value>投屏</value>
   </data>
-  <data name="input1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 3</value>
+  <data name="&gt;&gt;put.Name" xml:space="preserve">
+    <value>put</value>
   </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="checkbox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="&gt;&gt;put.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;put.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;put.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="wireless_connect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 3</value>
+  </data>
+  <data name="wireless_connect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 38</value>
+  </data>
+  <data name="wireless_connect.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="wireless_connect.Text" xml:space="preserve">
+    <value>无线连接</value>
+  </data>
+  <data name="&gt;&gt;wireless_connect.Name" xml:space="preserve">
+    <value>wireless_connect</value>
+  </data>
+  <data name="&gt;&gt;wireless_connect.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wireless_connect.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;wireless_connect.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;put.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="checkbox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="disconnect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 38</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkbox1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
-  <data name="put.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 38</value>
+  <data name="checkbox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 38</value>
+  </data>
+  <data name="checkbox1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="checkbox1.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;checkbox1.Name" xml:space="preserve">
+    <value>checkbox1</value>
+  </data>
+  <data name="&gt;&gt;checkbox1.Type" xml:space="preserve">
+    <value>AntdUI.Checkbox, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;checkbox1.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;checkbox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="disput.Location" type="System.Drawing.Point, System.Drawing">
     <value>231, 3</value>
   </data>
-  <data name="&gt;&gt;put.Name" xml:space="preserve">
-    <value>put</value>
+  <data name="disput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 38</value>
   </data>
-  <data name="&gt;&gt;ontop.Type" xml:space="preserve">
+  <data name="disput.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="disput.Text" xml:space="preserve">
+    <value>停止投屏</value>
+  </data>
+  <data name="&gt;&gt;disput.Name" xml:space="preserve">
+    <value>disput</value>
+  </data>
+  <data name="&gt;&gt;disput.Type" xml:space="preserve">
     <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;disput.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;disput.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="disconnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 3</value>
+  </data>
+  <data name="disconnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 38</value>
+  </data>
+  <data name="disconnect.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="disconnect.Text" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="&gt;&gt;disconnect.Name" xml:space="preserve">
+    <value>disconnect</value>
+  </data>
+  <data name="&gt;&gt;disconnect.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;disconnect.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;disconnect.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="show.Location" type="System.Drawing.Point, System.Drawing">
+    <value>474, 3</value>
+  </data>
+  <data name="show.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 36</value>
+  </data>
+  <data name="show.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="show.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;show.Name" xml:space="preserve">
+    <value>show</value>
+  </data>
+  <data name="&gt;&gt;show.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;show.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;show.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ontop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>517, 3</value>
+  </data>
+  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 36</value>
+  </data>
+  <data name="ontop.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="ontop.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;ontop.Name" xml:space="preserve">
     <value>ontop</value>
   </data>
+  <data name="&gt;&gt;ontop.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ontop.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;ontop.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 44</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>AntdUI.In.FlowLayoutPanel, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>zh-Hans</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>712, 51</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MoblieControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MobileControlGuru.BaseControl, MobileControlGuru, Version=1.0.8.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
 </root>

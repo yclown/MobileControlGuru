@@ -47,9 +47,17 @@ namespace MobileControlGuru
 
         private void ScrcpyForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            ScrcpyProcess.Kill();
-           
+            //ScrcpyProcess.Kill();
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+              
+                this.Hide();
+                //notifyIcon1.Visible = true;
+            }
         }
+
+
 
         private void ScrcpyForm_Resize(object sender, EventArgs e)
         {

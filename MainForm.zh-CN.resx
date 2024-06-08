@@ -224,4 +224,10 @@
   <data name="getDevices_btn.Text" xml:space="preserve">
     <value>刷新设备</value>
   </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="HotSetText" xml:space="preserve">
+    <value>快捷键</value>
+  </data>
 </root>
