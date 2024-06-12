@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MobileControlGuru.Src;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,6 +21,7 @@ namespace MobileControlGuru.AutoTask
         public TaskJson.TaskInfo taskInfo;
         public TaskList taskList;
         TaskRunWindow runWindow;
+        
         public TaskShowItem(TaskJson.TaskInfo taskInfo)
         {
             this.taskInfo = taskInfo;
@@ -60,16 +63,58 @@ namespace MobileControlGuru.AutoTask
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (runWindow != null)
+
+            AntdUI.Button button = (AntdUI.Button)sender;
+
+            DeviceManager.Instance.devices.ForEach(n =>
             {
-                runWindow.Dispose();
-                runWindow = null;
+                 
+
+            }); 
+            runWindow = new TaskRunWindow("419218f7", taskInfo);
+            //runWindow.Show();
+            button.Visible = false;
+            runWindow.taskStartDelegate += taskStart;
+            runWindow.taskFinishedDelegate += taskFinished;
+            
+            runWindow.RunTask();
+        }
+
+        private void taskStart()
+        {
+            UpdateButton(button3, false);
+            UpdateButton(button2, false);
+            UpdateButton(button1, false);
+
+            UpdateButton(button4, true);
+            UpdateButton(button5, true);
+        }
+
+        private void taskFinished()
+        {
+            UpdateButton(button3,true);
+            UpdateButton(button2,true);
+            UpdateButton(button1,true);
+
+            UpdateButton(button4,false);
+            UpdateButton(button5, false);
+           
+            runWindow=null;
+        }
+
+        private void UpdateButton(AntdUI.Button button, bool visible)
+        {
+            if (button.InvokeRequired)
+            {
+                button.Invoke(new Action(() =>
+                {
+                    button.Visible = visible;
+
+                }));
             }
             else
             {
-                runWindow = new TaskRunWindow("419218f7", taskInfo);
-                runWindow.Show();
-                runWindow.RunTask();
+                button.Visible = visible;
             }
         }
 
@@ -77,6 +122,16 @@ namespace MobileControlGuru.AutoTask
         {
             taskInfo.RunTimes=Convert.ToInt32(value);
             TaskJson.EditTask(taskInfo);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            runWindow.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            runWindow.taskRun.cts.Cancel();
         }
     }
 }

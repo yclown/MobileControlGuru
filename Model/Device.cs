@@ -1,4 +1,5 @@
 ﻿using AntdUI;
+using MobileControlGuru.AutoTask;
 using MobileControlGuru.Src;
 using MobileControlGuru.Tools;
 using System;
@@ -32,6 +33,7 @@ namespace MobileControlGuru.Model
 
         public ScrcpyForm form { set; get; }
         public Process ScrcpyProcess { get; set; }
+        public TaskRunWindow RunWindow { get; set; }
 
     }
   

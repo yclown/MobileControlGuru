@@ -32,27 +32,12 @@ namespace MobileControlGuru.Base
                     StandardOutputEncoding = Encoding.UTF8,
                     StandardErrorEncoding = Encoding.UTF8,
                 });
-
-                // 用于存储标准输出的StringBuilder  
-                //StringBuilder outputBuilder = new StringBuilder(); 
-                //// 异步读取标准输出  
-                //p.OutputDataReceived += (sender, e) =>
-                //{
-                //    if (!string.IsNullOrEmpty(e.Data))
-                //    {
-                //        outputBuilder.AppendLine(e.Data);
-                //    }
-                //};
-                //p.BeginOutputReadLine(); 
-
-
-                //p.WaitForExit();//等待程序执行完退出进程
-                //string output = outputBuilder.ToString();
-                string output = p.StandardOutput.ReadToEndAsync().Result;
+ 
+                string output = p.StandardOutput.ReadToEnd();
                 LogHelper.Info("adb output： " + output);
 
-                //p.Close();
-                //p.Dispose();
+                p.Close();
+                p.Dispose();
                 return new AdbParse(output);
             }
             catch(Exception e)

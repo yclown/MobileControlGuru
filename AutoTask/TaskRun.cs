@@ -32,7 +32,7 @@ namespace MobileControlGuru.AutoTask
         public TaskSingleStartDelegate singleStartDelegate;
         //单条指令结束 
         public TaskSingleEndDelegate singleEndDelegate;
-
+        public CancellationTokenSource cts = new CancellationTokenSource();
         public TaskRun(string deviceName, TaskJson.TaskInfo taskInfo, bool debug=false)
         {
             DeviceName = deviceName;
@@ -44,6 +44,7 @@ namespace MobileControlGuru.AutoTask
         {
             try
             {
+               
                 singleStartDelegate(taskItem.Oprate + " " + taskItem.Param);
                 string res = "";
                 if (taskItem.IsAdb)
@@ -88,6 +89,10 @@ namespace MobileControlGuru.AutoTask
             {
                 foreach (var t in taskInfo.TaskItems)
                 {
+                    if (cts.Token.IsCancellationRequested)
+                    {
+                        break;
+                    }
                     R(t);
                 }
             }
@@ -98,6 +103,10 @@ namespace MobileControlGuru.AutoTask
                 {
                     foreach (var t in taskInfo.TaskItems)
                     {
+                        if (cts.Token.IsCancellationRequested)
+                        {
+                            break;
+                        }
                         R(t);
                     }
                     i--;

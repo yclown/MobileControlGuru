@@ -142,5 +142,10 @@ namespace MobileControlGuru
             btn.BackgroundImage = device.form.Visible ? Resources.see : Resources.nosee;
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

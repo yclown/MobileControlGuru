@@ -38,6 +38,9 @@
             this.disconnect = new AntdUI.Button();
             this.show = new AntdUI.Button();
             this.ontop = new AntdUI.Button();
+            this.runtask = new AntdUI.Button();
+            this.log_btn = new AntdUI.Button();
+            this.end_task = new AntdUI.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +73,9 @@
             this.flowLayoutPanel1.Controls.Add(this.disconnect);
             this.flowLayoutPanel1.Controls.Add(this.show);
             this.flowLayoutPanel1.Controls.Add(this.ontop);
+            this.flowLayoutPanel1.Controls.Add(this.runtask);
+            this.flowLayoutPanel1.Controls.Add(this.log_btn);
+            this.flowLayoutPanel1.Controls.Add(this.end_task);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
@@ -111,6 +117,24 @@
             this.ontop.Name = "ontop";
             this.ontop.Click += new System.EventHandler(this.ontop_Click);
             // 
+            // runtask
+            // 
+            resources.ApplyResources(this.runtask, "runtask");
+            this.runtask.Name = "runtask";
+            this.runtask.Type = AntdUI.TTypeMini.Primary;
+            // 
+            // log_btn
+            // 
+            resources.ApplyResources(this.log_btn, "log_btn");
+            this.log_btn.Name = "log_btn";
+            this.log_btn.Type = AntdUI.TTypeMini.Primary;
+            // 
+            // end_task
+            // 
+            resources.ApplyResources(this.end_task, "end_task");
+            this.end_task.Name = "end_task";
+            this.end_task.Type = AntdUI.TTypeMini.Warn;
+            // 
             // MoblieControl
             // 
             resources.ApplyResources(this, "$this");
@@ -134,5 +158,8 @@
         private AntdUI.Checkbox checkbox1;
         private AntdUI.Button ontop;
         private AntdUI.Button show;
+        private AntdUI.Button runtask;
+        private AntdUI.Button log_btn;
+        private AntdUI.Button end_task;
     }
 }

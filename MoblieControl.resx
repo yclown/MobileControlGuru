@@ -312,11 +312,83 @@
   <data name="&gt;&gt;ontop.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="runtask.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 3</value>
+  </data>
+  <data name="runtask.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 36</value>
+  </data>
+  <data name="runtask.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="runtask.Text" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="&gt;&gt;runtask.Name" xml:space="preserve">
+    <value>runtask</value>
+  </data>
+  <data name="&gt;&gt;runtask.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;runtask.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;runtask.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="log_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 48</value>
+  </data>
+  <data name="log_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 36</value>
+  </data>
+  <data name="log_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="log_btn.Text" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="&gt;&gt;log_btn.Name" xml:space="preserve">
+    <value>log_btn</value>
+  </data>
+  <data name="&gt;&gt;log_btn.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;log_btn.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;log_btn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="end_task.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 48</value>
+  </data>
+  <data name="end_task.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 36</value>
+  </data>
+  <data name="end_task.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="end_task.Text" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="&gt;&gt;end_task.Name" xml:space="preserve">
+    <value>end_task</value>
+  </data>
+  <data name="&gt;&gt;end_task.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;end_task.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;end_task.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 44</value>
+    <value>692, 98</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -340,12 +412,12 @@
     <value>6, 12</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>712, 51</value>
+    <value>712, 130</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MoblieControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MobileControlGuru.BaseControl, MobileControlGuru, Version=1.0.8.1, Culture=neutral, PublicKeyToken=null</value>
+    <value>MobileControlGuru.BaseControl, MobileControlGuru, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

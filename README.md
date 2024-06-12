@@ -1,4 +1,4 @@
-# 电脑多控手机（MobileControlGuru） 支持快捷键，WebAPI控制
+# 电脑多控手机（MobileControlGuru） 支持快捷键，WebAPI控制，自动化任务
 
 
 <h3>简体中文 | <a href="README.en.md">English</a></h3>
@@ -12,6 +12,7 @@
 2. 批量操作
 3. 快捷键操作
 4. API发布
+5. 自动化任务 
 
 ## 使用说明
 
@@ -80,9 +81,6 @@ API
 
 ## 项目计划
 
-1. 有线转无线
-2. scrcpy模式修改
-3. 自动化任务模块
 
 
 
