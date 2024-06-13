@@ -117,31 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </data>
-  <data name="mini_menustrip.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  </metadata>
+  <metadata name="mini_menustrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>136, 17</value>
-  </data>
-  <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="main_tsmi.Text" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="setting_tmsi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="setting_tmsi.Text" xml:space="preserve">
-    <value>Setting</value>
-  </data>
-  <data name="exit_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="exit_tsmi.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="mini_menustrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 70</value>
   </data>
@@ -237,9 +219,27 @@
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing">
-    <value>278, 17</value>
+  <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
   </data>
+  <data name="main_tsmi.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="setting_tmsi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="setting_tmsi.Text" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="exit_tsmi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="exit_tsmi.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>278, 17</value>
+  </metadata>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>107, 3</value>
   </data>
@@ -944,16 +944,16 @@
     <value>3</value>
   </data>
   <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 388</value>
+    <value>3, 3</value>
   </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 41</value>
+    <value>87, 41</value>
   </data>
   <data name="button6.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
   <data name="button6.Text" xml:space="preserve">
-    <value>自动化</value>
+    <value>任务列表</value>
   </data>
   <data name="&gt;&gt;button6.Name" xml:space="preserve">
     <value>button6</value>
@@ -962,10 +962,10 @@
     <value>AntdUI.Button, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;button6.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
+    <value>flowLayoutPanel8</value>
   </data>
   <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>0</value>
   </data>
   <data name="divider5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1100,7 +1100,7 @@
     <value>3, 304</value>
   </data>
   <data name="flowLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 49</value>
+    <value>420, 49</value>
   </data>
   <data name="flowLayoutPanel6.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -1116,6 +1116,27 @@
   </data>
   <data name="&gt;&gt;flowLayoutPanel6.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="flowLayoutPanel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 388</value>
+  </data>
+  <data name="flowLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 45</value>
+  </data>
+  <data name="flowLayoutPanel8.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.Name" xml:space="preserve">
+    <value>flowLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.Type" xml:space="preserve">
+    <value>AntdUI.In.FlowLayoutPanel, AntdUI, Version=1.1.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.Parent" xml:space="preserve">
+    <value>flowLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel8.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="flowLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>516, 1</value>
@@ -1162,12 +1183,12 @@
   <data name="&gt;&gt;flowLayoutPanel7.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
@@ -1211,12 +1232,6 @@
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MobileControlGuru.BaseForm, MobileControlGuru, Version=1.0.8.1, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="AboutText" xml:space="preserve">
-    <value>关于</value>
-  </data>
-  <data name="HotSetText" xml:space="preserve">
-    <value>快捷键</value>
+    <value>MobileControlGuru.BaseForm, MobileControlGuru, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

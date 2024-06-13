@@ -75,6 +75,8 @@ namespace MobileControlGuru.AutoTask
             public List<TaskItem> TaskItems;
             public int id;
             public int RunTimes;
+            public string DeviceName;
+            public string Corn;
 
             public TaskInfo()
             {

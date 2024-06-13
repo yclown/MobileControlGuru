@@ -73,6 +73,7 @@
             this.flowLayoutPanel5 = new AntdUI.In.FlowLayoutPanel();
             this.flowLayoutPanel6 = new AntdUI.In.FlowLayoutPanel();
             this.flowLayoutPanel7 = new AntdUI.In.FlowLayoutPanel();
+            this.flowLayoutPanel8 = new AntdUI.In.FlowLayoutPanel();
             this.mini_menustrip.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -80,6 +81,7 @@
             this.flowLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -351,7 +353,7 @@
             this.flowLayoutPanel3.Controls.Add(this.divider4);
             this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel6);
             this.flowLayoutPanel3.Controls.Add(this.divider5);
-            this.flowLayoutPanel3.Controls.Add(this.button6);
+            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel8);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
             // flowLayoutPanel4
@@ -393,6 +395,12 @@
             this.flowLayoutPanel7.Controls.Add(this.lang_select);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.Controls.Add(this.button6);
+            resources.ApplyResources(this.flowLayoutPanel8, "flowLayoutPanel8");
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -411,6 +419,7 @@
             this.flowLayoutPanel5.ResumeLayout(false);
             this.flowLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel7.ResumeLayout(false);
+            this.flowLayoutPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -460,6 +469,7 @@
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel5;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel6;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel7;
+        private AntdUI.In.FlowLayoutPanel flowLayoutPanel8;
     }
 }
 
