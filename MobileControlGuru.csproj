@@ -316,6 +316,7 @@
     <Compile Include="Base\ADBKey.cs" />
     <Compile Include="Base\AdbParse.cs" />
     <Compile Include="Src\ScrcpyMonitor.cs" />
+    <Compile Include="Src\TaskManager.cs" />
     <Compile Include="Tools\Common.cs" />
     <Compile Include="Tools\ConfigHelp.cs" />
     <Compile Include="Src\DeviceADB.cs" />
