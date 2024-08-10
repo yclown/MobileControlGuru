@@ -124,6 +124,24 @@
     <value>136, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="main_tsmi.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="setting_tmsi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="setting_tmsi.Text" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="exit_tsmi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="exit_tsmi.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="mini_menustrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 70</value>
   </data>
@@ -218,24 +236,6 @@
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="main_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="main_tsmi.Text" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="setting_tmsi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="setting_tmsi.Text" xml:space="preserve">
-    <value>Setting</value>
-  </data>
-  <data name="exit_tsmi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="exit_tsmi.Text" xml:space="preserve">
-    <value>Exit</value>
   </data>
   <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>278, 17</value>

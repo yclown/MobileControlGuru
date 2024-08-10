@@ -331,6 +331,7 @@
     <Compile Include="Base\Scrcpy.cs" />
     <Compile Include="Base\ScrcpyParam.cs" />
     <Compile Include="Base\ScrcpyParamAttribute.cs" />
+    <Compile Include="Tools\QuartzJobUtil.cs" />
     <Compile Include="Tools\ZipHelper.cs" />
     <Compile Include="WebAPI\Controllers\DeviceController.cs" />
     <Compile Include="WebAPI\Controllers\HomeController.cs" />
