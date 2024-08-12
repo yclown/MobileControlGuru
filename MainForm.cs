@@ -588,9 +588,9 @@ namespace MobileControlGuru
 
         private void button6_Click(object sender, EventArgs e)
         {
-            AutoTask.TaskList iPConnect = new AutoTask.TaskList();
-          
-            iPConnect.Show(this);
+            AutoTask.TaskList tasklist = new AutoTask.TaskList();
+
+            tasklist.Show(this);
         }
     }
 }

@@ -35,12 +35,12 @@
             this.label1 = new AntdUI.Label();
             this.button4 = new AntdUI.Button();
             this.input1 = new AntdUI.Input();
-            this.select1 = new AntdUI.Select();
             this.label2 = new AntdUI.Label();
             this.flowLayoutPanel2 = new AntdUI.In.FlowLayoutPanel();
             this.label3 = new AntdUI.Label();
             this.input2 = new AntdUI.Input();
             this.button5 = new AntdUI.Button();
+            this.input3 = new AntdUI.Input();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,7 +89,7 @@
             // 
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 33);
+            this.label1.Size = new System.Drawing.Size(70, 33);
             this.label1.TabIndex = 5;
             this.label1.Text = "任务名";
             // 
@@ -105,33 +105,25 @@
             // 
             // input1
             // 
-            this.input1.Location = new System.Drawing.Point(61, 3);
+            this.input1.Location = new System.Drawing.Point(79, 3);
             this.input1.Name = "input1";
             this.input1.Size = new System.Drawing.Size(124, 33);
             this.input1.TabIndex = 8;
             // 
-            // select1
-            // 
-            this.select1.Location = new System.Drawing.Point(258, 3);
-            this.select1.Name = "select1";
-            this.select1.Size = new System.Drawing.Size(134, 33);
-            this.select1.TabIndex = 9;
-            this.select1.Text = "select1";
-            // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(191, 3);
+            this.label2.Location = new System.Drawing.Point(209, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 33);
+            this.label2.Size = new System.Drawing.Size(46, 33);
             this.label2.TabIndex = 10;
-            this.label2.Text = "设备选择";
+            this.label2.Text = "设备ID";
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.label1);
             this.flowLayoutPanel2.Controls.Add(this.input1);
             this.flowLayoutPanel2.Controls.Add(this.label2);
-            this.flowLayoutPanel2.Controls.Add(this.select1);
+            this.flowLayoutPanel2.Controls.Add(this.input3);
             this.flowLayoutPanel2.Controls.Add(this.label3);
             this.flowLayoutPanel2.Controls.Add(this.input2);
             this.flowLayoutPanel2.Controls.Add(this.button5);
@@ -163,6 +155,13 @@
             this.button5.TabIndex = 13;
             this.button5.Text = "Corn帮助";
             // 
+            // input3
+            // 
+            this.input3.Location = new System.Drawing.Point(261, 3);
+            this.input3.Name = "input3";
+            this.input3.Size = new System.Drawing.Size(139, 33);
+            this.input3.TabIndex = 14;
+            // 
             // TaskEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -191,11 +190,11 @@
         private AntdUI.Label label1;
         private AntdUI.Button button4;
         private AntdUI.Input input1;
-        public AntdUI.Select select1;
         private AntdUI.Label label2;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel2;
         private AntdUI.Label label3;
         private AntdUI.Input input2;
         private AntdUI.Button button5;
+        private AntdUI.Input input3;
     }
 }

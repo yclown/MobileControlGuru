@@ -57,7 +57,17 @@ namespace MobileControlGuru.AutoTask
                 {
                     if (taskItem.Oprate == "sleep")
                     {
-                        Thread.Sleep(Convert.ToInt32(taskItem.Param));
+                        var times= taskItem.Param.Split(' ');
+                        if (times.Count() == 1)
+                        {
+                            Thread.Sleep(Convert.ToInt32(times[0]));
+                        }
+                        else
+                        {
+                            int time = new Random().Next(Convert.ToInt32(times[0]), Convert.ToInt32(times[1]));
+                            Thread.Sleep(time);
+                        }
+                        
                     }
                     else
                     {

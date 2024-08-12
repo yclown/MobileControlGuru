@@ -253,7 +253,7 @@
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Base\BaseJob.cs" />
+    <Compile Include="AutoTask\BaseJob.cs" />
     <Compile Include="Base\CMD.cs" />
     <Compile Include="HotKeyControl.cs">
       <SubType>UserControl</SubType>

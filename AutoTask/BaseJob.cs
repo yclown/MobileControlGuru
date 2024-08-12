@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobileControlGuru.Base
+namespace MobileControlGuru.AutoTask
 {
     public class BaseJob : IJob
     {
@@ -13,14 +13,13 @@ namespace MobileControlGuru.Base
         {
             JobKey key = context.JobDetail.Key; 
             JobDataMap dataMap = context.JobDetail.JobDataMap; 
-            string jobSays = "";
-            dataMap.TryGetString("jobSays", out jobSays);
-
+            string devicename = dataMap.GetString("devicename");
+            TaskJson.TaskInfo taskInfo = (TaskJson.TaskInfo)dataMap.Get("taskInfo");
+            
             return Task.Factory.StartNew(() =>
             {
-               
-                Console.WriteLine(jobSays + " -- " + DateTime.Now.ToString());
-
+                TaskRun taskRun = new TaskRun(devicename, taskInfo);
+                taskRun.Run(); 
             });
         }
     }

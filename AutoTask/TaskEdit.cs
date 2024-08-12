@@ -102,13 +102,15 @@ namespace MobileControlGuru.AutoTask
             {
                 taskInfo.TaskItems=list;
                 taskInfo.Name=this.input1.Text;
+                taskInfo.DeviceName = this.input3.Text;
                 return taskInfo;
             }
             else
             { 
                 return new TaskJson.TaskInfo() {
                     Name = this.input1.Text,
-                    TaskItems = list
+                    TaskItems = list,
+                    DeviceName=input3.Text
                 };
             }
             
@@ -139,6 +141,11 @@ namespace MobileControlGuru.AutoTask
             TaskRunWindow tr = new TaskRunWindow(name,GetTaksInfo(),true);
             tr.Text = "debug on:"+name;
             tr.ShowDialog(this);
+        }
+
+        private void select1_SelectedIndexChanged(object sender, int value)
+        {
+
         }
     }
 }
