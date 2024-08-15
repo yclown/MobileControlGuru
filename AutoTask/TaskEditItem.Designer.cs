@@ -44,7 +44,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(321, 4);
+            this.button1.Location = new System.Drawing.Point(431, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 37);
             this.button1.TabIndex = 2;
@@ -55,7 +55,7 @@
             // 
             this.input1.Location = new System.Drawing.Point(194, 4);
             this.input1.Name = "input1";
-            this.input1.Size = new System.Drawing.Size(111, 37);
+            this.input1.Size = new System.Drawing.Size(231, 37);
             this.input1.TabIndex = 3;
             // 
             // select1
@@ -76,7 +76,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "TaskEditItem";
-            this.Size = new System.Drawing.Size(396, 48);
+            this.Size = new System.Drawing.Size(502, 48);
             this.Load += new System.EventHandler(this.TaskEditItem_Load);
             this.ResumeLayout(false);
 

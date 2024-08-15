@@ -28,12 +28,19 @@ namespace MobileControlGuru.AutoTask
         }
         private void TaskEdit_Load(object sender, EventArgs e)
         {
+            Init(); 
+        }
+
+        private void Init()
+        {
 
             if (taskInfo != null)
             {
                 this.input1.Text = taskInfo.Name;
+                this.input3.Text = taskInfo.DeviceName;
+                this.input2.Text = taskInfo.Corn;
 
-                foreach(var item in taskInfo.TaskItems)
+                foreach (var item in taskInfo.TaskItems)
                 {
                     var edit = new TaskEditItem(item);
                     edit.deleteEevnt += ItemDelete;
@@ -41,12 +48,6 @@ namespace MobileControlGuru.AutoTask
                 }
 
             }
-
-        }
-
-        private void Init()
-        {
-
 
 
         }
@@ -103,15 +104,17 @@ namespace MobileControlGuru.AutoTask
                 taskInfo.TaskItems=list;
                 taskInfo.Name=this.input1.Text;
                 taskInfo.DeviceName = this.input3.Text;
+                taskInfo.Corn = this.input2.Text;
                 return taskInfo;
             }
             else
             { 
                 return new TaskJson.TaskInfo() {
-                    Name = this.input1.Text,
+                    Name = input1.Text,
                     TaskItems = list,
-                    DeviceName=input3.Text
-                };
+                    DeviceName=input3.Text,
+                    Corn = input2.Text
+            };
             }
             
         }
@@ -126,10 +129,15 @@ namespace MobileControlGuru.AutoTask
         SelectDevice selectDevice;
         private void button4_Click(object sender, EventArgs e)
         {
-           
-            selectDevice = new SelectDevice();
-            selectDevice.button1.Click += SureDevice;
-            selectDevice.ShowDialog(this);  
+            var taskinfo = GetTaksInfo();
+            TaskRunWindow tr = new TaskRunWindow(taskinfo, true);
+            tr.Text = "debug on:" + taskinfo.DeviceName;
+            tr.ShowDialog(this);
+
+
+            //selectDevice = new SelectDevice();
+            //selectDevice.button1.Click += SureDevice;
+            //selectDevice.ShowDialog(this);  
             //tr.Run();
 
 
@@ -138,7 +146,7 @@ namespace MobileControlGuru.AutoTask
         {
             var name= this.selectDevice.select1.SelectedValue.ToString();
             selectDevice.Dispose();
-            TaskRunWindow tr = new TaskRunWindow(name,GetTaksInfo(),true);
+            TaskRunWindow tr = new TaskRunWindow(GetTaksInfo(),true);
             tr.Text = "debug on:"+name;
             tr.ShowDialog(this);
         }

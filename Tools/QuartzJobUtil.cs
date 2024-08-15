@@ -53,7 +53,7 @@ namespace MobileControlGuru.Tools
         ///  shutdown(true)表示等待所有正在执行的任务执行完毕后关闭Scheduler
         ///  shutdown(false),即shutdown()表示直接关闭Scheduler
         /// </summary>
-        public static void ShutdownScheduler(bool waitForJobsToComplete)
+        public static void ShutdownScheduler(bool waitForJobsToComplete=false)
         {
 
             try
@@ -103,7 +103,7 @@ namespace MobileControlGuru.Tools
             var trigger = TriggerBuilder.Create()
                       .WithIdentity(jobName, jobGroupName)
                      .ForJob(jobName, jobGroupName)
-                     .WithCronSchedule("0/3 * * * * ?", n =>
+                     .WithCronSchedule(cronExpression, n =>
                      {
                          n.WithMisfireHandlingInstructionDoNothing();
                      })
@@ -238,6 +238,13 @@ namespace MobileControlGuru.Tools
 
                 throw e;
             }
+        }
+
+
+        public static DateTime? GetNextTime(string cornexp)
+        {
+            CronExpression cronExpression = new CronExpression(cornexp);
+            return cronExpression.GetNextInvalidTimeAfter(DateTime.Now)?.DateTime;
         }
     }
 }

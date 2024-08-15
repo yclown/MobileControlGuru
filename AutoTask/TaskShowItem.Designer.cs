@@ -80,7 +80,7 @@
             // 
             // inputNumber1
             // 
-            this.inputNumber1.Location = new System.Drawing.Point(345, 4);
+            this.inputNumber1.Location = new System.Drawing.Point(435, 7);
             this.inputNumber1.Name = "inputNumber1";
             this.inputNumber1.Size = new System.Drawing.Size(92, 35);
             this.inputNumber1.TabIndex = 4;
@@ -90,6 +90,7 @@
             0,
             0,
             0});
+            this.inputNumber1.Visible = false;
             this.inputNumber1.ValueChanged += new AntdUI.DecimalEventHandler(this.inputNumber1_ValueChanged);
             // 
             // flowLayoutPanel1
@@ -97,11 +98,11 @@
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.Controls.Add(this.button5);
+            this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(91, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(248, 94);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(329, 94);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // button4
@@ -117,11 +118,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(84, 45);
+            this.button5.Location = new System.Drawing.Point(246, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 36);
             this.button5.TabIndex = 4;
-            this.button5.Text = "停止";
+            this.button5.Text = "禁用";
             this.button5.Type = AntdUI.TTypeMini.Warn;
             this.button5.Visible = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -134,7 +135,7 @@
             this.Controls.Add(this.inputNumber1);
             this.Controls.Add(this.label1);
             this.Name = "TaskShowItem";
-            this.Size = new System.Drawing.Size(440, 47);
+            this.Size = new System.Drawing.Size(536, 48);
             this.Load += new System.EventHandler(this.TaskShowItem_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

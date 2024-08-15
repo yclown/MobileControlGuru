@@ -1,4 +1,5 @@
 ﻿using MobileControlGuru.Src;
+using MobileControlGuru.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,7 +72,7 @@ namespace MobileControlGuru.AutoTask
                  
 
             }); 
-            runWindow = new TaskRunWindow("419218f7", taskInfo);
+            runWindow = new TaskRunWindow(taskInfo);
             //runWindow.Show();
             button.Visible = false;
             runWindow.taskStartDelegate += taskStart;
@@ -131,7 +132,25 @@ namespace MobileControlGuru.AutoTask
 
         private void button5_Click(object sender, EventArgs e)
         {
-            runWindow.taskRun.cts.Cancel();
+            //runWindow.taskRun.cts.Cancel();
+
+            var btn = (AntdUI.Button)sender;
+            this.taskInfo.IsRun = !taskInfo.IsRun;
+
+            if (taskInfo.IsRun)
+            {
+                btn.Text = "启用中";
+                btn.Type = AntdUI.TTypeMini.Success;
+
+                QuartzJobUtil.ResumeJob(taskInfo.id.ToString());
+            }
+            else
+            {
+                btn.Text = "禁用中";
+                btn.Type = AntdUI.TTypeMini.Warn;
+                QuartzJobUtil.PauseJob(taskInfo.id.ToString());
+            }
+            TaskJson.EditTask(taskInfo);
         }
     }
 }

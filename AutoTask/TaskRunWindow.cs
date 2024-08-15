@@ -31,9 +31,9 @@ namespace MobileControlGuru.AutoTask
         //单条指令结束 
         public TaskSingleEndDelegate singleEndDelegate;
 
-        public TaskRunWindow(string deviceName, TaskJson.TaskInfo taskInfo, bool debug=false)
+        public TaskRunWindow( TaskJson.TaskInfo taskInfo, bool debug=false)
         {
-            DeviceName = deviceName;
+            DeviceName = taskInfo.DeviceName;
             TaskInfo = taskInfo;
             Debug = debug;
             InitializeComponent();

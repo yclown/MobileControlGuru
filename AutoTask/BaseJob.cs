@@ -13,12 +13,12 @@ namespace MobileControlGuru.AutoTask
         {
             JobKey key = context.JobDetail.Key; 
             JobDataMap dataMap = context.JobDetail.JobDataMap; 
-            string devicename = dataMap.GetString("devicename");
+            //string devicename = dataMap.GetString("devicename");
             TaskJson.TaskInfo taskInfo = (TaskJson.TaskInfo)dataMap.Get("taskInfo");
             
             return Task.Factory.StartNew(() =>
             {
-                TaskRun taskRun = new TaskRun(devicename, taskInfo);
+                TaskRun taskRun = new TaskRun(taskInfo.DeviceName, taskInfo);
                 taskRun.Run(); 
             });
         }

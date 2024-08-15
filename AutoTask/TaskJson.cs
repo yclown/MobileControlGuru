@@ -68,6 +68,9 @@ namespace MobileControlGuru.AutoTask
 
             
         }
+        /// <summary>
+        /// 任务信息
+        /// </summary>
         public class TaskInfo
         {
 
@@ -78,9 +81,12 @@ namespace MobileControlGuru.AutoTask
             public string DeviceName;
             public string Corn;
 
+            public bool IsRun;
+
             public TaskInfo()
             {
                 this.RunTimes = 1;
+                this.IsRun = false;
             }
 
             //public string Name;
@@ -192,6 +198,8 @@ namespace MobileControlGuru.AutoTask
             var t= Instance.tasks.Where(n => n.id == task.id).First();
             t.TaskItems = task.TaskItems;
             t.Name= task.Name;
+            t.Corn = task.Corn;
+            t.DeviceName = task.DeviceName;
             SaveJsonData();
         }
     }

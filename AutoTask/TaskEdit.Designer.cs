@@ -37,10 +37,10 @@
             this.input1 = new AntdUI.Input();
             this.label2 = new AntdUI.Label();
             this.flowLayoutPanel2 = new AntdUI.In.FlowLayoutPanel();
+            this.input3 = new AntdUI.Input();
             this.label3 = new AntdUI.Label();
             this.input2 = new AntdUI.Input();
             this.button5 = new AntdUI.Button();
-            this.input3 = new AntdUI.Input();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,39 +50,42 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 106);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 104);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(414, 457);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(574, 459);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(432, 12);
+            this.button1.Location = new System.Drawing.Point(432, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.Size = new System.Drawing.Size(75, 35);
             this.button1.TabIndex = 1;
             this.button1.Text = "添加操作";
+            this.button1.Type = AntdUI.TTypeMini.Primary;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(432, 93);
+            this.button2.Location = new System.Drawing.Point(513, 51);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 35);
             this.button2.TabIndex = 2;
             this.button2.Text = "保存任务";
+            this.button2.Type = AntdUI.TTypeMini.Success;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(432, 51);
+            this.button3.Location = new System.Drawing.Point(512, 10);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 36);
             this.button3.TabIndex = 3;
             this.button3.Text = "清空";
+            this.button3.Type = AntdUI.TTypeMini.Error;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
@@ -96,11 +99,12 @@
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(433, 530);
+            this.button4.Location = new System.Drawing.Point(432, 51);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 34);
+            this.button4.Size = new System.Drawing.Size(75, 36);
             this.button4.TabIndex = 7;
             this.button4.Text = "调试";
+            this.button4.Type = AntdUI.TTypeMini.Warn;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // input1
@@ -129,8 +133,15 @@
             this.flowLayoutPanel2.Controls.Add(this.button5);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 12);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(414, 88);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(414, 86);
             this.flowLayoutPanel2.TabIndex = 11;
+            // 
+            // input3
+            // 
+            this.input3.Location = new System.Drawing.Point(261, 3);
+            this.input3.Name = "input3";
+            this.input3.Size = new System.Drawing.Size(139, 33);
+            this.input3.TabIndex = 14;
             // 
             // label3
             // 
@@ -155,24 +166,17 @@
             this.button5.TabIndex = 13;
             this.button5.Text = "Corn帮助";
             // 
-            // input3
-            // 
-            this.input3.Location = new System.Drawing.Point(261, 3);
-            this.input3.Name = "input3";
-            this.input3.Size = new System.Drawing.Size(139, 33);
-            this.input3.TabIndex = 14;
-            // 
             // TaskEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 576);
+            this.ClientSize = new System.Drawing.Size(599, 576);
             this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.button4);
             this.Name = "TaskEdit";
             this.Text = "TaskEdit";
             this.Load += new System.EventHandler(this.TaskEdit_Load);

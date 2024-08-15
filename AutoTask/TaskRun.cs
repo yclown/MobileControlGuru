@@ -44,8 +44,12 @@ namespace MobileControlGuru.AutoTask
         {
             try
             {
-               
-                singleStartDelegate(taskItem.Oprate + " " + taskItem.Param);
+
+                if (singleStartDelegate != null)
+                {
+                    singleStartDelegate(taskItem.Oprate + " " + taskItem.Param);
+                }
+                
                 string res = "";
                 if (taskItem.IsAdb)
                 {
@@ -75,7 +79,12 @@ namespace MobileControlGuru.AutoTask
                         
                     } 
                 }
-                singleEndDelegate(res);
+
+                if (singleEndDelegate != null)
+                {
+                    singleEndDelegate(res);
+                }
+                
                 return res;
             }
             catch (Exception ex)

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MobileControlGuru.Tools;
+using Quartz;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +34,7 @@ namespace MobileControlGuru.AutoTask
                 var item = new TaskShowItem(task);
                 item.taskList = this;
                 item.Tag = task;
+                
                 this.flowLayoutPanel1.Controls.Add(item);
             }
 
@@ -60,6 +63,50 @@ namespace MobileControlGuru.AutoTask
            
             TaskJson.DelTask(id);
              Init();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Init();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            QuartzJobUtil.StartScheduler();
+
+
+            foreach (var task in TaskJson.Instance.tasks)
+            {
+                
+                try
+                {
+                    Dictionary<string, TaskJson.TaskInfo> a = new Dictionary<string, TaskJson.TaskInfo>
+                    {
+                         {"taskInfo", task }
+                    };
+                    QuartzJobUtil.AddJob<BaseJob>
+                        (task.id.ToString(), task.Corn, new JobDataMap(a));
+
+                    if (!task.IsRun)
+                    {
+                        QuartzJobUtil.PauseJob(task.id.ToString());
+                    }
+
+                }
+                catch (Exception ex) {
+                    LogHelper.Error(ex);
+                    MessageBox.Show($"添加任务{task.Name}出错 任务id:{task.id}");
+                }
+
+              
+
+            }
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            QuartzJobUtil.ShutdownScheduler();
         }
     }
 }
