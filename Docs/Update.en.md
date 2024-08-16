@@ -1,5 +1,8 @@
 # Update Log
 
+## V 1.1
+1. Add automated tasks
+
 
 ## V 1.0.8.1
 1. Add window top and screen top
