@@ -1,6 +1,6 @@
 [
   {
-    "Name": "下滑",
+    "Name": "每5秒下滑",
     "TaskItems": [
       {
         "Oprate": "shell input swipe",

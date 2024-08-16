@@ -11,6 +11,7 @@ namespace MobileControlGuru.Base
         //https://blog.csdn.net/h_bpdwn/article/details/91425599
         public enum Key
         {
+
             KEYCODE_HOME=3,
             KEYCODE_MENU=82,
             KEYCODE_BACK=4,

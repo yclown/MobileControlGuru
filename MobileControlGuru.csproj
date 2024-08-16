@@ -448,6 +448,7 @@
       <DependentUpon>ScrcpySetting.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Docs\autohotkey.ahk" />
+    <None Include="Docs\Task.md" />
     <None Include="Docs\Update.en.md" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -480,6 +481,8 @@
     <Content Include="Preview\ipconnect.png" />
     <Content Include="Preview\main.en.png" />
     <Content Include="Preview\main.png" />
+    <Content Include="Preview\taskedit.png" />
+    <Content Include="Preview\taskmain.png" />
     <None Include="Resources\to_top.png" />
     <None Include="Resources\to_top_blur.png" />
     <None Include="Resources\see.png" />

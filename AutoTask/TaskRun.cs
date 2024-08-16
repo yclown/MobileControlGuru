@@ -40,6 +40,11 @@ namespace MobileControlGuru.AutoTask
             Debug = debug;
         }
 
+        /// <summary>
+        /// 任务核心运行方法
+        /// </summary>
+        /// <param name="taskItem"></param>
+        /// <returns></returns>
         public string R(TaskJson.TaskItem taskItem)
         {
             try
@@ -54,7 +59,9 @@ namespace MobileControlGuru.AutoTask
                 if (taskItem.IsAdb)
                 {
                   
-                    var adb= ADB.Exec("-s "+ DeviceName + " "+taskItem.Oprate + " " + taskItem.Param); 
+                    var adb= ADB.Exec(
+                        (!string.IsNullOrEmpty(DeviceName)?"-s "+ DeviceName : "")+ " "
+                        +taskItem.Oprate + " " + taskItem.Param); 
                     res= adb.Message;
                 }
                 else
