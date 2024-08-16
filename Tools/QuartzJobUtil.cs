@@ -122,16 +122,14 @@ namespace MobileControlGuru.Tools
         /// <param name="jobName"></param>
         /// <param name="jobGroupName"></param>
         /// <param name="newJobDataMap"></param>
+        /// <param name="cronExpression"></param>
         public static void AddJob<T>(String jobName, string cronExpression, JobDataMap newJobDataMap, String jobGroupName = "default") where T : IJob
         {
-
             //创建任务
             IJobDetail jobDetail = JobBuilder.Create<T>()
                 .WithIdentity(jobName, jobGroupName)
                 .UsingJobData(newJobDataMap)
-
                 .Build();
-            //创建触发器 每 5 秒钟执行一次 
             var trigger = TriggerBuilder.Create()
                       .WithIdentity(jobName, jobGroupName)
                      .ForJob(jobName, jobGroupName)
@@ -149,9 +147,63 @@ namespace MobileControlGuru.Tools
             catch (SchedulerException e)
             {
                 throw e;
-            }
-
+            } 
         }
+
+        public static void AddTaskJob<T>(String jobName, AutoTask.TaskJson.TaskInfo taskInfo, String jobGroupName = "default") where T : IJob
+        {
+            var data = new JobDataMap(new Dictionary<string, AutoTask.TaskJson.TaskInfo>
+                    {
+                         {"taskInfo", taskInfo }
+                    });
+            //创建任务
+            IJobDetail jobDetail = JobBuilder.Create<T>()
+                .WithIdentity(jobName, jobGroupName)
+                .UsingJobData(data)
+                .Build();
+            var trigger = TriggerBuilder.Create()
+                      .WithIdentity(jobName, jobGroupName)
+                     .ForJob(jobName, jobGroupName)
+                     .WithCronSchedule(taskInfo.Corn, n =>
+                     {
+                         n.WithMisfireHandlingInstructionDoNothing();
+                     })
+                     .Build();
+            try
+            {
+                //将任务及其触发器放入调度器
+                scheduler.ScheduleJob(jobDetail, trigger);
+
+            }
+            catch (SchedulerException e)
+            {
+                throw e;
+            }
+        }
+
+        /// <summary>
+        /// 更新任务
+        /// </summary>
+        /// <param name="jobName"></param> 
+        /// <param name="taskInfo"></param>
+        public static void UpdateTask(String jobName, AutoTask.TaskJson.TaskInfo taskInfo)
+        {
+            try
+            {
+                TriggerKey triggerKey = new TriggerKey(jobName);
+                var job = GetJob(jobName); 
+                scheduler.PauseTrigger(triggerKey);// 停止触发器
+                scheduler.UnscheduleJob(triggerKey);// 移除触发器  
+                scheduler.DeleteJob(job.Key);
+                AddTaskJob<AutoTask.BaseJob>(jobName, taskInfo);
+            }
+            catch (SchedulerException e)
+            {
+
+                throw e;
+            }
+        }
+
         /// <summary>
         /// 删除任务
         /// </summary>
@@ -272,7 +324,7 @@ namespace MobileControlGuru.Tools
             }
         }
 
-
+      
         public static DateTime? GetNextTime(string cornexp,DateTime? dateTime)
         {
             if (string.IsNullOrEmpty(cornexp)|| dateTime==null)
