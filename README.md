@@ -22,9 +22,7 @@
 4. 左边列表出现设备信息,即可开始控制手机（无需投屏）
 
 
-## 注意事项
 
-直接关闭不会退出本程序，请右击右下角图标退出本程序
 
 ### 快捷键说明
 
@@ -42,6 +40,12 @@
 |  Alt+5(小键盘)| 媒体键 播放暂停|
 |  Alt+2(小键盘)| 上滑（对应短视频下一个）|
 |  Alt+8(小键盘)| 下滑（对应短视频上一个）|
+
+## 自动化
+详情见[自动化文档](https://github.com/yclown/MobileControlGuru/blob/master/Docs/Task.md)
+
+
+
 
 ### API说明
 
@@ -78,9 +82,15 @@ API
 
 ![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/api.png)
 
+任务列表
 
-## 项目计划
+![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/taskmain.png)
+
+任务编辑
+
+![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/taskedit.png)
 
 
+## 注意事项
 
-
+直接关闭不会退出本程序，请右击右下角图标退出本程序
