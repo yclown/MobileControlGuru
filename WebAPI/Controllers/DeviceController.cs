@@ -106,7 +106,7 @@ namespace MobileControlGuru.WebAPI.Controllers
         [HttpGet]
         public string SendSwipe(string devicename, string direct)
         {
-            var res = new AdbParse("");
+            var res = new AdbParse("","");
             if (direct == "up")
             {
                 res= new DeviceADB(devicename).SendSwipeUp();

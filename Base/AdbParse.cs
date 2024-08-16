@@ -13,14 +13,18 @@ namespace MobileControlGuru.Base
     {
         public bool IsSuccess {  get; set; }
         public string Message { set; get; }
-        public AdbParse(string adbres)
+        public string Cmd { set; get; }
+
+        public AdbParse(string Cmd, string adbres)
         {
             this.Message= adbres;
+            this.Cmd = Cmd;
             this.IsSuccess = true;
+            
 
         }
 
-        public AdbParse(bool isSuccess, string message)
+        public AdbParse(string Cmd, bool isSuccess, string message)
         {
             IsSuccess = isSuccess;
             Message = message;

@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "下滑",
+    "TaskItems": [
+      {
+        "Oprate": "shell input swipe",
+        "Param": "540 1300 540 500 1000",
+        "IsAdb": true
+      }
+    ],
+    "id": 1,
+    "RunTimes": 1,
+    "DeviceName": "419218f7",
+    "Corn": "0/5 * * * * ?",
+    "IsRun": true
+  },
+  {
+    "Name": "打开钉钉进入工作台",
+    "TaskItems": [
+      {
+        "Oprate": "shell am start -n",
+        "Param": "com.alibaba.android.rimet/com.alibaba.android.rimet.biz.LaunchHomeActivity",
+        "IsAdb": true
+      },
+      {
+        "Oprate": "sleep",
+        "Param": "5000",
+        "IsAdb": false
+      },
+      {
+        "Oprate": "shell input tap",
+        "Param": "523 2326",
+        "IsAdb": true
+      }
+    ],
+    "id": 2,
+    "RunTimes": 1,
+    "DeviceName": "192.168.191.2:5555",
+    "Corn": "",
+    "IsRun": false
+  }
+]

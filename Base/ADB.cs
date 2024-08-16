@@ -38,12 +38,12 @@ namespace MobileControlGuru.Base
 
                 p.Close();
                 p.Dispose();
-                return new AdbParse(output);
+                return new AdbParse("adb "+ Arguments, output);
             }
             catch(Exception e)
             {
                 LogHelper.Error(e, "exc error：[adb " + Arguments + "]\n");
-                return new AdbParse(false,e.Message);
+                return new AdbParse("adb " + Arguments, false,e.Message);
 
             }
 
