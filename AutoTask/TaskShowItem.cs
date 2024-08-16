@@ -35,6 +35,9 @@ namespace MobileControlGuru.AutoTask
             {
                 this.label1.Text = taskInfo.Name;
                 this.inputNumber1.Value=taskInfo.RunTimes;
+               
+                run_able.Text = taskInfo.IsRun?"启用中":"禁用中";
+                run_able.Type = taskInfo.IsRun ? AntdUI.TTypeMini.Success: AntdUI.TTypeMini.Warn;
             }
             
 
@@ -65,40 +68,39 @@ namespace MobileControlGuru.AutoTask
         private void button3_Click(object sender, EventArgs e)
         {
 
-            AntdUI.Button button = (AntdUI.Button)sender;
+            //AntdUI.Button button = (AntdUI.Button)sender;
 
-            DeviceManager.Instance.devices.ForEach(n =>
-            {
+            //DeviceManager.Instance.devices.ForEach(n =>
+            //{
                  
 
-            }); 
+            //}); 
             runWindow = new TaskRunWindow(taskInfo);
-            //runWindow.Show();
-            button.Visible = false;
-            runWindow.taskStartDelegate += taskStart;
-            runWindow.taskFinishedDelegate += taskFinished;
-            
+            runWindow.Show();
+            //button.Visible = false;
+            //runWindow.taskStartDelegate += taskStart;
+            //runWindow.taskFinishedDelegate += taskFinished; 
             runWindow.RunTask();
         }
 
         private void taskStart()
         {
-            UpdateButton(button3, false);
-            UpdateButton(button2, false);
-            UpdateButton(button1, false);
+            UpdateButton(run, false);
+            UpdateButton(del, false);
+            UpdateButton(edit, false);
 
             UpdateButton(button4, true);
-            UpdateButton(button5, true);
+            UpdateButton(run_able, true);
         }
 
         private void taskFinished()
         {
-            UpdateButton(button3,true);
-            UpdateButton(button2,true);
-            UpdateButton(button1,true);
+            UpdateButton(run,true);
+            UpdateButton(del,true);
+            UpdateButton(edit,true);
 
             UpdateButton(button4,false);
-            UpdateButton(button5, false);
+            UpdateButton(run_able, false);
            
             runWindow=null;
         }

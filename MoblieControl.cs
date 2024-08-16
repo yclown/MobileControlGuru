@@ -62,14 +62,15 @@ namespace MobileControlGuru
         private void put_Click(object sender, EventArgs e)
         {
             Process process = Scrcpy.Put(this.device.Name); 
-            while (process.MainWindowHandle == IntPtr.Zero)
-            {
-                Thread.Sleep(100);
-            } 
-            device.form=new ScrcpyForm(device.Name,process);
-            device.ScrcpyProcess= process;
-            device.form.Show();
-            device.form.FormClosed += ScrcpyClosed; 
+            //while (process.MainWindowHandle == IntPtr.Zero)
+            //{
+            //    Thread.Sleep(100);
+            //} 
+            //device.form=new ScrcpyForm(device.Name,process);
+            //device.ScrcpyProcess= process;
+            //device.form.Show();
+            //device.form.FormClosed += ScrcpyClosed; 
+            DeviceManager.Instance.BindDevicesProcees(this.device.Name, process);
             DeviceManager.Instance.UpdateDevices();
         }
 
@@ -88,8 +89,14 @@ namespace MobileControlGuru
 
         private void wireless_connect_Click(object sender, EventArgs e)
         {
+           
+            string str = Interaction.InputBox("提示信息", "请输入手机IP", "", -1, -1);
+            if (string.IsNullOrEmpty(str))
+            {
+                return;
+            }
             ADB.Exec($"-s {this.device.Name} tcpip 5555");
-            string str = Interaction.InputBox("提示信息", "请输入手机IP", "", -1, -1); 
+            Thread.Sleep(1000);
             ADB.Connect(str);  
         }
 
@@ -112,7 +119,7 @@ namespace MobileControlGuru
 
                 device.ScrcpyProcess.Kill();
                 device.ScrcpyProcess = null;
-                device.form.Dispose();
+                device.form?.Dispose();
                 device.form = null;
                 DeviceManager.Instance.UpdateDevices();
             }
@@ -121,7 +128,7 @@ namespace MobileControlGuru
         private void ontop_Click(object sender, EventArgs e)
         {
             this.device.IsTop = !this.device.IsTop;
-            ((AntdUI.Button)sender).BackgroundImage = this.device.IsTop ? Resources.ontop : Resources.ontop_blur;
+            ((AntdUI.Button)sender).BackgroundImage = this.device.IsTop ? Resources.to_top : Resources.to_top_blur;
             DeviceManager.Instance.UpdateDevices();
         }
 

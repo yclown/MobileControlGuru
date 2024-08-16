@@ -14,7 +14,7 @@ namespace MobileControlGuru.Tools
 
 
         //使用默认的配置
-        private static ISchedulerFactory schedulerFactory = SchedulerBuilder.Create()
+        public static ISchedulerFactory schedulerFactory = SchedulerBuilder.Create()
             .WithMisfireThreshold(TimeSpan.FromMilliseconds(1000))
             .WithId("")
             .WithName("")
@@ -23,9 +23,22 @@ namespace MobileControlGuru.Tools
             .WithInterruptJobsOnShutdownWithWait(true)
             .WithBatchTriggerAcquisitionFireAheadTimeWindow(TimeSpan.FromMilliseconds(1))
             .Build();
-        private static IScheduler scheduler = schedulerFactory.GetScheduler().Result;
+        public static IScheduler _scheduler ;
 
+        public static IScheduler scheduler { 
+            get 
+            {
+                if (_scheduler == null)
+                {
+                    _scheduler = schedulerFactory.GetScheduler().Result;
+                }
 
+                return _scheduler; 
+            }
+        
+        }
+
+        //public static IScheduler
         //获取一个默认的Scheduler对象
         public static void StartScheduler()
         {
@@ -59,12 +72,31 @@ namespace MobileControlGuru.Tools
             try
             {
                 scheduler.Shutdown(waitForJobsToComplete);
+                _scheduler = null;
             }
             catch (SchedulerException e)
             {
                 throw e;
             }
         }
+
+        /// <summary>
+        /// 挂起
+        /// </summary>
+        public static void StandbyScheduler()
+        {
+
+            try
+            {
+                scheduler.Standby();
+               
+            }
+            catch (SchedulerException e)
+            {
+                throw e;
+            }
+        }
+
 
         /// <summary>
         /// 暂停所有任务执行
@@ -241,10 +273,24 @@ namespace MobileControlGuru.Tools
         }
 
 
-        public static DateTime? GetNextTime(string cornexp)
+        public static DateTime? GetNextTime(string cornexp,DateTime? dateTime)
         {
-            CronExpression cronExpression = new CronExpression(cornexp);
-            return cronExpression.GetNextInvalidTimeAfter(DateTime.Now)?.DateTime;
+            if (string.IsNullOrEmpty(cornexp)|| dateTime==null)
+            {
+                return null;
+            }
+            try
+            {
+                CronExpression cronExpression = new CronExpression(cornexp); 
+                var datetime = cronExpression.GetNextValidTimeAfter((DateTime)dateTime)?.ToLocalTime().DateTime;
+                return datetime;
+            }
+            catch(Exception ex)
+            {
+                LogHelper.Error(ex, "根据corn表达式获取下个运行时间出错");
+                return null;
+            }
+           
         }
     }
 }

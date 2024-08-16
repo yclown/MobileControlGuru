@@ -37,6 +37,9 @@ namespace MobileControlGuru.AutoTask
                 
                 this.flowLayoutPanel1.Controls.Add(item);
             }
+            start_quatrz.Visible = !QuartzJobUtil.scheduler.IsStarted;
+            shutdown.Visible = QuartzJobUtil.scheduler.IsStarted;
+
 
         }
         private void button1_Click(object sender, EventArgs e)
@@ -72,9 +75,7 @@ namespace MobileControlGuru.AutoTask
 
         private void button3_Click(object sender, EventArgs e)
         {
-            QuartzJobUtil.StartScheduler();
-
-
+            QuartzJobUtil.StartScheduler(); 
             foreach (var task in TaskJson.Instance.tasks)
             {
                 
@@ -101,12 +102,17 @@ namespace MobileControlGuru.AutoTask
               
 
             }
-            
+
+            start_quatrz.Visible = false;
+            shutdown.Visible = true;
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             QuartzJobUtil.ShutdownScheduler();
+            start_quatrz.Visible = true;
+            shutdown.Visible = false;
         }
     }
 }

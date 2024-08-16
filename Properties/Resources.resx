@@ -130,6 +130,9 @@
   <data name="scrcpy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scrcpy-win64-v2.4.zip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="nosee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nosee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="shouye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shouye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,13 +142,16 @@
   <data name="favicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\favicon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="see" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\see.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ontop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ontop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nosee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nosee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="to_top_blur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\to_top_blur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="see" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\see.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="to_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\to_top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

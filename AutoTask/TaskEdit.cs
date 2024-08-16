@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic;
+using MobileControlGuru.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,9 +37,9 @@ namespace MobileControlGuru.AutoTask
 
             if (taskInfo != null)
             {
-                this.input1.Text = taskInfo.Name;
-                this.input3.Text = taskInfo.DeviceName;
-                this.input2.Text = taskInfo.Corn;
+                this.task_name.Text = taskInfo.Name;
+                this.devicename_input.Text = taskInfo.DeviceName;
+                this.cornexp_input.Text = taskInfo.Corn;
 
                 foreach (var item in taskInfo.TaskItems)
                 {
@@ -102,18 +103,18 @@ namespace MobileControlGuru.AutoTask
             if(taskInfo != null)
             {
                 taskInfo.TaskItems=list;
-                taskInfo.Name=this.input1.Text;
-                taskInfo.DeviceName = this.input3.Text;
-                taskInfo.Corn = this.input2.Text;
+                taskInfo.Name=this.task_name.Text;
+                taskInfo.DeviceName = this.devicename_input.Text;
+                taskInfo.Corn = this.cornexp_input.Text;
                 return taskInfo;
             }
             else
             { 
                 return new TaskJson.TaskInfo() {
-                    Name = input1.Text,
+                    Name = task_name.Text,
                     TaskItems = list,
-                    DeviceName=input3.Text,
-                    Corn = input2.Text
+                    DeviceName=devicename_input.Text,
+                    Corn = cornexp_input.Text
             };
             }
             
@@ -154,6 +155,25 @@ namespace MobileControlGuru.AutoTask
         private void select1_SelectedIndexChanged(object sender, int value)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //var time= QuartzJobUtil.GetNextTime(this.cornexp_input.Text, DateTime.Now);
+
+            List<string> five_runtime = new List<string>();
+            DateTime? lastTime = DateTime.Now;
+            for (int i = 0; i < 5; i++)
+            {
+                var time = QuartzJobUtil.GetNextTime(this.cornexp_input.Text, lastTime);
+                
+                if (time != null)
+                {
+                    five_runtime.Add(((DateTime)time).ToString("yyyy-MM-dd HH:mm:ss"));
+                }
+                lastTime = time;
+            }
+            MessageBox.Show(string.Join("\n", five_runtime),"最近5次运行时间");
         }
     }
 }

@@ -200,6 +200,7 @@ namespace MobileControlGuru.AutoTask
             t.Name= task.Name;
             t.Corn = task.Corn;
             t.DeviceName = task.DeviceName;
+            t.IsRun = task.IsRun;
             SaveJsonData();
         }
     }

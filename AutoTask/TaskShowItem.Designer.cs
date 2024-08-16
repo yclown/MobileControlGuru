@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new AntdUI.Button();
-            this.button2 = new AntdUI.Button();
-            this.button3 = new AntdUI.Button();
+            this.edit = new AntdUI.Button();
+            this.del = new AntdUI.Button();
+            this.run = new AntdUI.Button();
             this.label1 = new AntdUI.Label();
             this.inputNumber1 = new AntdUI.InputNumber();
             this.flowLayoutPanel1 = new AntdUI.In.FlowLayoutPanel();
+            this.run_able = new AntdUI.Button();
             this.button4 = new AntdUI.Button();
-            this.button5 = new AntdUI.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // edit
             // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "编 辑";
-            this.button1.Type = AntdUI.TTypeMini.Success;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.edit.Location = new System.Drawing.Point(165, 3);
+            this.edit.Name = "edit";
+            this.edit.Size = new System.Drawing.Size(75, 36);
+            this.edit.TabIndex = 0;
+            this.edit.Text = "编 辑";
+            this.edit.Type = AntdUI.TTypeMini.Success;
+            this.edit.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // del
             // 
-            this.button2.Location = new System.Drawing.Point(84, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 36);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "删 除";
-            this.button2.Type = AntdUI.TTypeMini.Error;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.del.Location = new System.Drawing.Point(246, 3);
+            this.del.Name = "del";
+            this.del.Size = new System.Drawing.Size(75, 36);
+            this.del.TabIndex = 1;
+            this.del.Text = "删 除";
+            this.del.Type = AntdUI.TTypeMini.Error;
+            this.del.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // run
             // 
-            this.button3.Location = new System.Drawing.Point(165, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 36);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "运行";
-            this.button3.Type = AntdUI.TTypeMini.Primary;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.run.Location = new System.Drawing.Point(84, 3);
+            this.run.Name = "run";
+            this.run.Size = new System.Drawing.Size(75, 36);
+            this.run.TabIndex = 2;
+            this.run.Text = "运行";
+            this.run.Type = AntdUI.TTypeMini.Primary;
+            this.run.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -95,15 +95,25 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
+            this.flowLayoutPanel1.Controls.Add(this.run_able);
+            this.flowLayoutPanel1.Controls.Add(this.run);
+            this.flowLayoutPanel1.Controls.Add(this.edit);
+            this.flowLayoutPanel1.Controls.Add(this.del);
             this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(91, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(329, 94);
             this.flowLayoutPanel1.TabIndex = 5;
+            // 
+            // run_able
+            // 
+            this.run_able.Location = new System.Drawing.Point(3, 3);
+            this.run_able.Name = "run_able";
+            this.run_able.Size = new System.Drawing.Size(75, 36);
+            this.run_able.TabIndex = 4;
+            this.run_able.Text = "禁用中";
+            this.run_able.Type = AntdUI.TTypeMini.Warn;
+            this.run_able.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -115,17 +125,6 @@
             this.button4.Type = AntdUI.TTypeMini.Primary;
             this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(246, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 36);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "禁用";
-            this.button5.Type = AntdUI.TTypeMini.Warn;
-            this.button5.Visible = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // TaskShowItem
             // 
@@ -144,13 +143,13 @@
 
         #endregion
 
-        private AntdUI.Button button1;
-        private AntdUI.Button button2;
-        private AntdUI.Button button3;
+        private AntdUI.Button edit;
+        private AntdUI.Button del;
+        private AntdUI.Button run;
         private AntdUI.Label label1;
         private AntdUI.InputNumber inputNumber1;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel1;
         private AntdUI.Button button4;
-        private AntdUI.Button button5;
+        private AntdUI.Button run_able;
     }
 }

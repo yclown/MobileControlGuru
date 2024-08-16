@@ -28,28 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScrcpyForm));
             this.flowLayoutPanel1 = new AntdUI.In.FlowLayoutPanel();
             this.home_btn = new AntdUI.Button();
             this.back_btn = new AntdUI.Button();
-            this.screencap_btn = new AntdUI.Button();
-            this.exit_btn = new AntdUI.Button();
+            this.button2 = new AntdUI.Button();
+            this.opca = new AntdUI.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.tooltipComponent1 = new AntdUI.TooltipComponent();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.home_btn);
             this.flowLayoutPanel1.Controls.Add(this.back_btn);
-            this.flowLayoutPanel1.Controls.Add(this.screencap_btn);
-            this.flowLayoutPanel1.Controls.Add(this.exit_btn);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Controls.Add(this.opca);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(424, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(450, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(76, 551);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(53, 567);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // home_btn
@@ -59,7 +61,7 @@
             this.home_btn.Location = new System.Drawing.Point(3, 3);
             this.home_btn.Name = "home_btn";
             this.home_btn.Shape = AntdUI.TShape.Circle;
-            this.home_btn.Size = new System.Drawing.Size(70, 61);
+            this.home_btn.Size = new System.Drawing.Size(44, 44);
             this.home_btn.TabIndex = 0;
             this.home_btn.Type = AntdUI.TTypeMini.Info;
             this.home_btn.Click += new System.EventHandler(this.home_btn_Click);
@@ -68,47 +70,44 @@
             // 
             this.back_btn.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F);
             this.back_btn.ImageSvg = resources.GetString("back_btn.ImageSvg");
-            this.back_btn.Location = new System.Drawing.Point(3, 70);
+            this.back_btn.Location = new System.Drawing.Point(3, 53);
             this.back_btn.Name = "back_btn";
             this.back_btn.Shape = AntdUI.TShape.Circle;
-            this.back_btn.Size = new System.Drawing.Size(70, 61);
+            this.back_btn.Size = new System.Drawing.Size(44, 41);
             this.back_btn.TabIndex = 2;
             this.back_btn.Type = AntdUI.TTypeMini.Info;
             this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
-            // screencap_btn
+            // button2
             // 
-            this.screencap_btn.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F);
-            this.screencap_btn.ImageSvg = resources.GetString("screencap_btn.ImageSvg");
-            this.screencap_btn.Location = new System.Drawing.Point(3, 137);
-            this.screencap_btn.Name = "screencap_btn";
-            this.screencap_btn.Shape = AntdUI.TShape.Circle;
-            this.screencap_btn.Size = new System.Drawing.Size(70, 61);
-            this.screencap_btn.TabIndex = 3;
-            this.screencap_btn.Type = AntdUI.TTypeMini.Primary;
-            this.screencap_btn.Visible = false;
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F);
+            this.button2.ImageSvg = resources.GetString("button2.ImageSvg");
+            this.button2.Location = new System.Drawing.Point(3, 100);
+            this.button2.Name = "button2";
+            this.button2.Shape = AntdUI.TShape.Circle;
+            this.button2.Size = new System.Drawing.Size(44, 41);
+            this.button2.TabIndex = 6;
+            this.button2.Type = AntdUI.TTypeMini.Primary;
             // 
-            // exit_btn
+            // opca
             // 
-            this.exit_btn.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F);
-            this.exit_btn.ImageSvg = resources.GetString("exit_btn.ImageSvg");
-            this.exit_btn.Location = new System.Drawing.Point(3, 204);
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Shape = AntdUI.TShape.Circle;
-            this.exit_btn.Size = new System.Drawing.Size(70, 61);
-            this.exit_btn.TabIndex = 4;
-            this.exit_btn.Type = AntdUI.TTypeMini.Primary;
-            this.exit_btn.Visible = false;
+            this.opca.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F);
+            this.opca.ImageSvg = resources.GetString("opca.ImageSvg");
+            this.opca.Location = new System.Drawing.Point(3, 147);
+            this.opca.Name = "opca";
+            this.opca.Shape = AntdUI.TShape.Circle;
+            this.opca.Size = new System.Drawing.Size(44, 41);
+            this.opca.TabIndex = 5;
+            this.opca.Type = AntdUI.TTypeMini.Primary;
+            this.opca.Visible = false;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(406, 551);
+            this.panel1.Size = new System.Drawing.Size(450, 567);
             this.panel1.TabIndex = 7;
             // 
             // ScrcpyForm
@@ -119,7 +118,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "ScrcpyForm";
-            this.Text = "ScrcpyForm";
+            this.Text = "x";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ScrcpyForm_FormClosing);
             this.Load += new System.EventHandler(this.ScrcpyForm_Load);
             this.Resize += new System.EventHandler(this.ScrcpyForm_Resize);
@@ -133,8 +132,10 @@
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel1;
         private AntdUI.Button home_btn;
         private AntdUI.Button back_btn;
-        private AntdUI.Button screencap_btn;
-        private AntdUI.Button exit_btn;
         private System.Windows.Forms.Panel panel1;
+        private AntdUI.Button opca;
+        private AntdUI.Button button2;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private AntdUI.TooltipComponent tooltipComponent1;
     }
 }

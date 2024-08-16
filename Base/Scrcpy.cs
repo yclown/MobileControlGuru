@@ -69,7 +69,7 @@ namespace MobileControlGuru.Base
         public static Process Put(string device,string CustomSetting="")
         {
             Process p = null;
-            if (string.IsNullOrEmpty(CustomSetting))
+            if (!string.IsNullOrEmpty(CustomSetting))
             {
                 p = Exec($"  -s {device} --window-title={device} " + CustomSetting);
             }

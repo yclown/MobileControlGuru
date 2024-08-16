@@ -479,6 +479,8 @@
     <Content Include="Preview\ipconnect.png" />
     <Content Include="Preview\main.en.png" />
     <Content Include="Preview\main.png" />
+    <None Include="Resources\to_top.png" />
+    <None Include="Resources\to_top_blur.png" />
     <None Include="Resources\see.png" />
     <None Include="Resources\nosee.png" />
     <None Include="Resources\see.bmp" />

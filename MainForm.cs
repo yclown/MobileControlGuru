@@ -73,14 +73,32 @@ namespace MobileControlGuru
 
         public void UpdateDeviceList()
         {
-            this.flowLayoutPanel1.Controls.Clear();
+           
 
-
-            foreach (var d in DeviceManager.Instance.devices)
+            if (this.flowLayoutPanel1.InvokeRequired)
             {
-                var s = new MoblieControl(d);
-                this.flowLayoutPanel1.Controls.Add(s);
+                this.flowLayoutPanel1.Invoke((MethodInvoker)delegate
+                {
+                    this.flowLayoutPanel1.Controls.Clear();
+                    foreach (var d in DeviceManager.Instance.devices)
+                    {
+                        var s = new MoblieControl(d);
+                        this.flowLayoutPanel1.Controls.Add(s);
+                    }
+
+                });
             }
+            else
+            {
+                this.flowLayoutPanel1.Controls.Clear();
+                foreach (var d in DeviceManager.Instance.devices)
+                {
+                    var s = new MoblieControl(d);
+                    this.flowLayoutPanel1.Controls.Add(s);
+                }
+
+            }
+
 
 
         }

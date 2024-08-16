@@ -34,12 +34,12 @@
             this.button3 = new AntdUI.Button();
             this.label1 = new AntdUI.Label();
             this.button4 = new AntdUI.Button();
-            this.input1 = new AntdUI.Input();
+            this.task_name = new AntdUI.Input();
             this.label2 = new AntdUI.Label();
             this.flowLayoutPanel2 = new AntdUI.In.FlowLayoutPanel();
-            this.input3 = new AntdUI.Input();
+            this.devicename_input = new AntdUI.Input();
             this.label3 = new AntdUI.Label();
-            this.input2 = new AntdUI.Input();
+            this.cornexp_input = new AntdUI.Input();
             this.button5 = new AntdUI.Button();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -107,12 +107,12 @@
             this.button4.Type = AntdUI.TTypeMini.Warn;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // input1
+            // task_name
             // 
-            this.input1.Location = new System.Drawing.Point(79, 3);
-            this.input1.Name = "input1";
-            this.input1.Size = new System.Drawing.Size(124, 33);
-            this.input1.TabIndex = 8;
+            this.task_name.Location = new System.Drawing.Point(79, 3);
+            this.task_name.Name = "task_name";
+            this.task_name.Size = new System.Drawing.Size(124, 33);
+            this.task_name.TabIndex = 8;
             // 
             // label2
             // 
@@ -125,23 +125,23 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.label1);
-            this.flowLayoutPanel2.Controls.Add(this.input1);
+            this.flowLayoutPanel2.Controls.Add(this.task_name);
             this.flowLayoutPanel2.Controls.Add(this.label2);
-            this.flowLayoutPanel2.Controls.Add(this.input3);
+            this.flowLayoutPanel2.Controls.Add(this.devicename_input);
             this.flowLayoutPanel2.Controls.Add(this.label3);
-            this.flowLayoutPanel2.Controls.Add(this.input2);
+            this.flowLayoutPanel2.Controls.Add(this.cornexp_input);
             this.flowLayoutPanel2.Controls.Add(this.button5);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 12);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(414, 86);
             this.flowLayoutPanel2.TabIndex = 11;
             // 
-            // input3
+            // devicename_input
             // 
-            this.input3.Location = new System.Drawing.Point(261, 3);
-            this.input3.Name = "input3";
-            this.input3.Size = new System.Drawing.Size(139, 33);
-            this.input3.TabIndex = 14;
+            this.devicename_input.Location = new System.Drawing.Point(261, 3);
+            this.devicename_input.Name = "devicename_input";
+            this.devicename_input.Size = new System.Drawing.Size(139, 33);
+            this.devicename_input.TabIndex = 14;
             // 
             // label3
             // 
@@ -151,20 +151,21 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Corn表达式";
             // 
-            // input2
+            // cornexp_input
             // 
-            this.input2.Location = new System.Drawing.Point(79, 42);
-            this.input2.Name = "input2";
-            this.input2.Size = new System.Drawing.Size(124, 33);
-            this.input2.TabIndex = 12;
+            this.cornexp_input.Location = new System.Drawing.Point(79, 42);
+            this.cornexp_input.Name = "cornexp_input";
+            this.cornexp_input.Size = new System.Drawing.Size(124, 33);
+            this.cornexp_input.TabIndex = 12;
             // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(209, 42);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(73, 33);
+            this.button5.Size = new System.Drawing.Size(111, 33);
             this.button5.TabIndex = 13;
-            this.button5.Text = "Corn帮助";
+            this.button5.Text = "最近的运行时间";
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // TaskEdit
             // 
@@ -193,12 +194,12 @@
         private AntdUI.Button button3;
         private AntdUI.Label label1;
         private AntdUI.Button button4;
-        private AntdUI.Input input1;
+        private AntdUI.Input task_name;
         private AntdUI.Label label2;
         private AntdUI.In.FlowLayoutPanel flowLayoutPanel2;
         private AntdUI.Label label3;
-        private AntdUI.Input input2;
+        private AntdUI.Input cornexp_input;
         private AntdUI.Button button5;
-        private AntdUI.Input input3;
+        private AntdUI.Input devicename_input;
     }
 }

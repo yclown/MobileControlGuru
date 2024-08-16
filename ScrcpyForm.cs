@@ -43,7 +43,15 @@ namespace MobileControlGuru
             ProcessWindowController.MoveWindow(childHwnd,
                 -10, -30,
                 this.panel1.Width + 20, this.panel1.Height + 30, true);
+
+            tooltipComponent1.SetTip(home_btn, "主页");
+            tooltipComponent1.SetTip(back_btn, "返回");
+            //tooltipComponent1.SetTip(home_btn, "主页");
+            //tooltipComponent1.SetTip(home_btn, "主页");
+
         }
+
+
 
         private void ScrcpyForm_FormClosing(object sender, FormClosingEventArgs e)
         {
