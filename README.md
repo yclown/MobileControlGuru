@@ -82,13 +82,6 @@ API
 
 ![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/api.png)
 
-任务列表
-
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/taskmain.png)
-
-任务编辑
-
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/taskedit.png)
 
 
 ## 注意事项
