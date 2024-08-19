@@ -312,7 +312,7 @@ namespace MobileControlGuru.Tools
                 var newTrigger = TriggerBuilder.Create()
                      .WithIdentity(jobName, jobGroupName)
                     .ForJob(jobName, jobGroupName)
-                    .WithCronSchedule("0/1 * * * * ?")
+                    .WithCronSchedule(cornExp)
                     .Build();
                 scheduler.ScheduleJob(job, newTrigger);
                 //scheduler.ScheduleJob(newTrigger);
