@@ -4,7 +4,7 @@
 <h3>简体中文 | <a href="README.en.md">English</a></h3>
 
 
-[更新日志](https://github.com/yclown/MobileControlGuru/blob/master/Docs/Update.md)
+[更新日志](Docs/Update.md)
 
 ## 功能
 
