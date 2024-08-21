@@ -42,7 +42,7 @@
 |  Alt+8(小键盘)| 下滑（对应短视频上一个）|
 
 ## 自动化
-详情见[自动化文档](https://github.com/yclown/MobileControlGuru/blob/master/Docs/Task.md)
+详情见[自动化文档](Docs/Task.md)
 
 
 
@@ -72,15 +72,15 @@ AutoHotkey脚本示例查看docs目录下的<a href="Docs/autohotkey.md">autohot
 
 主界面
 
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/main.png)
+![image](Preview/main.png)
 
 IP连接
 
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/ipconnect.png)
+![image](Preview/ipconnect.png)
 
 API
 
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/api.png)
+![image](Preview/api.png)
 
 
 
