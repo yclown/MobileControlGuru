@@ -47,8 +47,8 @@
 
 任务列表
 
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/taskmain.png)
+![image](./Preview/taskmain.png)
 
 任务编辑
 
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/taskedit.png)
+![image](./Preview/taskedit.png)
