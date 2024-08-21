@@ -65,10 +65,10 @@ By default, the WebPort is enabled on port 12345. You need to enter the config f
 
 Main
 
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/main.en.png)
+![image](Preview/main.en.png)
 
 IP Connect
 
-![image](https://github.com/yclown/MobileControlGuru/blob/master/Preview/ipconnect.en.png)
+![image](Preview/ipconnect.en.png)
 
 
