@@ -47,8 +47,8 @@
 
 任务列表
 
-![image](./Preview/taskmain.png)
+![image](/Preview/taskmain.png)
 
 任务编辑
 
-![image](./Preview/taskedit.png)
+![image](/Preview/taskedit.png)
