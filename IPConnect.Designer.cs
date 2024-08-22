@@ -78,6 +78,11 @@
             // port_input
             // 
             resources.ApplyResources(this.port_input, "port_input");
+            this.port_input.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
             this.port_input.Name = "port_input";
             // 
             // label2
