@@ -72,16 +72,16 @@
             this.flowLayoutPanel4 = new AntdUI.In.FlowLayoutPanel();
             this.flowLayoutPanel5 = new AntdUI.In.FlowLayoutPanel();
             this.flowLayoutPanel6 = new AntdUI.In.FlowLayoutPanel();
-            this.flowLayoutPanel7 = new AntdUI.In.FlowLayoutPanel();
             this.flowLayoutPanel8 = new AntdUI.In.FlowLayoutPanel();
+            this.flowLayoutPanel7 = new AntdUI.In.FlowLayoutPanel();
             this.mini_menustrip.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
-            this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
+            this.flowLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -379,12 +379,18 @@
             // flowLayoutPanel6
             // 
             this.flowLayoutPanel6.Controls.Add(this.label2);
-            this.flowLayoutPanel6.Controls.Add(this.y_input);
-            this.flowLayoutPanel6.Controls.Add(this.label1);
             this.flowLayoutPanel6.Controls.Add(this.x_input);
+            this.flowLayoutPanel6.Controls.Add(this.label1);
+            this.flowLayoutPanel6.Controls.Add(this.y_input);
             this.flowLayoutPanel6.Controls.Add(this.tap_btn);
             resources.ApplyResources(this.flowLayoutPanel6, "flowLayoutPanel6");
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.Controls.Add(this.button6);
+            resources.ApplyResources(this.flowLayoutPanel8, "flowLayoutPanel8");
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             // 
             // flowLayoutPanel7
             // 
@@ -394,12 +400,6 @@
             this.flowLayoutPanel7.Controls.Add(this.button4);
             this.flowLayoutPanel7.Controls.Add(this.lang_select);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            // 
-            // flowLayoutPanel8
-            // 
-            this.flowLayoutPanel8.Controls.Add(this.button6);
-            resources.ApplyResources(this.flowLayoutPanel8, "flowLayoutPanel8");
-            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             // 
             // MainForm
             // 
@@ -418,8 +418,8 @@
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
             this.flowLayoutPanel6.ResumeLayout(false);
-            this.flowLayoutPanel7.ResumeLayout(false);
             this.flowLayoutPanel8.ResumeLayout(false);
+            this.flowLayoutPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

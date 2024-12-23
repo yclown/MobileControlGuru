@@ -337,7 +337,7 @@
     <value>6</value>
   </data>
   <data name="x_input.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 3</value>
+    <value>31, 3</value>
   </data>
   <data name="x_input.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 41</value>
@@ -358,7 +358,7 @@
     <value>flowLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;x_input.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="divider4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -437,7 +437,7 @@
     <value>0</value>
   </data>
   <data name="y_input.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 3</value>
+    <value>138, 3</value>
   </data>
   <data name="y_input.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 41</value>
@@ -458,7 +458,7 @@
     <value>flowLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;y_input.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="prv_keycode_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>257, 3</value>
@@ -1232,6 +1232,6 @@
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MobileControlGuru.BaseForm, MobileControlGuru, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MobileControlGuru.BaseForm, MobileControlGuru, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>
